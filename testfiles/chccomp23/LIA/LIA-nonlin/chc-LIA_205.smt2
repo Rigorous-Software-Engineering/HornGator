@@ -1,0 +1,17421 @@
+; ./prepared/jayhorn/./sv-comp-2020/jbmc-regression/StringBuilderChars01/smt-output-with-inlining/jayhorn-tmp_0_000.smt2
+(set-logic HORN)
+
+
+(declare-fun |<java.lang.StringBuilder: int length()>_post| ( Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_post| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.String: boolean equals(java.lang.Object)>_Block0| ( Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void setCharAt(int,char)>_post| ( Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_Block0_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_18| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: char get(int)>_Block1| ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #21: Main.java, line 21| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_13| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_16| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: char charAt(int)>_pre| ( Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_4| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void setCharAt(int,char)>_Block0| ( Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block2_5| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_post| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_Block2_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_7| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #1: Main.java, line 20| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_7| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block6| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #11: Main.java, line 14| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_12| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #23: Main.java, line 30| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_8| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_pre| ( Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_Block2_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #3: Main.java, line 20| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_12| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_7| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: char charAt(int)>_Block0_1| ( Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: void <init>(int)>_post| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #26: Main.java, line 32| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_10| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.io.PrintStream: void print(char)>_Block0_2| ( Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_13| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: char charAt(int)>_Block0| ( Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block12| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_Block2_3| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #2: Main.java, line 20| ( ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_Block0| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block3| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_8| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_4| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: char get(int)>_Block1_4| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_15| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_4| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block10_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #29: Main.java, line 31| ( ) Bool)
+(declare-fun |<JayArray_char: void <init>(int)>_Block1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_3| ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block5_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #18: Main.java, line 31| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_10| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #12: Main.java, line 26| ( ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_Block2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_17| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_11| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block1| ( Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #14: Main.java, line 32| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_16| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |inv_$StaticFields_java.lang.System_116| ( Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #20: Main.java, line 21| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_8| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_16| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_5| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: int length()>_Block0_2| ( Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void setCharAt(int,char)>_Block0_1| ( Int Int Int Int Int Int Int ) Bool)
+(declare-fun |CHC_COMP_FALSE| ( ) Bool)
+(declare-fun |<java.lang.StringBuilder: void setCharAt(int,char)>_Block0_2| ( Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_9| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_6| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: char get(int)>_post| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block5| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_9| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_Block1_1| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block0| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_10| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_7| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.io.PrintStream: void print(char)>_pre| ( Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: void <init>(int)>_Block1_5| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_11| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: void <init>(int)>_Block1_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_6| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_8| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #9: Main.java, line 17| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block9| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_Block0_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: void <init>(int)>_Block1_6| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #16: Main.java, line 32| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_9| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_4| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_14| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_4| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_8| ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #17: Main.java, line 31| ( ) Bool)
+(declare-fun |<java.lang.StringBuilder: int length()>_Block0| ( Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block2_6| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2_3| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block12_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_11| ( Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block9_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_14| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #13: Main.java, line 27| ( ) Bool)
+(declare-fun |Assert #27: Main.java, line 28| ( ) Bool)
+(declare-fun |<java.lang.StringBuilder: char charAt(int)>_Block0_2| ( Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: int length()>_pre| ( Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_17| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #7: Main.java, line 16| ( ) Bool)
+(declare-fun |<JayArray_char: void <init>(int)>_Block0| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: char get(int)>_Block1_1| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_post| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #6: Main.java, line 13| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.io.PrintStream: void print(char)>_post| ( Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_Block0_1| ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.io.PrintStream: void print(char)>_Block0_1| ( Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block2_4| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: char get(int)>_Block1_3| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_3| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_6| ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_13| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_5| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block10| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: void <init>(int)>_Block1_4| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block3| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block2_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block2_3| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_4| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: char get(int)>_Block0| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_3| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.String: boolean equals(java.lang.Object)>_Block0_2| ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_10| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_14| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.String: boolean equals(java.lang.Object)>_pre| ( Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_3| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #19: Main.java, line 31| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_Block1| ( Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_5| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: int length()>_Block0_1| ( Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_12| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_11| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_Block0_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_18| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block9_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_5| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_13| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_5| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void setCharAt(int,char)>_pre| ( Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #24: Main.java, line 32| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block11_9| ( Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: char get(int)>_Block1_2| ( Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_7| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_Block3| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block0_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_11| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.String toString()>_pre| ( Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: void <init>(int)>_pre| ( Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.String: boolean equals(java.lang.Object)>_Block0_1| ( Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #0: Main.java, line 11| ( ) Bool)
+(declare-fun |<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_Block0| ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #8: Main.java, line 16| ( ) Bool)
+(declare-fun |<java.io.PrintStream: void print(char)>_Block0| ( Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block0_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_3| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.String: boolean equals(java.lang.Object)>_post| ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block14| ( Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block2_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_6| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #22: Main.java, line 20| ( ) Bool)
+(declare-fun |Assert #4: Main.java, line 20| ( ) Bool)
+(declare-fun |Assert #5: Main.java, line 20| ( ) Bool)
+(declare-fun |<JayArray_char: char get(int)>_pre| ( Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_3| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_12| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #28: Main.java, line 22| ( ) Bool)
+(declare-fun |<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_5| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block4_15| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: char charAt(int)>_post| ( Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_15| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_19| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #15: Main.java, line 32| ( ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_17| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block28_2| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_pre| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_10| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block7_14| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #25: Main.java, line 32| ( ) Bool)
+(declare-fun |<JayArray_char: void <init>(int)>_Block1_3| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block3_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_9| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_Block8_6| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<JayArray_char: void <init>(int)>_Block1_1| ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block1_1| ( Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |inv_JayArray_char_11| ( Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |Assert #10: Main.java, line 17| ( ) Bool)
+(declare-fun |<java.lang.StringBuilder: void <init>(java.lang.String)>_pre| ( Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<java.lang.StringBuilder: void <init>(java.lang.String)>_post| ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |<Main: void main(JayArray_java_lang_String)>_pre| ( Int Int Int Int Int ) Bool)
+
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (v_86 Int) (v_87 Int) (v_88 Int) (v_89 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_pre| J F2 N1 K2 O1)
+        (and (= v_86 J) (= v_87 F2) (= v_88 N1) (= v_89 K2))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28|
+  J
+  F2
+  N1
+  K2
+  O1
+  H3
+  Z1
+  J2
+  M1
+  C
+  K1
+  X
+  P
+  G
+  P2
+  Y
+  H
+  H2
+  G2
+  D2
+  I1
+  H1
+  C1
+  L
+  T
+  Q2
+  Y2
+  M2
+  A
+  Q1
+  F1
+  W2
+  C2
+  N
+  U2
+  P1
+  U1
+  S1
+  S2
+  D
+  E2
+  Q
+  G1
+  C3
+  v_86
+  v_87
+  v_88
+  v_89
+  B2
+  I
+  M
+  B
+  Z2
+  X1
+  E3
+  Z
+  O2
+  B1
+  A2
+  D1
+  E1
+  V2
+  Y1
+  J1
+  S
+  A1
+  L1
+  R
+  T1
+  V
+  B3
+  D3
+  K
+  U
+  G3
+  F3
+  X2
+  N2
+  F
+  L2
+  T2
+  R2
+  W1
+  V1
+  W
+  R1
+  O
+  A3
+  I2
+  E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (v_87 Int) (v_88 Int) (v_89 Int) (v_90 Int) (v_91 Int) (v_92 Int) (v_93 Int) (v_94 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28|
+  F2
+  I2
+  C1
+  L1
+  R
+  H3
+  N1
+  U
+  W1
+  B
+  P2
+  G3
+  R2
+  Z1
+  B2
+  Q1
+  A3
+  Q2
+  O1
+  B3
+  Y2
+  Q
+  T
+  C2
+  E1
+  Y
+  U1
+  T2
+  I
+  V
+  Z2
+  G2
+  D
+  H
+  A
+  E2
+  D1
+  X2
+  S
+  P
+  C
+  O
+  V1
+  E3
+  v_87
+  v_88
+  v_89
+  v_90
+  H1
+  I3
+  C3
+  J
+  T1
+  G
+  Z
+  P1
+  E
+  W2
+  Y1
+  O2
+  S2
+  D3
+  A1
+  J1
+  M2
+  H2
+  F
+  N
+  N2
+  X
+  B1
+  M1
+  L2
+  D2
+  S1
+  A2
+  I1
+  M
+  J2
+  F1
+  K2
+  V2
+  K
+  W
+  F3
+  G1
+  K1
+  R1
+  U2
+  L)
+        (and (= v_87 F2)
+     (= v_88 I2)
+     (= v_89 C1)
+     (= v_90 L1)
+     (= X1 1)
+     (= v_91 F2)
+     (= v_92 I2)
+     (= v_93 C1)
+     (= v_94 L1))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_1|
+  F2
+  I2
+  C1
+  L1
+  R
+  H3
+  N1
+  U
+  W1
+  B
+  P2
+  G3
+  Z1
+  B2
+  Q1
+  A3
+  Q2
+  O1
+  B3
+  Y2
+  T
+  C2
+  E1
+  U1
+  T2
+  I
+  V
+  Z2
+  G2
+  H
+  A
+  E2
+  D1
+  X2
+  O
+  V1
+  E3
+  v_91
+  v_92
+  v_93
+  v_94
+  Z
+  P1
+  E
+  W2
+  Y1
+  O2
+  S2
+  D3
+  A1
+  J1
+  M2
+  H2
+  F
+  N
+  N2
+  X
+  B1
+  L2
+  D2
+  S1
+  A2
+  I1
+  X1
+  J2
+  F1
+  K2
+  V2
+  K
+  W
+  F3
+  G1
+  K1
+  R1
+  U2
+  L)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (v_72 Int) (v_73 Int) (v_74 Int) (v_75 Int) (v_76 Int) (v_77 Int) (v_78 Int) (v_79 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_1|
+  C1
+  A1
+  S
+  X1
+  M
+  B
+  O
+  L
+  K
+  D
+  F
+  Y1
+  I
+  M2
+  S1
+  I2
+  Z
+  C2
+  F2
+  J1
+  O2
+  R
+  R2
+  J2
+  I1
+  B1
+  Q
+  K2
+  G
+  W
+  A
+  V1
+  P2
+  H1
+  V
+  C
+  F1
+  v_72
+  v_73
+  v_74
+  v_75
+  H2
+  E2
+  G1
+  Q1
+  Y
+  H
+  L2
+  T
+  B2
+  R1
+  K1
+  G2
+  X
+  N1
+  M1
+  L1
+  E
+  N2
+  O1
+  D1
+  D2
+  P
+  N
+  E1
+  Q2
+  J
+  P1
+  S2
+  W1
+  A2
+  U
+  T2
+  T1
+  U1
+  Z1)
+        (and (= v_72 C1)
+     (= v_73 A1)
+     (= v_74 S)
+     (= v_75 X1)
+     (= A1 141)
+     (<= 0 X1)
+     (= C1 1)
+     (= v_76 C1)
+     (= v_77 A1)
+     (= v_78 S)
+     (= v_79 X1))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_2|
+  C1
+  A1
+  S
+  X1
+  M
+  B
+  O
+  L
+  K
+  D
+  F
+  Y1
+  I
+  M2
+  S1
+  I2
+  Z
+  C2
+  F2
+  J1
+  O2
+  R
+  R2
+  J2
+  I1
+  B1
+  Q
+  K2
+  G
+  W
+  A
+  V1
+  P2
+  H1
+  V
+  C
+  F1
+  v_76
+  v_77
+  v_78
+  v_79
+  H2
+  E2
+  G1
+  Q1
+  Y
+  H
+  L2
+  T
+  B2
+  R1
+  K1
+  G2
+  X
+  N1
+  M1
+  L1
+  E
+  O1
+  D1
+  D2
+  P
+  N
+  E1
+  Q2
+  J
+  P1
+  S2
+  W1
+  A2
+  U
+  T2
+  T1
+  U1
+  Z1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (v_71 Int) (v_72 Int) (v_73 Int) (v_74 Int) (v_75 Int) (v_76 Int) (v_77 Int) (v_78 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_2|
+  Q1
+  X
+  S2
+  P1
+  O2
+  V1
+  N2
+  J2
+  E1
+  H
+  C
+  X1
+  A1
+  T
+  C2
+  W1
+  A2
+  H1
+  L
+  C1
+  K
+  K1
+  J1
+  Y1
+  S
+  E
+  L1
+  V
+  O1
+  I1
+  U1
+  R2
+  T1
+  M2
+  B2
+  G2
+  U
+  v_71
+  v_72
+  v_73
+  v_74
+  D1
+  M1
+  M
+  L2
+  E2
+  S1
+  G
+  O
+  G1
+  I2
+  F2
+  P2
+  Q2
+  H2
+  R1
+  B
+  Z1
+  J
+  D
+  F1
+  R
+  F
+  B1
+  A
+  K2
+  Y
+  Q
+  Z
+  N1
+  D2
+  N
+  P
+  W
+  I)
+        (and (= v_71 Q1)
+     (= v_72 X)
+     (= v_73 S2)
+     (= v_74 P1)
+     (= v_75 Q1)
+     (= v_76 X)
+     (= v_77 S2)
+     (= v_78 P1))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_3|
+  Q1
+  X
+  S2
+  P1
+  O2
+  E1
+  H
+  C
+  X1
+  A1
+  T
+  C2
+  W1
+  A2
+  H1
+  L
+  C1
+  K
+  K1
+  J1
+  Y1
+  S
+  E
+  L1
+  V
+  O1
+  I1
+  U1
+  R2
+  T1
+  M2
+  B2
+  G2
+  U
+  v_75
+  v_76
+  v_77
+  v_78
+  D1
+  M1
+  M
+  L2
+  E2
+  S1
+  G
+  O
+  G1
+  I2
+  F2
+  P2
+  Q2
+  H2
+  R1
+  B
+  Z1
+  J
+  D
+  F1
+  R
+  F
+  B1
+  A
+  K2
+  Y
+  Q
+  Z
+  N1
+  D2
+  N
+  P
+  W
+  I)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (v_68 Int) (v_69 Int) (v_70 Int) (v_71 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_3|
+  V1
+  B
+  U
+  I
+  M1
+  L2
+  B1
+  E
+  Y1
+  O1
+  Q
+  P1
+  U1
+  N2
+  J2
+  X1
+  R
+  A1
+  G1
+  P
+  X
+  F
+  Z
+  H
+  P2
+  K1
+  M
+  J
+  J1
+  K2
+  D1
+  B2
+  V
+  O2
+  v_68
+  v_69
+  v_70
+  v_71
+  O
+  T1
+  N
+  A
+  D
+  C
+  I2
+  L
+  T
+  E1
+  A2
+  G2
+  S
+  D2
+  M2
+  R1
+  F2
+  I1
+  N1
+  E2
+  L1
+  Z1
+  H1
+  Q1
+  C2
+  W1
+  S1
+  F1
+  W
+  K
+  G
+  H2
+  Y
+  C1)
+        (and (= v_68 V1) (= v_69 B) (= v_70 U) (= v_71 I))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_4|
+  V1
+  B
+  U
+  I
+  M1
+  L2
+  B1
+  E
+  Y1
+  O1
+  Q
+  P1
+  U1
+  N2
+  J2
+  X1
+  R
+  A1
+  G1
+  P
+  X
+  F
+  Z
+  H
+  P2
+  K1
+  M
+  J
+  J1
+  K2
+  D1
+  B2
+  V
+  O2
+  O
+  T1
+  N
+  A
+  D
+  C
+  I2
+  L
+  T
+  E1
+  A2
+  G2
+  S
+  D2
+  M2
+  R1
+  F2
+  I1
+  N1
+  E2
+  L1
+  Z1
+  H1
+  Q1
+  C2
+  W1
+  S1
+  F1
+  W
+  K)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_4|
+  J
+  H2
+  W1
+  Y
+  A2
+  Q1
+  K
+  F2
+  E2
+  N1
+  R
+  W
+  O
+  G2
+  B2
+  B1
+  Q
+  I1
+  M
+  K2
+  F
+  Z1
+  Y1
+  P1
+  C
+  L2
+  M1
+  J2
+  U1
+  N
+  I2
+  G1
+  E
+  D1
+  B
+  D2
+  G
+  F1
+  P
+  T1
+  J1
+  A1
+  I
+  S
+  C1
+  X1
+  M2
+  D
+  S1
+  X
+  U
+  C2
+  R1
+  V1
+  L
+  T
+  Z
+  H1
+  E1
+  L1
+  H
+  A
+  V
+  O1)
+        (= K1 (+ 1 T))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_5|
+  J
+  H2
+  W1
+  Y
+  A2
+  Q1
+  K
+  F2
+  E2
+  N1
+  R
+  W
+  O
+  G2
+  B2
+  B1
+  Q
+  I1
+  M
+  K2
+  F
+  Z1
+  Y1
+  P1
+  C
+  L2
+  M1
+  J2
+  U1
+  N
+  I2
+  G1
+  E
+  D1
+  B
+  D2
+  G
+  F1
+  P
+  T1
+  J1
+  A1
+  I
+  S
+  C1
+  X1
+  M2
+  D
+  S1
+  X
+  U
+  C2
+  R1
+  V1
+  L
+  K1
+  Z
+  H1
+  E1
+  L1
+  H
+  A
+  V
+  O1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (v_66 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_5|
+  E1
+  K2
+  D2
+  S
+  G1
+  B1
+  N2
+  G
+  Y
+  F
+  C2
+  T1
+  Y1
+  Q1
+  P1
+  E2
+  K1
+  J1
+  L2
+  J
+  Q
+  S1
+  W1
+  D
+  V1
+  F2
+  H2
+  F1
+  L
+  I2
+  I1
+  H1
+  U
+  B2
+  Z
+  H
+  M2
+  Z1
+  A2
+  M1
+  U1
+  G2
+  P
+  N1
+  B
+  O1
+  M
+  L1
+  V
+  D1
+  C1
+  O
+  R1
+  X
+  N
+  A1
+  A
+  C
+  R
+  T
+  E
+  W
+  J2
+  X1)
+        (and (= I 331) (= K 265) (= v_66 A1))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_6|
+  E1
+  K2
+  D2
+  S
+  G1
+  B1
+  N2
+  G
+  Y
+  F
+  C2
+  T1
+  Y1
+  Q1
+  P1
+  E2
+  K1
+  J1
+  L2
+  J
+  Q
+  S1
+  W1
+  D
+  V1
+  F2
+  H2
+  F1
+  L
+  I2
+  I1
+  H1
+  U
+  B2
+  A1
+  K
+  I
+  Z
+  H
+  M2
+  Z1
+  A2
+  M1
+  U1
+  G2
+  P
+  N1
+  B
+  O1
+  M
+  L1
+  V
+  D1
+  C1
+  O
+  R1
+  X
+  N
+  v_66
+  A
+  C
+  R
+  T
+  E
+  W
+  J2
+  X1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_6|
+  P
+  Z1
+  C1
+  A1
+  I2
+  P2
+  V
+  C2
+  K1
+  F1
+  B2
+  J
+  K2
+  T1
+  E2
+  O
+  G1
+  H1
+  J2
+  B
+  D
+  N1
+  Z
+  R
+  W1
+  G2
+  H
+  Y
+  I
+  T
+  R1
+  G
+  N2
+  X1
+  H2
+  K
+  M1
+  S
+  Y1
+  M2
+  J1
+  L
+  P1
+  U1
+  Q
+  U
+  M
+  L1
+  Q2
+  A2
+  C
+  X
+  D2
+  E1
+  F2
+  N
+  S1
+  L2
+  A
+  I1
+  F
+  O1
+  W
+  D1
+  E
+  O2
+  Q1)
+        (and (= B1 3) (= V1 (- 1)))
+      )
+      (|<java.lang.StringBuilder: void <init>(java.lang.String)>_pre|
+  H2
+  K
+  M1
+  V1
+  B1
+  U
+  A)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_6|
+  Y1
+  A
+  K1
+  J1
+  B1
+  C2
+  J2
+  O
+  N
+  F
+  I1
+  S
+  I
+  E
+  S2
+  W
+  N2
+  L
+  D2
+  D1
+  D
+  T2
+  Y
+  H
+  R1
+  S1
+  Q1
+  B2
+  O2
+  L2
+  M1
+  G1
+  A2
+  W1
+  V
+  K2
+  K
+  G2
+  C
+  E1
+  U
+  O1
+  H2
+  V1
+  T1
+  F2
+  E2
+  W2
+  Q
+  Z1
+  T
+  A1
+  J
+  Q2
+  C1
+  X1
+  Z
+  V2
+  I2
+  P1
+  F1
+  R2
+  Z2
+  N1
+  U2
+  B
+  M)
+        (|<java.lang.StringBuilder: void <init>(java.lang.String)>_post|
+  V
+  K2
+  K
+  X
+  Y2
+  F2
+  I2
+  M2
+  H1
+  G
+  L1
+  P
+  U1
+  R
+  P2
+  X2)
+        (and (= X (- 1)) (= Y2 3))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_7|
+  Y1
+  A
+  K1
+  J1
+  B1
+  C2
+  J2
+  O
+  N
+  F
+  I1
+  S
+  I
+  E
+  S2
+  W
+  N2
+  L
+  D2
+  D1
+  D
+  T2
+  Y
+  H
+  R1
+  S1
+  Q1
+  B2
+  O2
+  L2
+  M1
+  M2
+  H1
+  G
+  G1
+  A2
+  W1
+  V
+  K2
+  K
+  G2
+  C
+  E1
+  U
+  O1
+  H2
+  V1
+  T1
+  F2
+  E2
+  W2
+  Q
+  Z1
+  T
+  A1
+  J
+  Q2
+  C1
+  X1
+  Z
+  V2
+  X2
+  P1
+  F1
+  R2
+  Z2
+  N1
+  U2
+  B
+  M)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_7|
+  O
+  K
+  I1
+  T1
+  E
+  U1
+  N
+  O1
+  J
+  L1
+  H
+  L2
+  J2
+  C2
+  C
+  R
+  A2
+  F1
+  K1
+  A
+  R2
+  T
+  Z1
+  D
+  P1
+  W1
+  Q2
+  I
+  B1
+  F
+  W
+  P2
+  S
+  B
+  O2
+  E1
+  S1
+  N1
+  G
+  C1
+  K2
+  G2
+  X
+  M2
+  N2
+  H2
+  E2
+  A1
+  P
+  B2
+  M
+  V1
+  D2
+  Y
+  F2
+  L
+  D1
+  R1
+  H1
+  Q
+  S2
+  Z
+  Q1
+  I2
+  V
+  U
+  J1
+  X1
+  G1
+  Y1)
+        (or (and (= M1 0) (= P2 0)) (and (= M1 1) (not (= P2 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_8|
+  O
+  K
+  I1
+  T1
+  E
+  U1
+  N
+  O1
+  J
+  L1
+  H
+  L2
+  J2
+  C2
+  C
+  R
+  A2
+  F1
+  K1
+  A
+  R2
+  T
+  Z1
+  D
+  P1
+  W1
+  M1
+  Q2
+  I
+  B1
+  F
+  W
+  O2
+  E1
+  S1
+  N1
+  G
+  C1
+  K2
+  G2
+  X
+  M2
+  N2
+  H2
+  E2
+  A1
+  P
+  B2
+  M
+  V1
+  D2
+  Y
+  F2
+  L
+  D1
+  R1
+  H1
+  Q
+  S2
+  Z
+  Q1
+  I2
+  V
+  U
+  J1
+  X1
+  G1
+  Y1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_8|
+  X
+  R1
+  D2
+  M2
+  D
+  F
+  W
+  I2
+  K1
+  C1
+  P1
+  X1
+  O2
+  V
+  U1
+  Q1
+  C
+  F1
+  T
+  J2
+  K
+  N2
+  Z
+  C2
+  N
+  S1
+  Z1
+  S
+  Q
+  A1
+  Y
+  K2
+  H2
+  T1
+  E
+  P2
+  A2
+  B1
+  L1
+  L
+  B
+  D1
+  M1
+  O
+  I1
+  J1
+  B2
+  A
+  P
+  N1
+  H1
+  H
+  Y1
+  L2
+  I
+  E1
+  M
+  G1
+  G
+  J
+  V1
+  E2
+  F2
+  G2
+  R
+  U
+  O1
+  W1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_9|
+  X
+  R1
+  D2
+  M2
+  D
+  F
+  W
+  I2
+  K1
+  C1
+  P1
+  X1
+  O2
+  V
+  U1
+  Q1
+  C
+  F1
+  T
+  J2
+  K
+  N2
+  Z
+  C2
+  N
+  S1
+  S
+  Q
+  A1
+  Y
+  K2
+  H2
+  T1
+  E
+  P2
+  A2
+  B1
+  L1
+  L
+  B
+  D1
+  M1
+  O
+  I1
+  J1
+  B2
+  A
+  P
+  N1
+  H1
+  H
+  Y1
+  L2
+  I
+  E1
+  M
+  G1
+  G
+  J
+  V1
+  E2
+  F2
+  G2
+  R
+  U
+  O1
+  W1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_8|
+  P
+  L
+  F2
+  L1
+  D2
+  B2
+  K2
+  A
+  Z1
+  F1
+  A2
+  W1
+  O1
+  O
+  C2
+  M1
+  M2
+  J2
+  X1
+  I
+  S1
+  M
+  U
+  K1
+  I1
+  C1
+  O2
+  P2
+  K
+  C
+  V1
+  E1
+  E2
+  H1
+  N2
+  S
+  T
+  H2
+  R1
+  B1
+  Q
+  D
+  J1
+  R
+  N
+  D1
+  G2
+  L2
+  U1
+  E
+  B
+  P1
+  Z
+  H
+  J
+  I2
+  G
+  X
+  F
+  Q1
+  W
+  G1
+  T1
+  N1
+  V
+  Y
+  A1
+  Y1)
+        (not (= O2 0))
+      )
+      |Assert #0: Main.java, line 11|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_9|
+  Z
+  Q
+  L
+  W
+  A
+  P
+  V
+  T1
+  U1
+  O1
+  B1
+  B
+  C2
+  S1
+  G2
+  T
+  O
+  Y1
+  J
+  F
+  Q1
+  A2
+  I1
+  L1
+  I
+  I2
+  C1
+  E1
+  E
+  H2
+  X1
+  D2
+  F2
+  R
+  M
+  E2
+  K1
+  H
+  H1
+  V1
+  N1
+  C
+  L2
+  O2
+  Z1
+  M1
+  G1
+  D
+  M2
+  U
+  N2
+  D1
+  F1
+  X
+  K2
+  Y
+  J2
+  P1
+  K
+  N
+  A1
+  W1
+  J1
+  B2
+  S
+  G
+  R1)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_pre| M E2 K1 K)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_6|
+  P
+  C
+  W
+  E
+  J
+  N
+  I
+  R
+  H
+  K
+  D
+  U
+  Q
+  B
+  V
+  L
+  F
+  S
+  G
+  O
+  A
+  T
+  M)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_pre| K D U M)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_3|
+  A
+  K
+  D
+  H
+  E
+  J
+  I
+  L
+  B
+  F
+  C
+  G)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_pre| J I L G)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_9|
+  O2
+  T
+  C1
+  P1
+  A
+  U2
+  E2
+  D2
+  R
+  G2
+  V2
+  V
+  E1
+  W
+  H
+  Y1
+  Z
+  R1
+  I
+  D1
+  X
+  T2
+  B2
+  O
+  B
+  U1
+  N
+  F2
+  M
+  J1
+  R2
+  L
+  F1
+  Q2
+  I1
+  N2
+  A1
+  H1
+  M2
+  B1
+  Q1
+  O1
+  G
+  Z1
+  M1
+  C2
+  Q
+  L1
+  S
+  Y
+  S1
+  J2
+  P2
+  J
+  E
+  K
+  C
+  K2
+  A2
+  L2
+  I2
+  V1
+  D
+  H2
+  T1
+  X1
+  S2)
+        (|<java.lang.StringBuilder: java.lang.String toString()>_post|
+  I1
+  N2
+  A1
+  A2
+  W1
+  P
+  U
+  G1
+  N1
+  F
+  K1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_10|
+  O2
+  T
+  C1
+  P1
+  A
+  U2
+  E2
+  D2
+  R
+  G2
+  V2
+  V
+  E1
+  W
+  H
+  Y1
+  Z
+  R1
+  I
+  D1
+  X
+  T2
+  B2
+  O
+  B
+  U1
+  N
+  F2
+  M
+  J1
+  R2
+  W1
+  P
+  U
+  L
+  F1
+  Q2
+  G1
+  N1
+  F
+  I1
+  N2
+  A1
+  H1
+  M2
+  B1
+  Q1
+  O1
+  G
+  Z1
+  M1
+  C2
+  Q
+  L1
+  S
+  Y
+  S1
+  J2
+  P2
+  J
+  E
+  K
+  C
+  K2
+  K1
+  L2
+  I2
+  V1
+  D
+  H2
+  T1
+  X1
+  S2)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_10|
+  C2
+  Y1
+  F
+  U1
+  J1
+  V2
+  S2
+  G2
+  I
+  D
+  O2
+  T1
+  M1
+  E1
+  N2
+  R
+  X1
+  K1
+  A1
+  M
+  G1
+  O1
+  I1
+  P2
+  T
+  M2
+  E2
+  Z1
+  C1
+  L
+  N1
+  Q2
+  F1
+  V1
+  A2
+  A
+  O
+  S1
+  F2
+  E
+  V
+  U
+  P1
+  Q1
+  G
+  W1
+  R1
+  H1
+  B2
+  Z
+  B
+  L2
+  N
+  J2
+  Q
+  L1
+  J
+  T2
+  K
+  R2
+  D2
+  S
+  D1
+  H
+  P
+  U2
+  I2
+  Y
+  H2
+  K2
+  B1
+  X
+  C)
+        (or (and (= W 0) (= Q2 0)) (and (= W 1) (not (= Q2 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_11|
+  C2
+  Y1
+  F
+  U1
+  J1
+  V2
+  S2
+  G2
+  I
+  D
+  O2
+  T1
+  M1
+  E1
+  N2
+  R
+  X1
+  W
+  K1
+  A1
+  M
+  G1
+  O1
+  I1
+  P2
+  T
+  M2
+  E2
+  Z1
+  C1
+  L
+  N1
+  A2
+  A
+  O
+  S1
+  F2
+  E
+  V
+  U
+  P1
+  Q1
+  G
+  W1
+  R1
+  H1
+  B2
+  Z
+  B
+  L2
+  N
+  J2
+  Q
+  L1
+  J
+  T2
+  K
+  R2
+  D2
+  S
+  D1
+  H
+  P
+  U2
+  I2
+  Y
+  H2
+  K2
+  B1
+  X
+  C)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_11|
+  T1
+  J
+  U1
+  W
+  A1
+  Y1
+  O2
+  E2
+  Q2
+  R
+  B2
+  S1
+  N
+  U
+  Z1
+  V
+  F2
+  O
+  M
+  W1
+  B
+  K1
+  M2
+  F1
+  R1
+  V1
+  J1
+  Q
+  E1
+  C
+  H1
+  P2
+  Y
+  D2
+  P1
+  G
+  J2
+  L
+  E
+  N2
+  G2
+  F
+  P
+  L1
+  T
+  X1
+  M1
+  L2
+  C1
+  H2
+  H
+  I
+  S2
+  O1
+  Q1
+  X
+  D1
+  D
+  K2
+  Z
+  A
+  R2
+  C2
+  K
+  S
+  I2
+  I1
+  G1
+  A2
+  N1
+  B1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_12|
+  T1
+  J
+  U1
+  W
+  A1
+  Y1
+  O2
+  E2
+  Q2
+  R
+  B2
+  S1
+  N
+  U
+  Z1
+  V
+  F2
+  M
+  W1
+  B
+  K1
+  M2
+  F1
+  R1
+  V1
+  J1
+  Q
+  E1
+  C
+  H1
+  P2
+  Y
+  D2
+  P1
+  G
+  J2
+  L
+  E
+  N2
+  G2
+  F
+  P
+  L1
+  T
+  X1
+  M1
+  L2
+  C1
+  H2
+  H
+  I
+  S2
+  O1
+  Q1
+  X
+  D1
+  D
+  K2
+  Z
+  A
+  R2
+  C2
+  K
+  S
+  I2
+  I1
+  G1
+  A2
+  N1
+  B1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_11|
+  X1
+  N1
+  Y1
+  A
+  L2
+  P
+  E1
+  Z
+  I2
+  O2
+  F
+  O
+  H
+  L
+  H2
+  E
+  G2
+  U1
+  H1
+  K
+  V1
+  C
+  M1
+  I1
+  F2
+  B
+  J
+  C2
+  Y
+  B1
+  Z1
+  M2
+  W1
+  P2
+  K2
+  S1
+  D2
+  S2
+  C1
+  L1
+  T1
+  D1
+  Q2
+  O1
+  B2
+  I
+  U
+  Q
+  P1
+  R
+  G1
+  G
+  K1
+  N2
+  N
+  F1
+  T
+  R1
+  A2
+  J1
+  E2
+  V
+  W
+  Q1
+  X
+  D
+  S
+  R2
+  J2
+  M
+  A1)
+        (not (= U1 0))
+      )
+      |Assert #1: Main.java, line 20|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_12|
+  C
+  M2
+  Q2
+  O2
+  O
+  U
+  B
+  V
+  S2
+  M
+  E
+  N2
+  Y1
+  Y
+  R
+  R1
+  N
+  T1
+  P
+  L2
+  T
+  S
+  P1
+  Q
+  X1
+  L
+  Z1
+  H1
+  G
+  V1
+  F1
+  K2
+  G1
+  B2
+  I
+  K1
+  J2
+  D1
+  I2
+  D
+  B1
+  A2
+  F
+  H
+  P2
+  A
+  W1
+  A1
+  X
+  F2
+  J1
+  Z
+  E1
+  L1
+  K
+  O1
+  D2
+  Q1
+  U1
+  G2
+  W
+  S1
+  M1
+  N1
+  R2
+  C2
+  E2
+  I1
+  J
+  C1)
+        (or (and (= I 0) (= H2 1)) (and (not (= I 0)) (= H2 0)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_13|
+  C
+  M2
+  Q2
+  O2
+  O
+  U
+  B
+  V
+  S2
+  H2
+  M
+  E
+  N2
+  Y1
+  Y
+  R
+  R1
+  N
+  T1
+  P
+  L2
+  T
+  S
+  P1
+  Q
+  X1
+  L
+  Z1
+  H1
+  G
+  V1
+  F1
+  K2
+  G1
+  B2
+  I
+  K1
+  J2
+  D1
+  I2
+  D
+  B1
+  A2
+  F
+  H
+  P2
+  A
+  W1
+  A1
+  X
+  F2
+  J1
+  Z
+  E1
+  L1
+  K
+  O1
+  D2
+  Q1
+  U1
+  G2
+  W
+  S1
+  M1
+  N1
+  R2
+  C2
+  E2
+  I1
+  J
+  C1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_13|
+  G2
+  V
+  B1
+  I
+  A1
+  H2
+  M
+  I2
+  R2
+  X
+  P1
+  Q2
+  U
+  H1
+  G1
+  N2
+  J1
+  S1
+  S
+  R1
+  O2
+  R
+  A2
+  K
+  P
+  S2
+  M2
+  M1
+  L1
+  B
+  L2
+  V1
+  C
+  H
+  Y
+  A
+  O1
+  N
+  I1
+  Y1
+  G
+  E2
+  F
+  F2
+  E1
+  U1
+  T
+  T1
+  X1
+  J2
+  Q1
+  Z1
+  K2
+  C2
+  J
+  E
+  D
+  P2
+  N1
+  O
+  D2
+  W
+  Q
+  B2
+  F1
+  Z
+  W1
+  D1
+  K1
+  C1
+  L)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_14|
+  G2
+  V
+  B1
+  I
+  A1
+  H2
+  M
+  I2
+  R2
+  P1
+  Q2
+  U
+  H1
+  G1
+  N2
+  J1
+  S1
+  S
+  R1
+  O2
+  R
+  A2
+  K
+  P
+  S2
+  M2
+  M1
+  L1
+  B
+  L2
+  V1
+  C
+  H
+  Y
+  A
+  O1
+  N
+  I1
+  Y1
+  G
+  E2
+  F
+  F2
+  E1
+  U1
+  T
+  T1
+  X1
+  J2
+  Q1
+  Z1
+  K2
+  C2
+  J
+  E
+  D
+  P2
+  N1
+  O
+  D2
+  W
+  Q
+  B2
+  F1
+  Z
+  W1
+  D1
+  K1
+  C1
+  L)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_13|
+  D
+  T1
+  H
+  L1
+  C1
+  P2
+  Y
+  H2
+  Z1
+  M
+  C2
+  J2
+  D2
+  Q2
+  K2
+  F2
+  P1
+  O2
+  B
+  B2
+  R
+  E1
+  I
+  F1
+  C
+  I1
+  A2
+  G
+  J
+  Q1
+  G1
+  A
+  O
+  A1
+  K1
+  X1
+  V
+  G2
+  N2
+  U
+  O1
+  K
+  D1
+  P
+  X
+  U1
+  S1
+  N1
+  L2
+  E2
+  Q
+  N
+  M2
+  V1
+  Y1
+  W1
+  R1
+  F
+  I2
+  J1
+  L
+  W
+  Z
+  T
+  B1
+  R2
+  E
+  S
+  H1
+  S2
+  M1)
+        (not (= M 0))
+      )
+      |Assert #2: Main.java, line 20|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_14|
+  R
+  U1
+  A
+  J1
+  P
+  H2
+  H1
+  Q1
+  T1
+  A1
+  O2
+  C
+  W
+  I1
+  B2
+  X1
+  N2
+  Q
+  P1
+  P2
+  K
+  T2
+  L1
+  Y
+  T
+  R1
+  M1
+  C1
+  X
+  S2
+  V
+  F2
+  E
+  Y1
+  E1
+  J2
+  Z1
+  B1
+  D1
+  G2
+  Q2
+  L2
+  M
+  K1
+  M2
+  I2
+  G
+  U
+  J
+  L
+  D
+  O
+  G1
+  A2
+  I
+  F1
+  O1
+  S1
+  V1
+  N1
+  W1
+  K2
+  C2
+  N
+  R2
+  E2
+  Z
+  D2
+  B
+  S)
+        (and (= F (- 1)) (= H 3))
+      )
+      (|<java.lang.String: boolean equals(java.lang.Object)>_pre| E1 J2 Z1 F H J K2)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_11|
+  B1
+  V
+  L
+  F
+  C
+  W
+  Q
+  S
+  A1
+  R
+  O
+  M
+  B
+  P
+  N
+  A
+  Z
+  D
+  K
+  G
+  J
+  I
+  H
+  Y
+  U
+  X)
+        (and (= E 3) (= T (- 3)))
+      )
+      (|<java.lang.String: boolean equals(java.lang.Object)>_pre| A Z D T E J X)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_8|
+  A
+  L
+  N
+  C
+  G
+  K
+  I
+  H
+  E
+  D
+  F
+  J)
+        (and (= B (- 4)) (= M 3))
+      )
+      (|<java.lang.String: boolean equals(java.lang.Object)>_pre| K I H B M F J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_14|
+  B
+  R
+  I1
+  H
+  K
+  I2
+  V1
+  D1
+  L2
+  J
+  M
+  A
+  W
+  U
+  G
+  D2
+  O
+  S2
+  V2
+  N2
+  T2
+  G2
+  K2
+  O1
+  G1
+  Q1
+  S1
+  X2
+  N
+  I
+  N1
+  X1
+  Y2
+  T1
+  K1
+  M1
+  H2
+  T
+  R2
+  B1
+  E1
+  V
+  J1
+  F2
+  A2
+  U1
+  Q2
+  L1
+  Y1
+  Z
+  W2
+  H1
+  P1
+  Z1
+  A1
+  F
+  F1
+  Y
+  E2
+  P
+  W1
+  P2
+  J2
+  X
+  Q
+  C1
+  E
+  O2
+  U2
+  R1)
+        (|<java.lang.String: boolean equals(java.lang.Object)>_post|
+  K1
+  M1
+  H2
+  L
+  D
+  Y1
+  P2
+  S
+  C
+  B2
+  M2
+  C2)
+        (and (= D 3) (= L (- 1)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_15|
+  B
+  R
+  I1
+  H
+  K
+  I2
+  V1
+  D1
+  L2
+  J
+  M
+  A
+  W
+  U
+  G
+  D2
+  O
+  S2
+  V2
+  N2
+  T2
+  G2
+  K2
+  O1
+  G1
+  Q1
+  S1
+  X2
+  N
+  I
+  N1
+  S
+  C
+  B2
+  X1
+  Y2
+  T1
+  T
+  R2
+  B1
+  E1
+  V
+  J1
+  F2
+  A2
+  U1
+  Z
+  W2
+  H1
+  P1
+  Z1
+  A1
+  F
+  F1
+  M2
+  Y
+  E2
+  P
+  W1
+  C2
+  J2
+  X
+  Q
+  C1
+  E
+  O2
+  U2
+  R1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_15|
+  M1
+  N2
+  Z1
+  U
+  P
+  H1
+  Q1
+  D
+  R1
+  B1
+  J
+  M
+  K2
+  Q2
+  G
+  W1
+  A
+  V
+  T
+  F
+  H2
+  P1
+  S1
+  W
+  N
+  B
+  F1
+  R
+  H
+  O1
+  C
+  N1
+  P2
+  T1
+  D1
+  L
+  G1
+  M2
+  L1
+  F2
+  C1
+  L2
+  I
+  S
+  G2
+  E1
+  X
+  O
+  Y1
+  V1
+  I2
+  K1
+  J2
+  J1
+  C2
+  B2
+  K
+  O2
+  D2
+  Y
+  A2
+  E2
+  U1
+  I1
+  E
+  Q
+  X1
+  A1)
+        (or (and (= Z 0) (= N1 0)) (and (= Z 1) (not (= N1 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_16|
+  M1
+  N2
+  Z1
+  U
+  P
+  H1
+  Q1
+  D
+  R1
+  B1
+  J
+  M
+  K2
+  Q2
+  G
+  W1
+  A
+  V
+  T
+  F
+  Z
+  H2
+  P1
+  S1
+  W
+  N
+  B
+  F1
+  R
+  H
+  O1
+  C
+  N1
+  P2
+  T1
+  D1
+  L
+  G1
+  M2
+  L1
+  F2
+  C1
+  L2
+  I
+  S
+  G2
+  E1
+  X
+  O
+  Y1
+  V1
+  I2
+  K1
+  J2
+  J1
+  C2
+  B2
+  K
+  O2
+  D2
+  Y
+  A2
+  E2
+  U1
+  I1
+  E
+  Q
+  X1
+  A1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_16|
+  D
+  W1
+  F
+  V1
+  Q2
+  Z1
+  X1
+  G2
+  L1
+  B1
+  C
+  H2
+  K
+  H
+  F2
+  H1
+  O
+  N1
+  M
+  L2
+  E1
+  Z
+  R1
+  W
+  I
+  D1
+  N
+  Q1
+  K1
+  O2
+  A
+  T1
+  L
+  S1
+  U
+  J1
+  C1
+  P2
+  J
+  Q
+  B
+  S
+  E
+  G
+  D2
+  B2
+  G1
+  V
+  X
+  N2
+  Y
+  Y1
+  M2
+  E2
+  K2
+  T
+  I1
+  R
+  P
+  I2
+  M1
+  C2
+  F1
+  P1
+  A1
+  J2
+  U1
+  A2
+  O1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block28_17|
+  D
+  W1
+  F
+  V1
+  Q2
+  Z1
+  X1
+  G2
+  L1
+  B1
+  C
+  H2
+  K
+  H
+  F2
+  H1
+  O
+  N1
+  M
+  L2
+  Z
+  R1
+  W
+  I
+  D1
+  N
+  Q1
+  K1
+  O2
+  A
+  T1
+  L
+  S1
+  U
+  J1
+  C1
+  P2
+  J
+  Q
+  B
+  S
+  E
+  G
+  D2
+  B2
+  G1
+  V
+  X
+  N2
+  Y
+  Y1
+  M2
+  E2
+  K2
+  T
+  I1
+  R
+  P
+  I2
+  M1
+  C2
+  F1
+  P1
+  A1
+  J2
+  U1
+  A2
+  O1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_16|
+  X1
+  P
+  L1
+  P2
+  F1
+  N
+  V1
+  C2
+  V
+  P1
+  J
+  K
+  E2
+  J2
+  A
+  F
+  L2
+  G
+  F2
+  G2
+  M
+  X
+  R
+  E1
+  U1
+  T1
+  Q
+  N1
+  H1
+  E
+  A1
+  B
+  K2
+  S
+  I2
+  D
+  Q1
+  Y1
+  D2
+  H
+  I
+  C
+  Z1
+  A2
+  Q2
+  I1
+  L
+  R1
+  J1
+  K1
+  S1
+  M1
+  B1
+  W
+  B2
+  O2
+  O1
+  H2
+  G1
+  M2
+  Z
+  C1
+  D1
+  T
+  O
+  N2
+  Y
+  U
+  W1)
+        (not (= M 0))
+      )
+      |Assert #3: Main.java, line 20|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_17|
+  G1
+  G
+  O1
+  S1
+  Q
+  B1
+  I
+  F
+  E2
+  F2
+  J2
+  J
+  I1
+  C2
+  F1
+  H
+  K1
+  N2
+  I2
+  M
+  P2
+  N1
+  C
+  A1
+  U
+  A2
+  L2
+  Y1
+  X
+  W
+  K2
+  R
+  V
+  H2
+  M1
+  Y
+  A
+  Q1
+  D2
+  D
+  O2
+  M2
+  H1
+  L
+  V1
+  E1
+  P
+  G2
+  T1
+  N
+  B2
+  T
+  S
+  B
+  D1
+  U1
+  J1
+  L1
+  X1
+  Z1
+  R1
+  K
+  C1
+  E
+  Z
+  O
+  P1
+  W1)
+        (= D1 0)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block2|
+  G1
+  G
+  O1
+  S1
+  Q
+  B1
+  I
+  F
+  E2
+  F2
+  J2
+  J
+  I1
+  C2
+  F1
+  H
+  K1
+  N2
+  I2
+  M
+  P2
+  N1
+  C
+  A1
+  U
+  A2
+  L2
+  Y1
+  X
+  W
+  K2
+  R
+  V
+  H2
+  M1
+  Y
+  A
+  Q1
+  D2
+  D
+  O2
+  M2
+  H1
+  L
+  V1
+  E1
+  P
+  G2
+  T1
+  N
+  B2
+  T
+  S
+  B
+  D1
+  U1
+  J1
+  L1
+  X1
+  Z1
+  R1
+  K
+  C1
+  E
+  Z
+  O
+  P1
+  W1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block3_1|
+  K
+  E2
+  H
+  C
+  G
+  X1
+  M2
+  I1
+  A
+  U1
+  G1
+  B
+  L
+  V
+  M
+  H1
+  L1
+  E
+  Y
+  I2
+  J
+  Z1
+  A1
+  E1
+  D
+  R1
+  O1
+  O2
+  Y1
+  W
+  K2
+  N
+  D2
+  C2
+  N2
+  X
+  M1
+  T1
+  F2
+  S1
+  D1
+  W1
+  U
+  P2
+  T
+  C1
+  Z
+  A2
+  I
+  V1
+  R
+  B2
+  N1
+  P1
+  P
+  F
+  L2
+  B1
+  G2
+  Q1
+  Q
+  S
+  K1
+  O
+  H2
+  F1
+  J1
+  J2)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block2|
+  K
+  E2
+  H
+  C
+  G
+  X1
+  M2
+  I1
+  A
+  U1
+  G1
+  B
+  L
+  V
+  M
+  H1
+  L1
+  E
+  Y
+  I2
+  J
+  Z1
+  A1
+  E1
+  D
+  R1
+  O1
+  O2
+  Y1
+  W
+  K2
+  N
+  D2
+  C2
+  N2
+  X
+  M1
+  T1
+  F2
+  S1
+  D1
+  W1
+  U
+  P2
+  T
+  C1
+  Z
+  A2
+  I
+  V1
+  R
+  B2
+  N1
+  P1
+  P
+  F
+  L2
+  B1
+  G2
+  Q1
+  Q
+  S
+  K1
+  O
+  H2
+  F1
+  J1
+  J2)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block28_17|
+  A2
+  D2
+  L
+  O1
+  B2
+  P
+  J1
+  T
+  O
+  R1
+  M2
+  B
+  F2
+  E2
+  Z1
+  V1
+  E1
+  Q1
+  K2
+  Q
+  H
+  S1
+  H2
+  P2
+  O2
+  K1
+  J
+  L1
+  D1
+  G2
+  A
+  N1
+  G1
+  I
+  M1
+  H1
+  J2
+  X
+  L2
+  V
+  B1
+  C1
+  N
+  P1
+  W
+  Y
+  F1
+  S
+  Y1
+  X1
+  C2
+  I2
+  U1
+  F
+  R
+  N2
+  I1
+  C
+  E
+  W1
+  K
+  Z
+  T1
+  D
+  G
+  U
+  A1
+  M)
+        (not (= R 0))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block3|
+  A2
+  D2
+  L
+  O1
+  B2
+  P
+  J1
+  T
+  O
+  R1
+  M2
+  B
+  F2
+  E2
+  Z1
+  V1
+  E1
+  Q1
+  K2
+  Q
+  H
+  S1
+  H2
+  P2
+  O2
+  K1
+  J
+  L1
+  D1
+  G2
+  A
+  N1
+  G1
+  I
+  M1
+  H1
+  J2
+  X
+  L2
+  V
+  B1
+  C1
+  N
+  P1
+  W
+  Y
+  F1
+  S
+  Y1
+  X1
+  C2
+  I2
+  U1
+  F
+  R
+  N2
+  I1
+  C
+  E
+  W1
+  K
+  Z
+  T1
+  D
+  G
+  U
+  A1
+  M)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2|
+  A1
+  Z
+  U
+  O
+  E1
+  K1
+  A
+  G1
+  Z1
+  J1
+  M1
+  Y
+  V
+  T
+  M
+  I1
+  A2
+  D1
+  I2
+  C1
+  P2
+  C2
+  L2
+  H1
+  S1
+  N
+  W
+  Q1
+  B1
+  U1
+  D
+  G2
+  J2
+  B
+  R1
+  X1
+  T1
+  O1
+  E2
+  J
+  S
+  G
+  O2
+  H2
+  Q
+  K
+  N2
+  D2
+  L
+  F2
+  F
+  F1
+  K2
+  R
+  B2
+  Y1
+  Q2
+  C
+  M2
+  I
+  P
+  H
+  V1
+  N1
+  P1
+  E
+  W1
+  L1)
+        (= X 0)
+      )
+      (|<java.lang.StringBuilder: char charAt(int)>_pre| O1 E2 J X I)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2_3|
+  E
+  J1
+  O
+  F
+  X
+  S
+  K
+  H2
+  G1
+  Q1
+  R1
+  F1
+  B2
+  B
+  Y1
+  I1
+  N1
+  U
+  C2
+  D1
+  D2
+  V1
+  X1
+  A
+  A2
+  Z1
+  J2
+  Y
+  J
+  H
+  L1
+  E1
+  W
+  E2
+  G2
+  G
+  B1
+  C
+  P1
+  I
+  D
+  A1
+  O1
+  F2
+  N
+  H1
+  V
+  I2
+  S1
+  T
+  L
+  C1
+  Z
+  W1
+  T1
+  P
+  M1
+  Q
+  M
+  U1
+  R)
+        (= K1 4)
+      )
+      (|<java.lang.StringBuilder: char charAt(int)>_pre| E1 W E2 K1 Z)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_16|
+  M
+  O
+  R1
+  A
+  H1
+  G
+  Q
+  B2
+  I1
+  U1
+  N
+  I
+  A2
+  W1
+  E1
+  X
+  C1
+  Z1
+  N1
+  T
+  C
+  K1
+  Q1
+  Y
+  L1
+  K
+  E
+  M1
+  J1
+  Z
+  G1
+  V
+  D
+  B1
+  S
+  S1
+  D1
+  J
+  R
+  P1
+  X1
+  Y1
+  H
+  B
+  V1
+  F
+  A1
+  L
+  U
+  P
+  T1
+  O1
+  W
+  F1)
+        true
+      )
+      (|<java.lang.StringBuilder: char charAt(int)>_pre| Q1 Y L1 Y1 A1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2|
+  T1
+  V1
+  S
+  H1
+  H2
+  Q1
+  M1
+  W1
+  A2
+  I2
+  T2
+  R
+  K1
+  S2
+  Q
+  P
+  J1
+  C2
+  M2
+  L2
+  E
+  D
+  X1
+  Z
+  W
+  K2
+  B1
+  F1
+  U2
+  P1
+  C1
+  J
+  U
+  N2
+  G
+  X
+  Y
+  G1
+  P2
+  V2
+  B2
+  G2
+  E2
+  O2
+  A1
+  I1
+  O1
+  D2
+  O
+  F
+  Z1
+  S1
+  Q2
+  L
+  N
+  C
+  R1
+  B
+  Y1
+  K
+  M
+  N1
+  A
+  D1
+  F2
+  J2
+  I
+  V)
+        (|<java.lang.StringBuilder: char charAt(int)>_post| G1 P2 V2 L1 K T E1 R2 U1 H)
+        (= L1 0)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block2_1|
+  T1
+  V1
+  S
+  H1
+  H2
+  Q1
+  M1
+  W1
+  A2
+  I2
+  T2
+  R
+  K1
+  S2
+  P
+  J1
+  C2
+  M2
+  L2
+  D
+  X1
+  Z
+  W
+  K2
+  B1
+  F1
+  U2
+  U1
+  T
+  E1
+  R2
+  G
+  X
+  Y
+  G1
+  P2
+  V2
+  B2
+  G2
+  E2
+  O2
+  A1
+  I1
+  O1
+  D2
+  O
+  F
+  Z1
+  S1
+  Q2
+  L
+  C
+  R1
+  B
+  Y1
+  H
+  M
+  N1
+  A
+  D1
+  F2
+  J2
+  I
+  V)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2_1|
+  L
+  Q1
+  G2
+  V1
+  Y1
+  Z1
+  B1
+  K1
+  A
+  I
+  N
+  D
+  Q
+  L1
+  N1
+  T1
+  C2
+  C1
+  R
+  A2
+  H1
+  M1
+  U1
+  K2
+  E2
+  G
+  F
+  E1
+  U
+  S
+  J
+  H
+  B2
+  D1
+  M
+  R1
+  K
+  B
+  X
+  A1
+  P1
+  J1
+  Y
+  W1
+  P
+  M2
+  T
+  J2
+  E
+  L2
+  I2
+  O1
+  H2
+  F1
+  V
+  D2
+  Z
+  I1
+  X1
+  F2
+  G1
+  O
+  W
+  S1)
+        (or (and (= C 0) (= U 0)) (and (= C 1) (not (= U 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block2_2|
+  L
+  Q1
+  G2
+  V1
+  Y1
+  Z1
+  B1
+  K1
+  A
+  I
+  N
+  D
+  Q
+  L1
+  N1
+  T1
+  C2
+  C1
+  R
+  C
+  A2
+  H1
+  M1
+  U1
+  K2
+  E2
+  G
+  F
+  E1
+  H
+  B2
+  D1
+  M
+  R1
+  K
+  B
+  X
+  A1
+  P1
+  J1
+  Y
+  W1
+  P
+  M2
+  T
+  J2
+  E
+  L2
+  I2
+  O1
+  H2
+  F1
+  V
+  D2
+  Z
+  I1
+  X1
+  F2
+  G1
+  O
+  W
+  S1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2_2|
+  D2
+  J2
+  G2
+  L1
+  F2
+  V1
+  W
+  Q1
+  L
+  P
+  D1
+  N1
+  G
+  Q
+  X1
+  P1
+  Z1
+  D
+  Z
+  R1
+  B
+  O
+  S1
+  A2
+  E2
+  K
+  B2
+  X
+  T1
+  J
+  I2
+  U1
+  W1
+  M1
+  U
+  K1
+  A
+  J1
+  C
+  N
+  H
+  E1
+  G1
+  A1
+  O1
+  F
+  I1
+  B1
+  C1
+  E
+  C2
+  S
+  H1
+  T
+  V
+  Y1
+  M
+  F1
+  H2
+  Y
+  I
+  R)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block2_3|
+  D2
+  J2
+  G2
+  L1
+  F2
+  V1
+  W
+  Q1
+  L
+  P
+  D1
+  N1
+  G
+  Q
+  X1
+  P1
+  Z1
+  D
+  Z
+  B
+  O
+  S1
+  A2
+  E2
+  K
+  B2
+  X
+  T1
+  J
+  I2
+  U1
+  W1
+  M1
+  U
+  K1
+  A
+  J1
+  C
+  N
+  H
+  E1
+  G1
+  A1
+  O1
+  F
+  I1
+  B1
+  C1
+  E
+  C2
+  S
+  H1
+  T
+  V
+  Y1
+  M
+  F1
+  H2
+  Y
+  I
+  R)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2_2|
+  U1
+  G1
+  B2
+  A
+  I2
+  S1
+  F2
+  L1
+  I1
+  X1
+  S
+  Y
+  Y1
+  R1
+  B
+  A2
+  O
+  D1
+  T1
+  P
+  Q1
+  L
+  J1
+  Q
+  H1
+  E
+  E2
+  C2
+  N1
+  V
+  A1
+  J
+  M
+  Z1
+  R
+  M1
+  F1
+  E1
+  G2
+  U
+  J2
+  H2
+  B1
+  O1
+  T
+  D2
+  I
+  H
+  C1
+  W1
+  D
+  G
+  N
+  F
+  W
+  X
+  V1
+  K
+  Z
+  P1
+  C
+  K1)
+        (not (= P 0))
+      )
+      |Assert #4: Main.java, line 20|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2_3|
+  K
+  F2
+  H1
+  C1
+  H
+  K2
+  D
+  P
+  S1
+  A1
+  L
+  V1
+  Y1
+  W1
+  B1
+  F1
+  O1
+  Z1
+  B
+  L1
+  U1
+  L2
+  E
+  A2
+  D2
+  U
+  C
+  H2
+  Y
+  V
+  E1
+  R1
+  Q1
+  A
+  J2
+  K1
+  N2
+  M2
+  O
+  M1
+  G1
+  D1
+  M
+  T1
+  P1
+  J1
+  T
+  I2
+  W
+  G
+  X1
+  C2
+  N1
+  R
+  G2
+  Z
+  S
+  I
+  B2
+  N
+  O2)
+        (|<java.lang.StringBuilder: char charAt(int)>_post| R1 Q1 A X N1 F E2 I1 J Q)
+        (= X 4)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block2_4|
+  K
+  F2
+  H1
+  C1
+  H
+  K2
+  D
+  P
+  S1
+  A1
+  L
+  V1
+  Y1
+  W1
+  B1
+  F1
+  O1
+  Z1
+  B
+  L1
+  U1
+  L2
+  E
+  A2
+  D2
+  U
+  C
+  H2
+  J
+  F
+  E2
+  I1
+  Y
+  V
+  E1
+  R1
+  Q1
+  A
+  J2
+  K1
+  N2
+  M2
+  O
+  M1
+  G1
+  D1
+  M
+  T1
+  P1
+  J1
+  T
+  I2
+  W
+  G
+  X1
+  C2
+  Q
+  R
+  G2
+  Z
+  S
+  I
+  B2
+  N
+  O2)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2_4|
+  L2
+  C2
+  L
+  W1
+  E1
+  J2
+  V1
+  W
+  B1
+  P
+  K1
+  K
+  H
+  G2
+  U1
+  T
+  N2
+  J
+  D1
+  M1
+  T1
+  K2
+  Q1
+  E2
+  P1
+  J1
+  G1
+  Y
+  R1
+  S1
+  V
+  M
+  D
+  Z
+  X
+  L1
+  G
+  I2
+  Z1
+  O
+  F
+  H2
+  O1
+  C
+  X1
+  B2
+  Y1
+  D2
+  A
+  E
+  I
+  N1
+  S
+  A1
+  N
+  M2
+  H1
+  A2
+  C1
+  B
+  R
+  F2
+  F1
+  I1
+  U)
+        (or (and (= Q 0) (= S1 0)) (and (= Q 1) (not (= S1 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block2_5|
+  L2
+  C2
+  L
+  W1
+  E1
+  J2
+  V1
+  W
+  B1
+  P
+  K1
+  K
+  H
+  G2
+  Q
+  U1
+  T
+  N2
+  J
+  D1
+  M1
+  T1
+  K2
+  Q1
+  E2
+  P1
+  J1
+  G1
+  Y
+  R1
+  S1
+  V
+  M
+  D
+  Z
+  X
+  L1
+  G
+  I2
+  Z1
+  O
+  F
+  H2
+  O1
+  C
+  X1
+  B2
+  Y1
+  D2
+  A
+  E
+  I
+  N1
+  S
+  A1
+  N
+  M2
+  H1
+  A2
+  C1
+  B
+  R
+  F2
+  F1
+  I1
+  U)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2_5|
+  E1
+  N2
+  P1
+  F2
+  Y
+  B
+  T
+  G
+  E2
+  Y1
+  G2
+  T1
+  A2
+  J2
+  O1
+  S1
+  A
+  D2
+  N
+  S
+  H2
+  K1
+  Q
+  D1
+  H
+  I1
+  B1
+  L
+  O
+  R1
+  A1
+  W1
+  N1
+  I2
+  X
+  Z
+  W
+  J1
+  K
+  V1
+  L1
+  F1
+  L2
+  C2
+  U
+  C
+  H1
+  F
+  R
+  Q1
+  U1
+  V
+  X1
+  Z1
+  M2
+  M
+  E
+  B2
+  G1
+  P
+  M1
+  D
+  C1
+  I
+  K2
+  J)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block2_6|
+  E1
+  N2
+  P1
+  F2
+  Y
+  B
+  T
+  G
+  E2
+  Y1
+  G2
+  T1
+  A2
+  J2
+  S1
+  A
+  D2
+  N
+  S
+  H2
+  K1
+  Q
+  D1
+  H
+  I1
+  B1
+  L
+  O
+  R1
+  A1
+  W1
+  N1
+  I2
+  X
+  Z
+  W
+  J1
+  K
+  V1
+  L1
+  F1
+  L2
+  C2
+  U
+  C
+  H1
+  F
+  R
+  Q1
+  U1
+  V
+  X1
+  Z1
+  M2
+  M
+  E
+  B2
+  G1
+  P
+  M1
+  D
+  C1
+  I
+  K2
+  J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2_5|
+  M2
+  C1
+  C2
+  E2
+  M1
+  H1
+  G
+  S1
+  I
+  G2
+  P1
+  B2
+  U1
+  T
+  B
+  S
+  A2
+  K
+  N2
+  X1
+  M
+  D
+  F
+  I2
+  Q
+  G1
+  J
+  D2
+  X
+  I1
+  D1
+  R
+  B1
+  O1
+  L1
+  W
+  V
+  F1
+  F2
+  N
+  E
+  R1
+  A
+  A1
+  L
+  E1
+  K2
+  C
+  Q1
+  U
+  L2
+  K1
+  N1
+  T1
+  Z
+  H
+  Y1
+  W1
+  J2
+  J1
+  O
+  V1
+  Z1
+  H2
+  P
+  Y)
+        (not (= B 0))
+      )
+      |Assert #5: Main.java, line 20|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2_6|
+  Z1
+  L
+  L1
+  Y1
+  E2
+  B1
+  B
+  G
+  I2
+  K1
+  G2
+  R
+  C2
+  R1
+  J1
+  J
+  D2
+  A
+  I1
+  F2
+  V1
+  S
+  T1
+  D
+  F
+  G1
+  C1
+  M1
+  F1
+  Q
+  P1
+  Y
+  E
+  A2
+  N
+  A1
+  X1
+  V
+  T
+  I
+  O1
+  K2
+  D1
+  M
+  L2
+  H
+  E1
+  C
+  S1
+  W
+  H2
+  Q1
+  U
+  O
+  K
+  W1
+  H1
+  M2
+  B2
+  N1
+  J2
+  U1
+  X
+  P
+  Z)
+        (not (= M1 F1))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4|
+  Z1
+  L
+  L1
+  Y1
+  E2
+  B1
+  B
+  G
+  I2
+  K1
+  G2
+  R
+  C2
+  R1
+  J1
+  J
+  D2
+  A
+  I1
+  F2
+  V1
+  S
+  T1
+  D
+  F
+  G1
+  C1
+  M1
+  F1
+  Q
+  P1
+  Y
+  E
+  A2
+  N
+  A1
+  X1
+  V
+  T
+  I
+  O1
+  K2
+  D1
+  M
+  L2
+  H
+  E1
+  C
+  S1
+  W
+  H2
+  Q1
+  U
+  O
+  K
+  W1
+  H1
+  M2
+  B2
+  N1
+  J2
+  U1
+  X
+  P
+  Z)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block5_1|
+  H2
+  K1
+  S1
+  B1
+  I
+  G
+  A1
+  C1
+  F
+  N1
+  B
+  D2
+  L
+  M
+  J1
+  G1
+  D1
+  M2
+  E2
+  K
+  W
+  S
+  L2
+  E1
+  R
+  Z
+  J
+  F1
+  C2
+  T
+  H
+  G2
+  Q
+  K2
+  U1
+  L1
+  U
+  Y
+  W1
+  A2
+  X
+  R1
+  X1
+  F2
+  I2
+  Q1
+  P1
+  I1
+  H1
+  V
+  J2
+  D
+  T1
+  A
+  Y1
+  N
+  O
+  Z1
+  O1
+  V1
+  B2
+  P
+  M1
+  C
+  E)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4|
+  H2
+  K1
+  S1
+  B1
+  I
+  G
+  A1
+  C1
+  F
+  N1
+  B
+  D2
+  L
+  M
+  J1
+  G1
+  D1
+  M2
+  E2
+  K
+  W
+  S
+  L2
+  E1
+  R
+  Z
+  J
+  F1
+  C2
+  T
+  H
+  G2
+  Q
+  K2
+  U1
+  L1
+  U
+  Y
+  W1
+  A2
+  X
+  R1
+  X1
+  F2
+  I2
+  Q1
+  P1
+  I1
+  H1
+  V
+  J2
+  D
+  T1
+  A
+  Y1
+  N
+  O
+  Z1
+  O1
+  V1
+  B2
+  P
+  M1
+  C
+  E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block2_6|
+  K2
+  G
+  S
+  O
+  J2
+  B2
+  B1
+  W1
+  A
+  P
+  W
+  V
+  Q1
+  J1
+  N
+  J
+  D1
+  Y
+  I
+  E1
+  I1
+  H1
+  P1
+  C1
+  U
+  A2
+  D
+  Q
+  C
+  L
+  F2
+  U1
+  X
+  D2
+  L2
+  R1
+  T1
+  F
+  G1
+  L1
+  M1
+  E2
+  Y1
+  T
+  Z1
+  H2
+  S1
+  B
+  R
+  N1
+  V1
+  I2
+  Z
+  M2
+  F1
+  X1
+  K
+  O1
+  K1
+  H
+  C2
+  G2
+  A1
+  M
+  E)
+        (= Q C)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block5|
+  K2
+  G
+  S
+  O
+  J2
+  B2
+  B1
+  W1
+  A
+  P
+  W
+  V
+  Q1
+  J1
+  N
+  J
+  D1
+  Y
+  I
+  E1
+  I1
+  H1
+  P1
+  C1
+  U
+  A2
+  D
+  Q
+  C
+  L
+  F2
+  U1
+  X
+  D2
+  L2
+  R1
+  T1
+  F
+  G1
+  L1
+  M1
+  E2
+  Y1
+  T
+  Z1
+  H2
+  S1
+  B
+  R
+  N1
+  V1
+  I2
+  Z
+  M2
+  F1
+  X1
+  K
+  O1
+  K1
+  H
+  C2
+  G2
+  A1
+  M
+  E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block3|
+  I1
+  B1
+  N2
+  X
+  M
+  V1
+  U
+  Y1
+  S1
+  D
+  C1
+  K1
+  R
+  G1
+  C2
+  F1
+  D1
+  E1
+  M2
+  O
+  Z
+  U1
+  L
+  J2
+  Z1
+  A
+  F
+  K2
+  G2
+  V
+  B2
+  G
+  S
+  M1
+  W1
+  P2
+  H1
+  E2
+  B
+  Y
+  E
+  N
+  I2
+  J1
+  A1
+  C
+  P
+  R1
+  L2
+  K
+  Q
+  O2
+  P1
+  F2
+  J
+  O1
+  L1
+  Q1
+  W
+  I
+  H
+  D2
+  T1
+  A2
+  T
+  X1
+  N1
+  H2)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block3_1|
+  I1
+  B1
+  N2
+  X
+  M
+  V1
+  U
+  Y1
+  S1
+  D
+  C1
+  K1
+  R
+  G1
+  C2
+  F1
+  D1
+  E1
+  M2
+  O
+  Z
+  U1
+  L
+  J2
+  Z1
+  A
+  F
+  K2
+  G2
+  V
+  B2
+  G
+  S
+  M1
+  W1
+  P2
+  H1
+  E2
+  B
+  Y
+  E
+  N
+  I2
+  J1
+  A1
+  C
+  P
+  R1
+  L2
+  K
+  Q
+  O2
+  P1
+  F2
+  J
+  O1
+  L1
+  Q1
+  W
+  I
+  H
+  D2
+  T1
+  A2
+  T
+  X1
+  N1
+  H2)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block3|
+  K1
+  H2
+  A
+  V
+  P2
+  Z
+  E2
+  J
+  L1
+  N1
+  G2
+  O
+  M2
+  X
+  W
+  I
+  T1
+  F2
+  S1
+  B1
+  A2
+  H1
+  Y1
+  N
+  W1
+  H
+  F1
+  J1
+  P1
+  R1
+  J2
+  C1
+  S
+  N2
+  D1
+  K
+  D
+  B2
+  U
+  M1
+  Z1
+  I2
+  X1
+  L2
+  V1
+  O1
+  U1
+  M
+  C
+  B
+  R
+  E
+  O2
+  T
+  E1
+  Q
+  L
+  Q1
+  G1
+  Y
+  G
+  F
+  A1
+  D2
+  I1
+  K2
+  C2
+  P)
+        true
+      )
+      |Assert #6: Main.java, line 13|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4|
+  D
+  J1
+  W1
+  E1
+  L1
+  H
+  O
+  P
+  K2
+  T
+  R
+  W
+  K1
+  A
+  C
+  N
+  B1
+  Z
+  G1
+  T1
+  M
+  L2
+  L
+  J2
+  B
+  C1
+  Y
+  Q
+  V
+  U1
+  Z1
+  G
+  I
+  P1
+  D1
+  N1
+  A1
+  H2
+  J
+  X1
+  X
+  F1
+  I1
+  R1
+  F2
+  G2
+  O1
+  Y1
+  S1
+  E
+  A2
+  E2
+  F
+  K
+  M1
+  C2
+  V1
+  M2
+  Q1
+  I2
+  H1
+  U
+  D2
+  B2
+  S)
+        true
+      )
+      (|<java.lang.StringBuilder: int length()>_pre| N1 A1 H2 V1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_9|
+  U1
+  A2
+  J1
+  N
+  I1
+  V1
+  H
+  F1
+  A
+  L
+  S1
+  R1
+  O1
+  M
+  B1
+  K
+  L1
+  R
+  T1
+  G
+  Z1
+  X1
+  W
+  D1
+  B
+  G1
+  M1
+  J
+  Z
+  Q1
+  H1
+  Q
+  A1
+  C1
+  N1
+  F
+  Y1
+  X
+  E
+  I
+  K1
+  U
+  T
+  Y
+  E1
+  S
+  O
+  D
+  W1
+  C
+  P1
+  V
+  P)
+        true
+      )
+      (|<java.lang.StringBuilder: int length()>_pre| B G1 M1 S)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4|
+  G1
+  E
+  K2
+  C
+  T
+  Q
+  S
+  Q2
+  G
+  M1
+  C2
+  J2
+  V
+  N1
+  I2
+  Y1
+  N
+  P
+  Q1
+  R
+  A2
+  F
+  P1
+  W1
+  I
+  E2
+  P2
+  R1
+  V1
+  L1
+  J
+  L
+  G2
+  A1
+  F1
+  F2
+  M2
+  A
+  I1
+  Y
+  H
+  B1
+  W
+  B2
+  R2
+  L2
+  Z1
+  U1
+  M
+  C1
+  H2
+  Z
+  B
+  H1
+  X1
+  K
+  D1
+  D2
+  E1
+  T1
+  U
+  O
+  O1
+  K1
+  X)
+        (|<java.lang.StringBuilder: int length()>_post| F2 M2 A D1 O2 D N2 S1 J1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_1|
+  G1
+  E
+  K2
+  C
+  T
+  Q
+  S
+  Q2
+  G
+  M1
+  C2
+  J2
+  N1
+  I2
+  N
+  P
+  Q1
+  R
+  P1
+  W1
+  I
+  E2
+  P2
+  O2
+  D
+  N2
+  G2
+  S1
+  F2
+  M2
+  A
+  I1
+  Y
+  H
+  B1
+  W
+  B2
+  R2
+  L2
+  Z1
+  U1
+  M
+  C1
+  H2
+  Z
+  B
+  H1
+  X1
+  K
+  J1
+  O1
+  K1
+  X)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_1|
+  Y1
+  J
+  T
+  I1
+  X1
+  K1
+  D1
+  B
+  U
+  X
+  H
+  S1
+  O1
+  B1
+  A2
+  C1
+  G
+  V1
+  P
+  I
+  P1
+  U1
+  R
+  H1
+  B2
+  J1
+  R1
+  Z
+  V
+  Q1
+  S
+  Q
+  G1
+  Z1
+  F
+  N
+  W1
+  A
+  E
+  O
+  M
+  A1
+  Y
+  D
+  L
+  F1
+  N1
+  C
+  T1
+  L1
+  W
+  E1
+  M1)
+        (or (and (= K 0) (= H1 0)) (and (= K 1) (not (= H1 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_2|
+  Y1
+  J
+  T
+  I1
+  X1
+  K1
+  D1
+  B
+  U
+  X
+  H
+  S1
+  O1
+  B1
+  A2
+  C1
+  G
+  V1
+  K
+  P
+  I
+  P1
+  U1
+  R
+  R1
+  Z
+  V
+  Q1
+  S
+  Q
+  G1
+  Z1
+  F
+  N
+  W1
+  A
+  E
+  O
+  M
+  A1
+  Y
+  D
+  L
+  F1
+  N1
+  C
+  T1
+  L1
+  W
+  E1
+  M1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_2|
+  W1
+  M1
+  V1
+  K1
+  I
+  U1
+  C1
+  D
+  P1
+  N1
+  P
+  V
+  E1
+  H1
+  Q1
+  F1
+  Z
+  K
+  Q
+  R
+  E
+  D1
+  O1
+  G
+  C
+  U
+  O
+  L
+  Y
+  J1
+  B
+  X
+  A1
+  A
+  I1
+  T1
+  Y1
+  F
+  T
+  S
+  W
+  M
+  S1
+  L1
+  G1
+  N
+  J
+  X1
+  B1
+  R1
+  H)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_3|
+  W1
+  M1
+  V1
+  K1
+  I
+  U1
+  C1
+  D
+  P1
+  N1
+  P
+  V
+  E1
+  H1
+  Q1
+  F1
+  Z
+  K
+  R
+  E
+  D1
+  O1
+  G
+  C
+  U
+  O
+  L
+  Y
+  J1
+  B
+  X
+  A1
+  A
+  I1
+  T1
+  Y1
+  F
+  T
+  S
+  W
+  M
+  S1
+  L1
+  G1
+  N
+  J
+  X1
+  B1
+  R1
+  H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_2|
+  W1
+  C
+  S1
+  A
+  I
+  X
+  T1
+  C1
+  F1
+  Y1
+  B1
+  D1
+  G
+  K
+  T
+  N1
+  P
+  R1
+  K1
+  J
+  E1
+  G1
+  P1
+  L
+  H1
+  W
+  S
+  V
+  M1
+  R
+  L1
+  Q1
+  D
+  U1
+  N
+  Z
+  B
+  O
+  H
+  X1
+  Q
+  O1
+  J1
+  F
+  Y
+  A1
+  V1
+  I1
+  U
+  E
+  M)
+        (not (= K1 0))
+      )
+      |Assert #7: Main.java, line 16|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_3|
+  K
+  X
+  Z
+  D
+  H1
+  P1
+  J1
+  N
+  M1
+  E1
+  H
+  U
+  E
+  W
+  O1
+  I1
+  T1
+  D1
+  Y
+  N1
+  G1
+  Q1
+  C
+  F1
+  B
+  I
+  A
+  T
+  V
+  S
+  B1
+  W1
+  A1
+  R
+  C1
+  X1
+  R1
+  V1
+  Q
+  K1
+  M
+  L1
+  G
+  P
+  L
+  O
+  Y1
+  F
+  U1
+  J)
+        (or (and (<= 0 B) (= S1 0)) (and (not (<= 0 B)) (= S1 1)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_4|
+  K
+  X
+  Z
+  D
+  H1
+  P1
+  J1
+  N
+  M1
+  E1
+  H
+  U
+  S1
+  E
+  W
+  O1
+  I1
+  T1
+  D1
+  Y
+  N1
+  G1
+  Q1
+  C
+  F1
+  B
+  I
+  A
+  T
+  V
+  S
+  B1
+  W1
+  A1
+  R
+  C1
+  X1
+  R1
+  V1
+  Q
+  K1
+  M
+  L1
+  G
+  P
+  L
+  O
+  Y1
+  F
+  U1
+  J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_4|
+  C1
+  E
+  N
+  T
+  G
+  K1
+  Y
+  F1
+  F
+  E1
+  G1
+  X1
+  L1
+  Y1
+  D
+  D1
+  A
+  O1
+  U1
+  B
+  S
+  W1
+  V1
+  T1
+  S1
+  L
+  X
+  I
+  R1
+  C
+  J1
+  M
+  J
+  U
+  B1
+  P
+  I1
+  Q1
+  A1
+  Z
+  Q
+  K
+  W
+  M1
+  P1
+  N1
+  H
+  R
+  H1
+  V
+  O)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_5|
+  C1
+  E
+  N
+  T
+  G
+  K1
+  Y
+  F1
+  F
+  E1
+  G1
+  X1
+  Y1
+  D
+  D1
+  A
+  O1
+  U1
+  B
+  S
+  W1
+  V1
+  T1
+  S1
+  L
+  X
+  I
+  R1
+  C
+  J1
+  M
+  J
+  U
+  B1
+  P
+  I1
+  Q1
+  A1
+  Z
+  Q
+  K
+  W
+  M1
+  P1
+  N1
+  H
+  R
+  H1
+  V
+  O)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_4|
+  E1
+  B1
+  V1
+  L
+  X
+  R1
+  M
+  F1
+  L1
+  Q
+  U1
+  D1
+  N1
+  T
+  I
+  Q1
+  J
+  P1
+  E
+  O1
+  I1
+  C1
+  H1
+  Y1
+  S1
+  A1
+  D
+  C
+  S
+  K1
+  Z
+  J1
+  O
+  H
+  G
+  K
+  B
+  R
+  A
+  W
+  G1
+  T1
+  N
+  X1
+  F
+  V
+  Y
+  P
+  U
+  W1
+  M1)
+        (not (= N1 0))
+      )
+      |Assert #8: Main.java, line 16|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_5|
+  B1
+  O1
+  L
+  F1
+  G1
+  O
+  Y1
+  V
+  A
+  N
+  G
+  C
+  N1
+  C1
+  R
+  Q
+  S1
+  L1
+  P
+  I1
+  J
+  Q1
+  F
+  X
+  T
+  J1
+  X1
+  H1
+  D
+  W1
+  T1
+  Y
+  K
+  U1
+  M1
+  B
+  Z
+  P1
+  S
+  W
+  V1
+  H
+  I
+  D1
+  U
+  A1
+  E1
+  M
+  E
+  R1)
+        (= K1 (+ 1 E1))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_6|
+  B1
+  O1
+  L
+  F1
+  G1
+  O
+  Y1
+  V
+  A
+  N
+  G
+  C
+  N1
+  C1
+  R
+  Q
+  S1
+  L1
+  P
+  I1
+  J
+  Q1
+  F
+  X
+  T
+  J1
+  X1
+  H1
+  D
+  W1
+  T1
+  Y
+  K
+  U1
+  M1
+  B
+  Z
+  P1
+  S
+  W
+  V1
+  H
+  I
+  D1
+  U
+  A1
+  K1
+  M
+  E
+  R1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (v_53 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_6|
+  Z1
+  P
+  V1
+  S
+  C
+  R
+  O
+  J1
+  U1
+  E
+  N
+  T1
+  L1
+  Q1
+  H1
+  P1
+  F1
+  B1
+  O1
+  M
+  W
+  Q
+  G
+  A1
+  K
+  Y
+  Y1
+  G1
+  Z
+  X1
+  B
+  F
+  H
+  I1
+  S1
+  M1
+  A2
+  K1
+  V
+  E1
+  U
+  A
+  D1
+  D
+  L
+  W1
+  T
+  N1
+  I
+  C1)
+        (and (= J 2) (= R1 1504) (= v_53 T))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_7|
+  Z1
+  P
+  V1
+  S
+  C
+  R
+  O
+  J1
+  U1
+  E
+  N
+  T1
+  L1
+  Q1
+  H1
+  P1
+  F1
+  B1
+  O1
+  M
+  W
+  Q
+  G
+  A1
+  K
+  Y
+  Y1
+  G1
+  Z
+  X1
+  B
+  F
+  H
+  I1
+  S1
+  M1
+  A2
+  K1
+  V
+  E1
+  U
+  A
+  D1
+  D
+  L
+  W1
+  T
+  v_53
+  J
+  R1
+  X
+  N1
+  I
+  C1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_7|
+  Z1
+  U
+  O1
+  P
+  I
+  P1
+  N1
+  A
+  R
+  W1
+  T
+  U1
+  Q1
+  B1
+  A2
+  O
+  X1
+  A1
+  T1
+  D1
+  C
+  E
+  G
+  N
+  Z
+  B
+  X
+  F1
+  M1
+  M
+  K
+  G1
+  Q
+  J
+  C1
+  H
+  S
+  Y
+  L1
+  H1
+  D
+  I1
+  L
+  W
+  K1
+  F
+  B2
+  V1
+  V
+  E1
+  S1
+  Y1
+  J1
+  R1)
+        true
+      )
+      (|<JayArray_char: void <init>(int)>_pre| V1 V E1 S1 Z B2)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_7|
+  L
+  Y
+  J1
+  X
+  H
+  K1
+  Q1
+  O1
+  S1
+  D
+  H2
+  A1
+  Q
+  D1
+  B2
+  I2
+  F
+  L1
+  E
+  C2
+  C
+  E1
+  W
+  I1
+  P
+  G
+  B1
+  V1
+  K
+  S
+  M1
+  A
+  F2
+  C1
+  Z1
+  V
+  W1
+  R
+  U1
+  U
+  N1
+  T1
+  R1
+  T
+  H1
+  Z
+  I
+  A2
+  B
+  J
+  F1
+  Y1
+  N
+  M)
+        (|<JayArray_char: void <init>(int)>_post| A2 B J F1 P I O G1 G2 P1 E2 X1 D2)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_8|
+  L
+  Y
+  J1
+  X
+  H
+  K1
+  Q1
+  O1
+  S1
+  D
+  H2
+  A1
+  Q
+  D1
+  B2
+  I2
+  F
+  L1
+  E
+  C2
+  C
+  E1
+  W
+  I1
+  G
+  B1
+  V1
+  K
+  S
+  M1
+  A
+  F2
+  C1
+  Z1
+  V
+  W1
+  R
+  U1
+  U
+  N1
+  T1
+  R1
+  T
+  H1
+  Z
+  D2
+  A2
+  B
+  J
+  F1
+  P1
+  Y1
+  N
+  M)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_8|
+  O
+  K1
+  A2
+  N
+  R1
+  D1
+  B2
+  V1
+  T1
+  F
+  U1
+  D
+  T
+  Q
+  H1
+  E
+  U
+  W
+  G
+  J1
+  P1
+  V
+  J
+  Z1
+  B1
+  L
+  M
+  I
+  N1
+  E1
+  H
+  Y1
+  O1
+  X1
+  F1
+  A1
+  M1
+  C
+  G1
+  S
+  K
+  Q1
+  W1
+  L1
+  P
+  B
+  X
+  Z
+  I1
+  C1
+  R
+  A
+  S1
+  Y)
+        (= C1 R)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_9|
+  O
+  K1
+  A2
+  N
+  R1
+  D1
+  B2
+  V1
+  T1
+  F
+  U1
+  D
+  T
+  Q
+  H1
+  E
+  U
+  W
+  G
+  J1
+  P1
+  V
+  J
+  Z1
+  B1
+  L
+  M
+  I
+  N1
+  E1
+  H
+  Y1
+  O1
+  X1
+  F1
+  A1
+  M1
+  C
+  G1
+  S
+  K
+  Q1
+  W1
+  L1
+  P
+  B
+  X
+  Z
+  I1
+  C1
+  A
+  S1
+  Y)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_9|
+  N
+  E2
+  K
+  V
+  Y1
+  W
+  K1
+  Q1
+  N1
+  F2
+  V1
+  P1
+  M1
+  D1
+  H
+  D2
+  A
+  A1
+  B2
+  S1
+  O
+  P
+  L
+  Y
+  U1
+  U
+  C
+  C2
+  Z1
+  E
+  E1
+  R1
+  T1
+  B
+  O1
+  G1
+  Z
+  R
+  C1
+  G
+  Q
+  S
+  I
+  F
+  B1
+  F1
+  J
+  J1
+  I1
+  X1
+  M
+  A2
+  T)
+        (|<java.lang.StringBuilder: int length()>_post| U1 U C F1 W1 X D L1 H1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_10|
+  N
+  E2
+  K
+  V
+  Y1
+  W
+  K1
+  Q1
+  N1
+  F2
+  V1
+  P1
+  M1
+  D1
+  H
+  D2
+  A
+  A1
+  B2
+  S1
+  O
+  P
+  L
+  W1
+  X
+  D
+  Y
+  L1
+  U1
+  U
+  C
+  C2
+  Z1
+  E
+  E1
+  R1
+  T1
+  B
+  O1
+  G1
+  Z
+  R
+  C1
+  G
+  Q
+  S
+  I
+  F
+  B1
+  H1
+  J
+  J1
+  I1
+  X1
+  M
+  A2
+  T)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_10|
+  B2
+  C
+  P1
+  H1
+  T1
+  Y1
+  W
+  E2
+  N
+  S1
+  Z
+  M
+  Q1
+  G1
+  H
+  F
+  S
+  J
+  O1
+  F1
+  Y
+  A
+  G
+  R1
+  D1
+  J1
+  A2
+  D2
+  C2
+  X1
+  D
+  W1
+  K1
+  F2
+  E1
+  E
+  M1
+  I1
+  A1
+  L
+  P
+  B
+  C1
+  X
+  T
+  L1
+  V
+  K
+  O
+  R
+  U1
+  N1
+  Z1
+  Q
+  U
+  B1
+  V1)
+        (or (and (= I 0) (= R1 0)) (and (= I 1) (not (= R1 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_11|
+  B2
+  C
+  P1
+  H1
+  T1
+  Y1
+  W
+  E2
+  N
+  S1
+  Z
+  M
+  Q1
+  G1
+  I
+  H
+  F
+  S
+  J
+  O1
+  F1
+  Y
+  A
+  G
+  A2
+  D2
+  C2
+  X1
+  D
+  W1
+  K1
+  F2
+  E1
+  E
+  M1
+  I1
+  A1
+  L
+  P
+  B
+  C1
+  X
+  T
+  L1
+  V
+  K
+  O
+  R
+  U1
+  N1
+  Z1
+  Q
+  U
+  B1
+  V1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_11|
+  T1
+  L
+  V1
+  M1
+  S1
+  W1
+  F1
+  M
+  B1
+  S
+  V
+  G1
+  J1
+  A
+  Q
+  E
+  W
+  H
+  F
+  C1
+  Y1
+  Q1
+  I
+  N
+  D1
+  B
+  R1
+  D
+  Z
+  E1
+  P1
+  N1
+  R
+  J
+  X1
+  B2
+  U
+  A2
+  C
+  I1
+  U1
+  Y
+  G
+  T
+  L1
+  H1
+  X
+  P
+  Z1
+  C2
+  A1
+  K
+  K1
+  O
+  O1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_12|
+  T1
+  L
+  V1
+  M1
+  S1
+  W1
+  F1
+  M
+  B1
+  S
+  V
+  G1
+  J1
+  A
+  E
+  W
+  H
+  F
+  C1
+  Y1
+  Q1
+  I
+  N
+  D1
+  B
+  R1
+  D
+  Z
+  E1
+  P1
+  N1
+  R
+  J
+  X1
+  B2
+  U
+  A2
+  C
+  I1
+  U1
+  Y
+  G
+  T
+  L1
+  H1
+  X
+  P
+  Z1
+  C2
+  A1
+  K
+  K1
+  O
+  O1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_11|
+  T
+  I
+  R1
+  Y1
+  S
+  N1
+  M1
+  A2
+  Z1
+  Q
+  L
+  O1
+  W
+  H1
+  V
+  Z
+  C1
+  N
+  L1
+  C
+  D1
+  F1
+  B1
+  E1
+  R
+  U
+  E
+  G1
+  S1
+  O
+  D
+  Q1
+  P1
+  U1
+  C2
+  A1
+  X
+  F
+  M
+  K1
+  B
+  J
+  I1
+  B2
+  W1
+  H
+  G
+  V1
+  P
+  X1
+  A
+  K
+  Y
+  T1
+  J1)
+        (not (= V 0))
+      )
+      |Assert #9: Main.java, line 17|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_12|
+  A2
+  B2
+  W1
+  L
+  Q1
+  D1
+  I
+  R
+  W
+  T1
+  F1
+  D
+  L1
+  Q
+  J
+  H1
+  B
+  O1
+  Y
+  I1
+  K
+  J1
+  Z
+  C1
+  S
+  G1
+  B1
+  P1
+  P
+  X
+  Y1
+  U
+  F
+  T
+  O
+  X1
+  N1
+  S1
+  M1
+  U1
+  C2
+  G
+  E
+  A
+  N
+  A1
+  E1
+  K1
+  V
+  D2
+  V1
+  Z1
+  R1
+  H)
+        (and (= C 0) (= M 0))
+      )
+      (|<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_pre|
+  G1
+  B1
+  P1
+  C
+  S
+  K1
+  V
+  D2
+  V1
+  M
+  E1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_12|
+  C1
+  C
+  T
+  H1
+  R1
+  Y
+  F2
+  O1
+  N
+  J
+  E2
+  I
+  R
+  M
+  P
+  S1
+  B
+  G1
+  E
+  Q
+  F
+  A
+  H
+  E1
+  A1
+  K
+  G2
+  D1
+  K1
+  V
+  B1
+  I1
+  Z1
+  Y1
+  Q1
+  S
+  O
+  T1
+  Z
+  U
+  A2
+  P1
+  M1
+  W1
+  V1
+  D2
+  B2
+  W
+  L1
+  F1
+  H2
+  J1
+  U1
+  L)
+        (|<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_post|
+  K
+  G2
+  D1
+  D
+  A1
+  W
+  L1
+  F1
+  H2
+  X1
+  B2
+  X
+  C2
+  N1
+  G)
+        (and (= D 0) (= X1 0))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_13|
+  C1
+  C
+  T
+  H1
+  R1
+  Y
+  F2
+  O1
+  N
+  J
+  E2
+  I
+  R
+  M
+  P
+  S1
+  B
+  G1
+  E
+  Q
+  F
+  A
+  H
+  X
+  C2
+  N1
+  E1
+  K
+  G2
+  D1
+  K1
+  V
+  B1
+  I1
+  Z1
+  Y1
+  Q1
+  S
+  O
+  T1
+  Z
+  U
+  A2
+  P1
+  M1
+  W1
+  V1
+  D2
+  G
+  W
+  L1
+  F1
+  H2
+  J1
+  U1
+  L)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_13|
+  E1
+  X
+  E2
+  K1
+  L
+  N1
+  J1
+  B
+  W1
+  P
+  W
+  P1
+  F
+  G1
+  M
+  B2
+  C2
+  C
+  S
+  Y1
+  E
+  D
+  F1
+  Y
+  Q
+  Z
+  M1
+  V1
+  X1
+  K
+  Q1
+  S1
+  A1
+  N
+  O
+  I
+  A
+  U
+  C1
+  R
+  A2
+  H
+  J
+  T1
+  I1
+  V
+  G
+  O1
+  U1
+  B1
+  H1
+  T
+  D2
+  L1
+  R1
+  Z1)
+        (or (and (= Y 0) (= D1 0)) (and (not (= Y 0)) (= D1 1)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_14|
+  E1
+  X
+  E2
+  K1
+  L
+  N1
+  J1
+  B
+  W1
+  P
+  W
+  P1
+  F
+  G1
+  M
+  B2
+  C2
+  C
+  D1
+  S
+  Y1
+  E
+  D
+  F1
+  Y
+  Q
+  Z
+  M1
+  V1
+  X1
+  K
+  Q1
+  S1
+  A1
+  N
+  O
+  I
+  A
+  U
+  C1
+  R
+  A2
+  H
+  J
+  T1
+  I1
+  V
+  G
+  O1
+  U1
+  B1
+  H1
+  T
+  D2
+  L1
+  R1
+  Z1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_14|
+  H1
+  L
+  W
+  E
+  U
+  D2
+  C
+  A1
+  A
+  X1
+  P1
+  B2
+  C2
+  Q
+  L1
+  K
+  N
+  H
+  U1
+  V1
+  J1
+  M1
+  N1
+  F1
+  G
+  Y1
+  K1
+  G1
+  Z1
+  T
+  J
+  A2
+  E2
+  R1
+  O1
+  O
+  B
+  M
+  R
+  F
+  S
+  Q1
+  V
+  D1
+  I1
+  E1
+  Y
+  C1
+  I
+  Z
+  T1
+  P
+  B1
+  D
+  X
+  W1
+  S1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_15|
+  H1
+  L
+  W
+  E
+  U
+  D2
+  C
+  A1
+  A
+  X1
+  P1
+  B2
+  C2
+  Q
+  L1
+  K
+  N
+  H
+  V1
+  J1
+  M1
+  N1
+  F1
+  G
+  Y1
+  K1
+  G1
+  Z1
+  T
+  J
+  A2
+  E2
+  R1
+  O1
+  O
+  B
+  M
+  R
+  F
+  S
+  Q1
+  V
+  D1
+  I1
+  E1
+  Y
+  C1
+  I
+  Z
+  T1
+  P
+  B1
+  D
+  X
+  W1
+  S1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_14|
+  B2
+  Y
+  B1
+  E1
+  I1
+  O1
+  L1
+  J1
+  R
+  T1
+  C1
+  P
+  L
+  D
+  D1
+  H
+  C
+  Z
+  X1
+  A2
+  G
+  A
+  T
+  I
+  Z1
+  R1
+  Q1
+  V1
+  H1
+  G1
+  X
+  U1
+  N1
+  K1
+  C2
+  E2
+  Y1
+  A1
+  E
+  O
+  W
+  V
+  F
+  F1
+  M
+  D2
+  B
+  W1
+  M1
+  J
+  S1
+  S
+  N
+  U
+  Q
+  K
+  P1)
+        (not (= X1 0))
+      )
+      |Assert #10: Main.java, line 17|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_15|
+  I1
+  H
+  O1
+  A2
+  P
+  C1
+  U1
+  X
+  I
+  D
+  U
+  D2
+  N1
+  R
+  E1
+  E2
+  Y1
+  B1
+  G
+  H1
+  A1
+  V
+  Y
+  N
+  T1
+  O
+  G1
+  B2
+  J
+  E
+  A
+  D1
+  S1
+  V1
+  C
+  T
+  W
+  L
+  R1
+  M1
+  X1
+  J1
+  F
+  Z1
+  Z
+  M
+  W1
+  L1
+  K1
+  C2
+  Q
+  K
+  F1
+  B
+  Q1
+  S)
+        (= P1 0)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_16|
+  I1
+  H
+  O1
+  A2
+  P
+  C1
+  U1
+  X
+  I
+  D
+  U
+  D2
+  N1
+  R
+  E1
+  E2
+  Y1
+  B1
+  G
+  H1
+  A1
+  V
+  Y
+  N
+  T1
+  O
+  G1
+  B2
+  J
+  E
+  A
+  D1
+  S1
+  V1
+  C
+  T
+  W
+  L
+  R1
+  M1
+  X1
+  J1
+  F
+  Z1
+  Z
+  P1
+  M
+  W1
+  L1
+  K1
+  C2
+  Q
+  K
+  F1
+  B
+  Q1
+  S)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (v_57 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_16|
+  L1
+  O
+  E
+  D
+  C
+  I
+  Y1
+  H
+  A
+  D2
+  P1
+  R
+  T1
+  R1
+  K
+  I1
+  Q
+  G
+  G1
+  C2
+  L
+  Z1
+  F
+  M
+  B
+  V
+  U
+  Y
+  W1
+  N
+  H1
+  E2
+  B2
+  K1
+  X1
+  P
+  X
+  N1
+  A1
+  M1
+  V1
+  U1
+  W
+  O1
+  Q1
+  E1
+  F1
+  S
+  T
+  A2
+  B1
+  D1
+  S1
+  J
+  C1
+  J1
+  Z)
+        (= v_57 J)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_17|
+  L1
+  O
+  E
+  D
+  C
+  I
+  Y1
+  H
+  A
+  D2
+  P1
+  R
+  T1
+  R1
+  K
+  I1
+  Q
+  G
+  G1
+  C2
+  L
+  Z1
+  F
+  M
+  B
+  V
+  U
+  Y
+  W1
+  N
+  H1
+  E2
+  B2
+  K1
+  X1
+  P
+  X
+  N1
+  A1
+  M1
+  V1
+  U1
+  W
+  O1
+  Q1
+  J
+  E1
+  F1
+  S
+  T
+  A2
+  B1
+  D1
+  S1
+  v_57
+  C1
+  J1
+  Z)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_17|
+  N
+  E
+  S
+  C
+  A
+  X
+  V1
+  R1
+  P1
+  W
+  Q1
+  X1
+  I
+  D
+  A1
+  J
+  R
+  P
+  W1
+  O
+  F
+  C2
+  G1
+  T
+  C1
+  G
+  E2
+  G2
+  Y
+  L
+  T1
+  E1
+  D2
+  M1
+  B
+  Z
+  K1
+  L1
+  D1
+  F1
+  A2
+  Q
+  O1
+  Z1
+  M
+  N1
+  B1
+  H
+  U
+  H1
+  Y1
+  K
+  U1
+  S1
+  J1
+  I1
+  V
+  B2)
+        (= F2 0)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block4_18|
+  N
+  E
+  S
+  C
+  A
+  X
+  V1
+  R1
+  P1
+  W
+  Q1
+  X1
+  I
+  D
+  A1
+  J
+  R
+  P
+  W1
+  O
+  F
+  C2
+  G1
+  T
+  C1
+  G
+  E2
+  G2
+  Y
+  L
+  T1
+  E1
+  D2
+  M1
+  B
+  Z
+  K1
+  L1
+  D1
+  F1
+  A2
+  Q
+  O1
+  Z1
+  M
+  N1
+  B1
+  F2
+  H
+  U
+  H1
+  Y1
+  K
+  U1
+  S1
+  J1
+  I1
+  V
+  B2)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block4_18|
+  V
+  X1
+  H
+  D1
+  Q1
+  J
+  B2
+  L
+  Z1
+  C2
+  E1
+  I1
+  E2
+  B
+  V1
+  J1
+  B1
+  W
+  O
+  F1
+  A2
+  M
+  K1
+  D
+  K
+  W1
+  Y
+  F
+  T1
+  G
+  R
+  Q
+  A
+  U
+  A1
+  E
+  M1
+  O1
+  R1
+  N
+  G1
+  C1
+  P1
+  T
+  X
+  P
+  S1
+  I
+  Z
+  F2
+  H1
+  N1
+  U1
+  Y1
+  G2
+  C
+  S
+  D2
+  L1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block6|
+  V
+  X1
+  H
+  D1
+  Q1
+  J
+  B2
+  L
+  Z1
+  C2
+  E1
+  I1
+  E2
+  B
+  V1
+  J1
+  B1
+  W
+  O
+  F1
+  A2
+  M
+  K1
+  D
+  K
+  W1
+  Y
+  F
+  T1
+  G
+  R
+  Q
+  A
+  U
+  A1
+  E
+  M1
+  O1
+  R1
+  N
+  G1
+  C1
+  P1
+  T
+  X
+  P
+  S1
+  I
+  Z
+  F2
+  H1
+  N1
+  U1
+  Y1
+  G2
+  C
+  S
+  D2
+  L1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block9_2|
+  C2
+  Z
+  T1
+  T
+  A
+  Y
+  V1
+  D1
+  Z1
+  S1
+  D2
+  Q
+  X1
+  M1
+  W1
+  V
+  E
+  H1
+  B1
+  B
+  P
+  G
+  M
+  G1
+  A2
+  K
+  I1
+  R1
+  F
+  N1
+  L1
+  U1
+  H
+  R
+  O
+  J1
+  L
+  E1
+  E2
+  Y1
+  X
+  U
+  J
+  B2
+  Q1
+  D
+  F2
+  G2
+  O1
+  P1
+  N
+  W
+  K1
+  I
+  F1
+  C
+  C1
+  A1
+  S)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block6|
+  C2
+  Z
+  T1
+  T
+  A
+  Y
+  V1
+  D1
+  Z1
+  S1
+  D2
+  Q
+  X1
+  M1
+  W1
+  V
+  E
+  H1
+  B1
+  B
+  P
+  G
+  M
+  G1
+  A2
+  K
+  I1
+  R1
+  F
+  N1
+  L1
+  U1
+  H
+  R
+  O
+  J1
+  L
+  E1
+  E2
+  Y1
+  X
+  U
+  J
+  B2
+  Q1
+  D
+  F2
+  G2
+  O1
+  P1
+  N
+  W
+  K1
+  I
+  F1
+  C
+  C1
+  A1
+  S)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block5|
+  B2
+  U
+  Q
+  A2
+  C2
+  I1
+  F
+  T
+  B
+  L
+  H1
+  V1
+  K2
+  S1
+  G
+  R1
+  F2
+  T1
+  Q1
+  V
+  L1
+  O
+  D2
+  H2
+  K
+  M2
+  C1
+  X1
+  P
+  E1
+  G2
+  L2
+  W1
+  Y
+  D
+  J
+  M1
+  Y1
+  O1
+  A1
+  J2
+  Z1
+  P1
+  S
+  D1
+  C
+  B1
+  N
+  X
+  J1
+  K1
+  I
+  E
+  R
+  H
+  N1
+  G1
+  I2
+  M
+  Z
+  U1
+  E2
+  W
+  A
+  F1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block5_1|
+  B2
+  U
+  Q
+  A2
+  C2
+  I1
+  F
+  T
+  B
+  L
+  H1
+  V1
+  K2
+  S1
+  G
+  R1
+  F2
+  T1
+  Q1
+  V
+  L1
+  O
+  D2
+  H2
+  K
+  M2
+  C1
+  X1
+  P
+  E1
+  G2
+  L2
+  W1
+  Y
+  D
+  J
+  M1
+  Y1
+  O1
+  A1
+  J2
+  Z1
+  P1
+  S
+  D1
+  C
+  B1
+  N
+  X
+  J1
+  K1
+  I
+  E
+  R
+  H
+  N1
+  G1
+  I2
+  M
+  Z
+  U1
+  E2
+  W
+  A
+  F1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block5|
+  Y1
+  H1
+  W
+  B
+  C1
+  I1
+  Z1
+  L1
+  J2
+  B1
+  U
+  S
+  Z
+  J
+  M
+  R1
+  K2
+  Q1
+  D2
+  N
+  G2
+  B2
+  K
+  G1
+  O1
+  Y
+  L
+  E
+  V
+  A2
+  I2
+  J1
+  G
+  F1
+  T1
+  N1
+  Q
+  F
+  D
+  M1
+  C
+  I
+  L2
+  U1
+  H2
+  W1
+  R
+  P1
+  X1
+  E2
+  V1
+  O
+  H
+  P
+  S1
+  X
+  C2
+  A1
+  D1
+  E1
+  F2
+  T
+  M2
+  A
+  K1)
+        true
+      )
+      |Assert #11: Main.java, line 14|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block6|
+  V
+  X1
+  S1
+  T
+  W
+  F2
+  B1
+  K1
+  J
+  C2
+  D1
+  D2
+  L1
+  E1
+  L
+  G1
+  U
+  H1
+  I
+  E
+  P1
+  F1
+  J1
+  O1
+  A1
+  R
+  H
+  M
+  Q
+  N1
+  W1
+  Y
+  M1
+  N
+  B2
+  Y1
+  I1
+  O
+  P
+  T1
+  B
+  K
+  Q1
+  G
+  Z1
+  X
+  A2
+  S
+  C
+  F
+  D
+  C1
+  A
+  G2
+  U1
+  E2
+  V1
+  Z
+  R1)
+        (<= 0 (+ S (* (- 1) X)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7|
+  V
+  X1
+  S1
+  T
+  W
+  D2
+  L1
+  E1
+  L
+  G1
+  U
+  H1
+  E
+  F1
+  O1
+  A1
+  R
+  M
+  Q
+  N1
+  W1
+  Y
+  M1
+  N
+  B2
+  Y1
+  I1
+  O
+  P
+  T1
+  B
+  K
+  Q1
+  G
+  X
+  S
+  C1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block6|
+  R
+  I
+  V1
+  E
+  U
+  D1
+  J1
+  V
+  N
+  G
+  Q
+  X1
+  O1
+  W1
+  Y
+  A
+  C1
+  Z1
+  X
+  P1
+  T1
+  M1
+  A2
+  W
+  L1
+  C2
+  R1
+  N1
+  Y1
+  P
+  G1
+  E2
+  K
+  F2
+  D2
+  K1
+  J
+  U1
+  H
+  A1
+  O
+  B
+  T
+  D
+  E1
+  I1
+  H1
+  F1
+  S
+  M
+  G2
+  Z
+  B2
+  B1
+  C
+  Q1
+  S1
+  F
+  L)
+        (not (<= 0 (+ F1 (* (- 1) I1))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8|
+  R
+  I
+  V1
+  E
+  U
+  D1
+  J1
+  V
+  N
+  G
+  Q
+  X1
+  O1
+  W1
+  Y
+  A
+  C1
+  Z1
+  X
+  P1
+  T1
+  M1
+  A2
+  W
+  L1
+  C2
+  R1
+  N1
+  Y1
+  P
+  G1
+  E2
+  K
+  F2
+  D2
+  K1
+  J
+  U1
+  H
+  A1
+  O
+  B
+  T
+  D
+  E1
+  I1
+  H1
+  F1
+  S
+  M
+  G2
+  Z
+  B2
+  B1
+  C
+  Q1
+  S1
+  F
+  L)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7|
+  K
+  P
+  J
+  Q
+  F
+  V
+  K1
+  D1
+  A
+  S
+  L
+  G
+  Z
+  F1
+  Y
+  C
+  X
+  H
+  T
+  A1
+  B1
+  I1
+  O
+  D
+  B
+  N
+  L1
+  R
+  G1
+  M
+  M1
+  C1
+  E
+  H1
+  U
+  J1
+  W)
+        (and (= I 72) (= E1 0))
+      )
+      (|<java.lang.StringBuilder: void setCharAt(int,char)>_pre| H T A1 E1 I W)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_3|
+  T
+  H
+  G
+  R
+  O
+  P
+  N
+  S
+  L
+  X
+  U
+  K
+  J
+  C
+  M
+  E
+  D
+  A
+  V
+  Y
+  Q
+  I
+  B)
+        (and (= F 6) (= W 84))
+      )
+      (|<java.lang.StringBuilder: void setCharAt(int,char)>_pre| X U K F W B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7|
+  D
+  H1
+  S
+  L
+  K1
+  O
+  J
+  Q
+  V
+  Y
+  O1
+  E
+  E1
+  R
+  D1
+  U
+  M1
+  G
+  F
+  G1
+  N
+  I
+  B
+  T
+  H
+  K
+  C
+  P1
+  Q1
+  X
+  B1
+  A1
+  L1
+  N1
+  F1
+  W
+  P)
+        (|<java.lang.StringBuilder: void setCharAt(int,char)>_post|
+  G
+  F
+  G1
+  A
+  I1
+  P
+  C1
+  M
+  Z
+  J1)
+        (and (= A 0) (= I1 72))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_1|
+  D
+  H1
+  S
+  L
+  K1
+  O
+  Q
+  Y
+  R
+  C1
+  M
+  Z
+  G
+  F
+  G1
+  N
+  I
+  B
+  C
+  P1
+  Q1
+  X
+  B1
+  A1
+  L1
+  J1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_1|
+  P
+  Z
+  G
+  U
+  T
+  H
+  E
+  C
+  N
+  S
+  R
+  W
+  M
+  J
+  L
+  F
+  A
+  Y
+  X
+  V
+  B
+  I
+  D
+  K
+  Q
+  O)
+        (or (and (= S 0) (= A1 0)) (and (not (= S 0)) (= A1 1)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_2|
+  P
+  Z
+  G
+  U
+  T
+  H
+  E
+  A1
+  C
+  N
+  M
+  J
+  L
+  F
+  A
+  Y
+  X
+  V
+  B
+  I
+  D
+  K
+  Q
+  O)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_2|
+  R
+  F
+  I
+  T
+  G
+  V
+  B
+  X
+  K
+  M
+  A
+  W
+  D
+  J
+  O
+  N
+  P
+  C
+  H
+  U
+  S
+  Q
+  E
+  L)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_3|
+  R
+  F
+  I
+  T
+  G
+  V
+  B
+  K
+  M
+  A
+  W
+  D
+  J
+  O
+  N
+  P
+  C
+  H
+  U
+  S
+  Q
+  E
+  L)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_2|
+  W
+  F
+  M
+  C
+  Q
+  H
+  U
+  D
+  S
+  J
+  V
+  L
+  N
+  E
+  K
+  O
+  X
+  G
+  T
+  R
+  B
+  A
+  I
+  P)
+        (not (= D 0))
+      )
+      |Assert #12: Main.java, line 26|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_3|
+  B1
+  M
+  S
+  U
+  C1
+  F
+  C
+  N
+  Z
+  D
+  W
+  V
+  E
+  B
+  P
+  I
+  J
+  A1
+  H
+  A
+  O
+  Y
+  R)
+        (|<java.lang.StringBuilder: void setCharAt(int,char)>_post| D W V T L R G Q K X)
+        (and (= L 84) (= T 6))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_4|
+  B1
+  M
+  S
+  U
+  C1
+  F
+  C
+  N
+  Z
+  G
+  Q
+  K
+  D
+  W
+  V
+  E
+  B
+  P
+  I
+  J
+  A1
+  H
+  A
+  O
+  Y
+  X)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_4|
+  A
+  H
+  A1
+  U
+  X
+  Y
+  V
+  T
+  K
+  O
+  S
+  L
+  E
+  B
+  Z
+  M
+  C
+  I
+  R
+  Q
+  J
+  F
+  W
+  G
+  P
+  N)
+        (or (and (= D 0) (= O 0)) (and (= D 1) (not (= O 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_5|
+  A
+  H
+  A1
+  U
+  X
+  Y
+  V
+  T
+  D
+  K
+  E
+  B
+  Z
+  M
+  C
+  I
+  R
+  Q
+  J
+  F
+  W
+  G
+  P
+  N)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_5|
+  O
+  Q
+  P
+  S
+  V
+  X
+  A
+  N
+  M
+  L
+  H
+  E
+  J
+  I
+  D
+  W
+  B
+  C
+  T
+  R
+  K
+  U
+  G
+  F)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_6|
+  O
+  Q
+  P
+  S
+  V
+  X
+  A
+  N
+  L
+  H
+  E
+  J
+  I
+  D
+  W
+  B
+  C
+  T
+  R
+  K
+  U
+  G
+  F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_5|
+  N
+  E
+  B
+  A
+  I
+  X
+  J
+  G
+  R
+  H
+  Q
+  W
+  L
+  V
+  P
+  C
+  M
+  D
+  U
+  O
+  S
+  K
+  T
+  F)
+        (not (= R 0))
+      )
+      |Assert #13: Main.java, line 27|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_6|
+  W
+  B
+  V
+  M
+  F
+  O
+  T
+  R
+  H
+  A
+  C
+  N
+  E
+  L
+  B1
+  A1
+  D1
+  S
+  J
+  U
+  G
+  I
+  Q)
+        (|<java.lang.StringBuilder: java.lang.String toString()>_post|
+  A
+  C
+  N
+  Q
+  K
+  P
+  X
+  Y
+  C1
+  D
+  Z)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_7|
+  W
+  B
+  V
+  M
+  F
+  O
+  T
+  R
+  H
+  K
+  P
+  X
+  A
+  C
+  N
+  E
+  L
+  B1
+  Y
+  C1
+  D
+  A1
+  D1
+  S
+  J
+  U
+  G
+  I
+  Z)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_7|
+  H
+  X
+  C1
+  A
+  C
+  L
+  N
+  W
+  I
+  A1
+  T
+  F
+  U
+  Y
+  S
+  M
+  G
+  O
+  B1
+  D1
+  B
+  E
+  P
+  K
+  Q
+  R
+  Z
+  V
+  D)
+        (or (and (= J 0) (= A1 0)) (and (= J 1) (not (= A1 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_8|
+  H
+  X
+  C1
+  A
+  C
+  L
+  N
+  W
+  J
+  I
+  U
+  Y
+  S
+  M
+  G
+  O
+  B1
+  D1
+  B
+  E
+  P
+  K
+  Q
+  R
+  Z
+  V
+  D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_8|
+  C
+  Q
+  V
+  M
+  G
+  R
+  K
+  Z
+  O
+  B
+  T
+  Y
+  A1
+  L
+  I
+  S
+  U
+  H
+  P
+  N
+  F
+  J
+  E
+  X
+  A
+  D
+  W)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_9|
+  C
+  Q
+  V
+  M
+  G
+  R
+  K
+  Z
+  B
+  T
+  Y
+  A1
+  L
+  I
+  S
+  U
+  H
+  P
+  N
+  F
+  J
+  E
+  X
+  A
+  D
+  W)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_8|
+  O
+  D
+  X
+  N
+  E
+  G
+  H
+  I
+  B
+  Z
+  K
+  W
+  S
+  Y
+  A
+  R
+  L
+  J
+  A1
+  P
+  V
+  Q
+  U
+  C
+  T
+  M
+  F)
+        (not (= B 0))
+      )
+      |Assert #14: Main.java, line 32|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_9|
+  W
+  L
+  Z
+  X
+  E
+  B
+  S
+  Y
+  N
+  F
+  A
+  R
+  V
+  J
+  G
+  U
+  K
+  A1
+  M
+  Q
+  D
+  P
+  O
+  H
+  C
+  T)
+        (or (and (= I 1) (= U 0)) (and (= I 0) (not (= U 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_10|
+  W
+  L
+  Z
+  X
+  E
+  B
+  I
+  S
+  Y
+  N
+  F
+  A
+  R
+  V
+  J
+  G
+  U
+  K
+  A1
+  M
+  Q
+  D
+  P
+  O
+  H
+  C
+  T)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_10|
+  C
+  J
+  V
+  S
+  Q
+  U
+  M
+  B
+  Y
+  E
+  K
+  N
+  X
+  O
+  H
+  R
+  F
+  L
+  I
+  P
+  W
+  D
+  A1
+  A
+  T
+  Z
+  G)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_11|
+  C
+  J
+  V
+  S
+  Q
+  U
+  B
+  Y
+  E
+  K
+  N
+  X
+  O
+  H
+  R
+  F
+  L
+  I
+  P
+  W
+  D
+  A1
+  A
+  T
+  Z
+  G)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_10|
+  V
+  A
+  Z
+  W
+  Y
+  D
+  F
+  J
+  K
+  L
+  U
+  Q
+  I
+  R
+  O
+  E
+  C
+  A1
+  H
+  T
+  S
+  P
+  X
+  N
+  B
+  G
+  M)
+        (not (= F 0))
+      )
+      |Assert #15: Main.java, line 32|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_11|
+  T
+  E1
+  C1
+  B1
+  C
+  D1
+  S
+  I
+  G
+  P
+  V
+  R
+  L
+  J
+  W
+  O
+  X
+  F
+  G1
+  A
+  M
+  E
+  D
+  F1
+  U
+  A1)
+        (|<java.lang.String: boolean equals(java.lang.Object)>_post|
+  O
+  X
+  F
+  B
+  N
+  M
+  A1
+  Y
+  H
+  Z
+  K
+  Q)
+        (and (= B (- 3)) (= N 3))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_12|
+  T
+  E1
+  C1
+  B1
+  C
+  D1
+  S
+  I
+  G
+  Y
+  H
+  Z
+  P
+  V
+  R
+  L
+  J
+  W
+  E
+  D
+  F1
+  U
+  K
+  Q)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_12|
+  O
+  H
+  T
+  C
+  B
+  Q
+  Y
+  P
+  U
+  M
+  J
+  N
+  S
+  X
+  E
+  I
+  G
+  V
+  L
+  W
+  K
+  R
+  F
+  D)
+        (or (and (= A 0) (= M 0)) (and (= A 1) (not (= M 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_13|
+  O
+  H
+  T
+  C
+  B
+  Q
+  Y
+  P
+  A
+  U
+  M
+  J
+  N
+  S
+  X
+  E
+  I
+  G
+  V
+  L
+  W
+  K
+  R
+  F
+  D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_13|
+  W
+  A
+  O
+  L
+  Q
+  D
+  Y
+  X
+  P
+  R
+  N
+  T
+  M
+  S
+  K
+  I
+  U
+  E
+  V
+  F
+  H
+  B
+  G
+  C
+  J)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block7_14|
+  W
+  A
+  O
+  L
+  Q
+  D
+  Y
+  X
+  R
+  N
+  T
+  M
+  S
+  K
+  I
+  U
+  E
+  V
+  F
+  H
+  B
+  G
+  C
+  J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_13|
+  K
+  S
+  Q
+  V
+  I
+  N
+  F
+  L
+  A
+  P
+  W
+  Y
+  B
+  H
+  U
+  G
+  X
+  C
+  D
+  J
+  R
+  T
+  E
+  M
+  O)
+        (not (= A 0))
+      )
+      |Assert #16: Main.java, line 32|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_14|
+  C
+  K
+  X
+  F
+  I
+  T
+  R
+  Q
+  G
+  J
+  B
+  S
+  O
+  E
+  D
+  N
+  H
+  P
+  U
+  M
+  W
+  L
+  A
+  V)
+        (= A 0)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11|
+  C
+  K
+  X
+  F
+  I
+  T
+  R
+  Q
+  G
+  J
+  B
+  S
+  O
+  E
+  D
+  N
+  H
+  P
+  U
+  M
+  W
+  L
+  A
+  V)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block12_1|
+  O
+  D
+  L
+  X
+  M
+  W
+  N
+  V
+  Q
+  R
+  A
+  J
+  I
+  G
+  U
+  H
+  E
+  T
+  C
+  B
+  K
+  F
+  S
+  P)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11|
+  O
+  D
+  L
+  X
+  M
+  W
+  N
+  V
+  Q
+  R
+  A
+  J
+  I
+  G
+  U
+  H
+  E
+  T
+  C
+  B
+  K
+  F
+  S
+  P)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block7_14|
+  X
+  K
+  G
+  Q
+  S
+  N
+  D
+  R
+  J
+  V
+  E
+  M
+  I
+  W
+  P
+  F
+  T
+  H
+  C
+  L
+  O
+  U
+  A
+  B)
+        (not (= A 0))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block12|
+  X
+  K
+  G
+  Q
+  S
+  N
+  D
+  R
+  J
+  V
+  E
+  M
+  I
+  W
+  P
+  F
+  T
+  H
+  C
+  L
+  O
+  U
+  A
+  B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8|
+  C
+  P
+  F2
+  T1
+  E2
+  J1
+  T
+  M1
+  K
+  N
+  U1
+  H2
+  J
+  H1
+  R1
+  B
+  I
+  S1
+  B1
+  A2
+  V1
+  C2
+  W
+  B2
+  I1
+  Z
+  Y1
+  V
+  H
+  L
+  F
+  Z1
+  F1
+  D1
+  D2
+  M
+  E
+  G
+  N1
+  L1
+  K1
+  G1
+  U
+  Q1
+  A
+  O1
+  Q
+  G2
+  P1
+  E1
+  S
+  R
+  O
+  X1
+  W1
+  C1
+  A1
+  X
+  D)
+        (or (and (= O 0) (= Y 1)) (and (not (= O 0)) (= Y 0)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_1|
+  C
+  P
+  F2
+  T1
+  E2
+  J1
+  T
+  M1
+  Y
+  H2
+  J
+  H1
+  R1
+  B
+  I
+  S1
+  A2
+  C2
+  V
+  H
+  L
+  F
+  Z1
+  F1
+  D1
+  D2
+  M
+  E
+  G
+  N1
+  L1
+  K1
+  G1
+  U
+  Q1
+  O1
+  Q
+  G2
+  R
+  O
+  X1
+  W1
+  C1
+  A1
+  X
+  D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_1|
+  R1
+  N1
+  F
+  B1
+  E1
+  S1
+  Q
+  O1
+  G
+  X
+  M
+  S
+  P
+  H
+  R
+  Q1
+  Z
+  M1
+  I1
+  H1
+  T1
+  D
+  L
+  N
+  J1
+  K
+  G1
+  W
+  L1
+  A1
+  U
+  O
+  E
+  P1
+  Y
+  V
+  K1
+  F1
+  B
+  C
+  I
+  T
+  D1
+  C1
+  J
+  A)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_2|
+  R1
+  N1
+  F
+  B1
+  E1
+  S1
+  Q
+  O1
+  G
+  X
+  M
+  S
+  P
+  H
+  R
+  Q1
+  Z
+  M1
+  I1
+  H1
+  T1
+  D
+  L
+  N
+  J1
+  K
+  G1
+  W
+  L1
+  A1
+  U
+  O
+  E
+  P1
+  Y
+  V
+  K1
+  F1
+  B
+  C
+  I
+  T
+  D1
+  C1
+  J
+  A)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_1|
+  F1
+  R1
+  A1
+  H1
+  I1
+  Q1
+  Z
+  X
+  K1
+  E1
+  N1
+  J
+  M1
+  O1
+  O
+  D1
+  L1
+  I
+  H
+  B
+  T1
+  N
+  T
+  C
+  J1
+  D
+  S1
+  S
+  G
+  G1
+  M
+  R
+  A
+  B1
+  L
+  K
+  E
+  P1
+  Y
+  W
+  Q
+  P
+  C1
+  U
+  F
+  V)
+        (not (= K1 0))
+      )
+      |Assert #17: Main.java, line 31|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (v_46 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_2|
+  B1
+  S1
+  G
+  A
+  R
+  C1
+  T1
+  P1
+  N
+  G1
+  H
+  J1
+  Q
+  T
+  U
+  I1
+  O
+  F1
+  X
+  I
+  B
+  L1
+  F
+  E1
+  P
+  M
+  D1
+  L
+  D
+  W
+  E
+  J
+  K1
+  O1
+  C
+  S
+  M1
+  K
+  A1
+  R1
+  Z
+  N1
+  H1
+  Y
+  V
+  Q1)
+        (= v_46 H1)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_3|
+  B1
+  S1
+  G
+  A
+  R
+  C1
+  T1
+  P1
+  N
+  G1
+  H
+  J1
+  Q
+  T
+  U
+  I1
+  O
+  F1
+  H1
+  X
+  I
+  B
+  L1
+  F
+  E1
+  P
+  M
+  D1
+  L
+  D
+  W
+  E
+  J
+  K1
+  O1
+  C
+  S
+  M1
+  K
+  A1
+  R1
+  Z
+  N1
+  v_46
+  Y
+  V
+  Q1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_3|
+  K1
+  U1
+  I
+  Y
+  L1
+  E1
+  M1
+  O1
+  X
+  W
+  P
+  L
+  U
+  F
+  M
+  J1
+  B
+  N
+  V1
+  N1
+  T1
+  I1
+  S1
+  R1
+  E
+  Q
+  B1
+  K
+  Q1
+  A
+  A1
+  T
+  G1
+  J
+  C
+  Z
+  G
+  P1
+  R
+  H1
+  D
+  S
+  C1
+  V
+  F1
+  D1
+  O)
+        (let ((a!1 (and (<= 1 (+ V1 (* (- 1) R))) (= H 0)))
+      (a!2 (not (<= 1 (+ V1 (* (- 1) R))))))
+  (or a!1 (and a!2 (= H 1))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_4|
+  K1
+  U1
+  I
+  Y
+  L1
+  E1
+  M1
+  O1
+  X
+  H
+  W
+  P
+  L
+  U
+  F
+  M
+  J1
+  B
+  N
+  V1
+  N1
+  T1
+  I1
+  S1
+  R1
+  E
+  Q
+  B1
+  K
+  Q1
+  A
+  A1
+  T
+  G1
+  J
+  C
+  Z
+  G
+  P1
+  R
+  H1
+  D
+  S
+  C1
+  V
+  F1
+  D1
+  O)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_4|
+  D
+  M
+  K
+  Z
+  J
+  J1
+  Q
+  B
+  I1
+  B1
+  H
+  L1
+  N1
+  H1
+  N
+  V1
+  F
+  D1
+  I
+  X
+  E
+  A1
+  M1
+  K1
+  C
+  C1
+  S
+  Q1
+  U1
+  R
+  P
+  P1
+  L
+  G1
+  Y
+  W
+  A
+  R1
+  S1
+  G
+  V
+  F1
+  U
+  T1
+  O
+  T
+  O1
+  E1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_5|
+  D
+  M
+  K
+  Z
+  J
+  J1
+  Q
+  B
+  I1
+  H
+  L1
+  N1
+  H1
+  N
+  V1
+  F
+  D1
+  I
+  X
+  E
+  A1
+  M1
+  K1
+  C
+  C1
+  S
+  Q1
+  U1
+  R
+  P
+  P1
+  L
+  G1
+  Y
+  W
+  A
+  R1
+  S1
+  G
+  V
+  F1
+  U
+  T1
+  O
+  T
+  O1
+  E1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_4|
+  Q1
+  N1
+  N
+  D1
+  P
+  U1
+  D
+  G1
+  W
+  O
+  J
+  V
+  U
+  S1
+  K1
+  R
+  L
+  F1
+  P1
+  H
+  T1
+  C
+  K
+  M1
+  X
+  B
+  I1
+  T
+  Y
+  E
+  B1
+  M
+  C1
+  F
+  G
+  S
+  L1
+  V1
+  A
+  A1
+  H1
+  E1
+  Z
+  R1
+  O1
+  I
+  Q
+  J1)
+        (not (= O 0))
+      )
+      |Assert #18: Main.java, line 31|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_5|
+  S1
+  E
+  C
+  E1
+  W
+  T
+  O1
+  C1
+  R
+  B1
+  A
+  A1
+  G1
+  S
+  P
+  M1
+  L1
+  N
+  U
+  G
+  K1
+  V
+  R1
+  D
+  H1
+  U1
+  H
+  B
+  V1
+  I1
+  P1
+  F
+  F1
+  L
+  N1
+  J1
+  J
+  I
+  Z
+  M
+  O
+  X
+  T1
+  Q
+  D1
+  Y
+  K)
+        (or (and (<= 0 Z) (= Q1 0)) (and (not (<= 0 Z)) (= Q1 1)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_6|
+  S1
+  E
+  C
+  E1
+  W
+  T
+  O1
+  C1
+  R
+  Q1
+  B1
+  A
+  A1
+  G1
+  S
+  P
+  M1
+  L1
+  N
+  U
+  G
+  K1
+  V
+  R1
+  D
+  H1
+  U1
+  H
+  B
+  V1
+  I1
+  P1
+  F
+  F1
+  L
+  N1
+  J1
+  J
+  I
+  Z
+  M
+  O
+  X
+  T1
+  Q
+  D1
+  Y
+  K)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_6|
+  V1
+  I
+  S
+  R
+  N
+  O1
+  H
+  Q
+  O
+  M
+  Y
+  J
+  S1
+  E1
+  M1
+  R1
+  C1
+  K
+  N1
+  G1
+  B
+  B1
+  L
+  F
+  E
+  D1
+  Z
+  U1
+  V
+  T
+  D
+  P1
+  P
+  L1
+  U
+  A
+  A1
+  I1
+  K1
+  T1
+  G
+  J1
+  X
+  Q1
+  F1
+  W
+  H1
+  C)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_7|
+  V1
+  I
+  S
+  R
+  N
+  O1
+  H
+  Q
+  O
+  M
+  Y
+  J
+  S1
+  E1
+  M1
+  R1
+  C1
+  K
+  N1
+  G1
+  B
+  B1
+  L
+  F
+  E
+  D1
+  Z
+  U1
+  V
+  T
+  D
+  P1
+  P
+  L1
+  U
+  A
+  A1
+  I1
+  K1
+  T1
+  G
+  J1
+  X
+  Q1
+  F1
+  W
+  H1
+  C)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_6|
+  E
+  D
+  K
+  U1
+  Y
+  P1
+  T1
+  I
+  V1
+  N1
+  Q
+  Z
+  B
+  U
+  J
+  M1
+  W
+  E1
+  M
+  G1
+  K1
+  F1
+  S1
+  F
+  S
+  R1
+  A
+  X
+  O1
+  O
+  H1
+  V
+  D1
+  I1
+  L
+  H
+  C1
+  C
+  Q1
+  R
+  P
+  T
+  N
+  J1
+  B1
+  G
+  A1
+  L1)
+        (not (= N1 0))
+      )
+      |Assert #19: Main.java, line 31|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_7|
+  D1
+  E1
+  J
+  G
+  N
+  H1
+  V
+  F
+  Q1
+  C
+  S1
+  O1
+  F1
+  A
+  I1
+  K1
+  U
+  L
+  L1
+  P
+  Z
+  R
+  C1
+  P1
+  N1
+  X
+  T
+  H
+  B1
+  O
+  W
+  Y
+  G1
+  V1
+  D
+  B
+  I
+  Q
+  R1
+  J1
+  U1
+  K
+  M1
+  S
+  A1
+  T1
+  M
+  E)
+        true
+      )
+      (|<JayArray_char: char get(int)>_pre| K M1 S A1 J1 U1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_7|
+  Z
+  I
+  K1
+  K
+  Q1
+  Y
+  F1
+  C
+  I1
+  W1
+  P1
+  F
+  S
+  E
+  U
+  G1
+  X1
+  T
+  E1
+  J
+  V
+  G
+  M
+  S1
+  B1
+  X
+  D
+  A2
+  C1
+  H
+  Z1
+  V1
+  N
+  U1
+  L1
+  H1
+  B
+  N1
+  L
+  R1
+  A1
+  R
+  A
+  O
+  O1
+  P
+  T1
+  D1)
+        (|<JayArray_char: char get(int)>_post| R A O O1 R1 A1 W J1 Q M1 Y1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_8|
+  Z
+  I
+  K1
+  K
+  Q1
+  Y
+  F1
+  C
+  I1
+  W1
+  P1
+  F
+  S
+  E
+  U
+  G1
+  X1
+  T
+  E1
+  J
+  V
+  G
+  M
+  S1
+  B1
+  X
+  D
+  A2
+  C1
+  H
+  Z1
+  V1
+  N
+  U1
+  L1
+  H1
+  B
+  M1
+  N1
+  L
+  R1
+  Y1
+  R
+  A
+  O
+  O1
+  P
+  T1
+  D1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_8|
+  F
+  A1
+  H1
+  T
+  O1
+  X
+  I
+  L1
+  H
+  U
+  K
+  E1
+  C1
+  P1
+  C
+  N
+  R1
+  Y
+  K1
+  D1
+  R
+  I1
+  M1
+  Z
+  S
+  V
+  J1
+  W1
+  B
+  E
+  U1
+  L
+  D
+  Q
+  Q1
+  M
+  N1
+  B1
+  A
+  P
+  G1
+  T1
+  J
+  F1
+  W
+  S1
+  O
+  G
+  V1)
+        (not (= O 0))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_9|
+  F
+  A1
+  H1
+  T
+  O1
+  X
+  I
+  L1
+  H
+  U
+  K
+  E1
+  C1
+  P1
+  C
+  N
+  R1
+  Y
+  K1
+  D1
+  R
+  I1
+  M1
+  Z
+  S
+  V
+  J1
+  W1
+  B
+  E
+  U1
+  L
+  D
+  Q
+  Q1
+  M
+  N1
+  B1
+  A
+  P
+  G1
+  T1
+  J
+  F1
+  W
+  S1
+  O
+  G
+  V1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_9|
+  C
+  O
+  Z
+  N
+  A
+  E1
+  P
+  Y
+  I
+  J
+  H
+  M
+  V1
+  N1
+  D1
+  A1
+  U
+  H1
+  V
+  X1
+  B
+  W
+  F
+  M1
+  U1
+  G
+  T1
+  L
+  F1
+  K1
+  T
+  P1
+  Y1
+  R1
+  Q
+  S
+  J1
+  K
+  S1
+  B1
+  W1
+  D
+  L1
+  O1
+  Z1
+  X
+  Q1
+  I1
+  R)
+        (and (= C1 299) (= G1 (- 2)))
+      )
+      (inv_$StaticFields_java.lang.System_116 G1 C1 Y E Q1 I1 R)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_9|
+  Y
+  B1
+  U
+  Q1
+  A1
+  E
+  E1
+  M1
+  U1
+  R1
+  H
+  S
+  D
+  T
+  F1
+  S1
+  P1
+  T1
+  Z
+  O
+  L
+  H1
+  G
+  K
+  W
+  A
+  C
+  W1
+  I1
+  V
+  C1
+  O1
+  G1
+  Q
+  L1
+  V1
+  N1
+  M
+  K1
+  D1
+  J
+  J1
+  X
+  I
+  N
+  R
+  P
+  F
+  B)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_10|
+  Y
+  B1
+  U
+  Q1
+  A1
+  E
+  E1
+  M1
+  U1
+  R1
+  H
+  S
+  D
+  T
+  F1
+  S1
+  P1
+  T1
+  Z
+  O
+  L
+  H1
+  G
+  K
+  W
+  A
+  C
+  W1
+  I1
+  V
+  C1
+  O1
+  G1
+  Q
+  L1
+  V1
+  N1
+  M
+  K1
+  D1
+  J
+  J1
+  X
+  I
+  N
+  R
+  P
+  F
+  B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_10|
+  C2
+  D1
+  P
+  K
+  F
+  V1
+  Y1
+  B1
+  K1
+  H
+  S
+  Z
+  X1
+  R
+  L
+  H1
+  T1
+  Y
+  F1
+  I1
+  N1
+  Z1
+  S1
+  P1
+  A1
+  I
+  Q1
+  Q
+  G
+  D
+  U1
+  W1
+  E1
+  C
+  E
+  C1
+  V
+  X
+  B2
+  J
+  J1
+  W
+  U
+  T
+  N
+  R1
+  B
+  A
+  G1)
+        (inv_$StaticFields_java.lang.System_116 L1 A2 B1 M1 O O1 M)
+        (and (= L1 (- 2)) (= A2 299))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_11|
+  C2
+  D1
+  P
+  K
+  F
+  V1
+  Y1
+  B1
+  K1
+  H
+  S
+  Z
+  X1
+  R
+  L
+  H1
+  T1
+  Y
+  F1
+  I1
+  N1
+  Z1
+  S1
+  P1
+  A1
+  I
+  Q1
+  Q
+  G
+  D
+  U1
+  W1
+  E1
+  C
+  E
+  C1
+  V
+  X
+  B2
+  J
+  J1
+  O
+  O1
+  M
+  W
+  U
+  T
+  N
+  R1
+  B
+  A
+  G1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_11|
+  X1
+  D1
+  E1
+  D
+  W
+  J
+  Q1
+  X
+  L
+  G1
+  A1
+  S1
+  Z1
+  R
+  T
+  P1
+  I1
+  N1
+  O
+  H1
+  K
+  W1
+  C1
+  O1
+  G
+  V1
+  A
+  A2
+  B1
+  U1
+  Y
+  P
+  I
+  M1
+  L1
+  N
+  F
+  K1
+  E
+  V
+  R1
+  Y1
+  U
+  S
+  T1
+  J1
+  M
+  F1
+  Z
+  C
+  B
+  Q)
+        (or (and (= H 1) (= Y1 0)) (and (= H 0) (not (= Y1 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_12|
+  X1
+  D1
+  E1
+  D
+  W
+  J
+  Q1
+  X
+  H
+  L
+  G1
+  A1
+  S1
+  Z1
+  R
+  T
+  P1
+  I1
+  N1
+  O
+  H1
+  K
+  W1
+  C1
+  O1
+  G
+  V1
+  A
+  A2
+  B1
+  U1
+  Y
+  P
+  I
+  M1
+  L1
+  N
+  F
+  K1
+  E
+  V
+  R1
+  Y1
+  U
+  S
+  T1
+  J1
+  M
+  F1
+  Z
+  C
+  B
+  Q)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_12|
+  R1
+  F1
+  P
+  T1
+  X
+  U1
+  Q1
+  K1
+  P1
+  L1
+  C
+  O
+  V1
+  T
+  N1
+  S
+  W
+  D1
+  Y
+  E1
+  L
+  O1
+  Y1
+  A2
+  Z
+  C1
+  I
+  G1
+  W1
+  J
+  H
+  F
+  V
+  B
+  H1
+  E
+  B1
+  S1
+  K
+  Z1
+  M1
+  A
+  N
+  X1
+  G
+  U
+  A1
+  Q
+  M
+  J1
+  D
+  I1
+  R)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_13|
+  R1
+  F1
+  P
+  T1
+  X
+  U1
+  Q1
+  K1
+  P1
+  L1
+  C
+  O
+  V1
+  T
+  N1
+  S
+  W
+  D1
+  Y
+  E1
+  L
+  O1
+  Y1
+  A2
+  Z
+  C1
+  I
+  G1
+  W1
+  J
+  H
+  F
+  V
+  B
+  H1
+  E
+  B1
+  S1
+  K
+  Z1
+  M1
+  A
+  N
+  X1
+  G
+  U
+  A1
+  Q
+  M
+  J1
+  D
+  I1
+  R)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_12|
+  T
+  G
+  N1
+  J1
+  E
+  F1
+  R
+  Y
+  E1
+  S
+  B
+  Z
+  F
+  Z1
+  H
+  Q
+  M
+  A
+  M1
+  T1
+  S1
+  V
+  K
+  C1
+  L1
+  X
+  H1
+  K1
+  B1
+  A2
+  R1
+  Y1
+  W1
+  D
+  I1
+  W
+  C
+  P
+  L
+  Q1
+  G1
+  A1
+  I
+  O
+  D1
+  U
+  V1
+  X1
+  O1
+  P1
+  U1
+  N
+  J)
+        (not (= E1 0))
+      )
+      |Assert #20: Main.java, line 21|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_13|
+  V1
+  N1
+  K1
+  U1
+  X
+  Q
+  E
+  C
+  R1
+  A
+  J1
+  W1
+  R
+  F1
+  A2
+  Z1
+  B1
+  D
+  W
+  A1
+  L
+  Y
+  I1
+  P
+  D1
+  L1
+  T
+  H1
+  S1
+  G1
+  K
+  T1
+  Y1
+  O
+  I
+  Q1
+  Z
+  P1
+  M1
+  X1
+  V
+  E1
+  J
+  H
+  S
+  C1
+  U
+  G
+  N
+  M
+  O1
+  F
+  B)
+        true
+      )
+      (|<java.io.PrintStream: void print(char)>_pre| J H S M1 C1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_13|
+  U
+  J
+  M
+  W1
+  G
+  L1
+  Y1
+  I1
+  B
+  O
+  I
+  P1
+  E2
+  E
+  B2
+  H
+  Q1
+  E1
+  H1
+  T
+  M1
+  B1
+  D1
+  K1
+  U1
+  O1
+  Q
+  S
+  A2
+  T1
+  D2
+  J1
+  Z
+  Y
+  N1
+  X1
+  P
+  D
+  R
+  A
+  C
+  C2
+  X
+  N
+  G1
+  V
+  Z1
+  S1
+  F
+  F1
+  A1
+  R1
+  W)
+        (|<java.io.PrintStream: void print(char)>_post| X N G1 R V V1 L K C1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_14|
+  U
+  J
+  M
+  W1
+  G
+  L1
+  Y1
+  I1
+  B
+  O
+  I
+  P1
+  E2
+  E
+  B2
+  H
+  Q1
+  E1
+  H1
+  T
+  V1
+  L
+  K
+  M1
+  B1
+  D1
+  K1
+  U1
+  O1
+  Q
+  S
+  A2
+  T1
+  D2
+  J1
+  Z
+  Y
+  N1
+  X1
+  P
+  D
+  R
+  A
+  C
+  C2
+  X
+  N
+  G1
+  C1
+  Z1
+  S1
+  F
+  F1
+  A1
+  R1
+  W)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_14|
+  I
+  D1
+  L
+  B2
+  H1
+  P1
+  U1
+  B1
+  M1
+  F
+  D
+  K1
+  V1
+  C1
+  A
+  J
+  R1
+  Q1
+  X1
+  H
+  A2
+  F1
+  Y1
+  D2
+  T1
+  Z1
+  Q
+  E1
+  E2
+  W
+  A1
+  Y
+  P
+  O1
+  T
+  C
+  J1
+  S1
+  Z
+  G1
+  G
+  O
+  X
+  N
+  M
+  R
+  W1
+  N1
+  B
+  L1
+  K
+  C2
+  E
+  U
+  V
+  I1)
+        (or (and (= S 0) (= A2 0)) (and (= S 1) (not (= A2 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_15|
+  I
+  D1
+  L
+  B2
+  H1
+  P1
+  U1
+  B1
+  M1
+  F
+  D
+  K1
+  V1
+  C1
+  A
+  J
+  R1
+  Q1
+  S
+  X1
+  H
+  D2
+  T1
+  Z1
+  Q
+  E1
+  E2
+  W
+  A1
+  Y
+  P
+  O1
+  T
+  C
+  J1
+  S1
+  Z
+  G1
+  G
+  O
+  X
+  N
+  M
+  R
+  W1
+  N1
+  B
+  L1
+  K
+  C2
+  E
+  U
+  V
+  I1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_15|
+  N
+  F1
+  A2
+  M1
+  U
+  K
+  R
+  M
+  E
+  J
+  A1
+  C
+  T
+  Y1
+  K1
+  B
+  W1
+  N1
+  I1
+  S1
+  Y
+  A
+  T1
+  X1
+  X
+  S
+  D
+  L1
+  P
+  D1
+  G
+  R1
+  J1
+  C1
+  Q1
+  I
+  H
+  P1
+  L
+  H1
+  V
+  Q
+  O1
+  U1
+  G1
+  O
+  Z
+  B1
+  W
+  B2
+  F
+  Z1
+  V1
+  E1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_16|
+  N
+  F1
+  A2
+  M1
+  U
+  K
+  R
+  M
+  E
+  J
+  A1
+  C
+  T
+  Y1
+  K1
+  B
+  W1
+  N1
+  I1
+  S1
+  Y
+  A
+  T1
+  X1
+  X
+  S
+  D
+  L1
+  P
+  D1
+  G
+  R1
+  J1
+  C1
+  Q1
+  I
+  H
+  P1
+  L
+  H1
+  V
+  Q
+  O1
+  U1
+  G1
+  O
+  Z
+  B1
+  W
+  B2
+  F
+  Z1
+  V1
+  E1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_15|
+  A1
+  C1
+  B2
+  Q1
+  A2
+  I1
+  J1
+  R1
+  D1
+  R
+  O1
+  H
+  W
+  A
+  W1
+  F
+  L1
+  J
+  Q
+  C
+  K1
+  K
+  N
+  I
+  M
+  P1
+  L
+  V
+  B
+  B1
+  Z1
+  Z
+  O
+  M1
+  X
+  X1
+  Y1
+  S1
+  G
+  D
+  Y
+  U1
+  F1
+  E
+  T1
+  N1
+  V1
+  E1
+  T
+  H1
+  G1
+  U
+  P
+  S)
+        (not (= Q 0))
+      )
+      |Assert #21: Main.java, line 21|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_16|
+  V
+  G2
+  C
+  R
+  S1
+  W1
+  O
+  X1
+  F1
+  J
+  K1
+  G
+  H
+  U1
+  A
+  S
+  D2
+  X
+  A1
+  U
+  F2
+  R1
+  F
+  M
+  Z
+  V1
+  Z1
+  E2
+  E1
+  M1
+  B2
+  A2
+  L
+  H1
+  O1
+  B
+  B1
+  D
+  J1
+  P1
+  Y
+  T1
+  Q
+  G1
+  W
+  C2
+  Y1
+  C1
+  L1
+  K
+  T
+  P
+  Q1
+  N)
+        (|<java.lang.StringBuilder: char charAt(int)>_post| F M Z T1 Y1 E D1 I I1 N1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_17|
+  V
+  G2
+  C
+  R
+  S1
+  W1
+  O
+  X1
+  F1
+  J
+  K1
+  G
+  H
+  U1
+  A
+  S
+  D2
+  X
+  A1
+  U
+  F2
+  I1
+  E
+  D1
+  I
+  R1
+  F
+  M
+  Z
+  V1
+  Z1
+  E2
+  E1
+  M1
+  B2
+  A2
+  L
+  H1
+  O1
+  B
+  B1
+  D
+  J1
+  P1
+  Y
+  T1
+  Q
+  G1
+  W
+  C2
+  N1
+  C1
+  L1
+  K
+  T
+  P
+  Q1
+  N)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_17|
+  B2
+  L
+  T
+  U
+  D1
+  J1
+  S
+  X
+  Q1
+  V
+  W
+  D
+  V1
+  K1
+  H
+  D2
+  Z1
+  A
+  S1
+  M1
+  C
+  P1
+  G
+  L1
+  A2
+  I1
+  E
+  F1
+  Z
+  N
+  O
+  C1
+  T1
+  R1
+  R
+  F
+  P
+  G2
+  C2
+  Y
+  K
+  X1
+  U1
+  J
+  W1
+  O1
+  B1
+  E1
+  B
+  A1
+  H1
+  F2
+  Y1
+  N1
+  Q
+  E2
+  I
+  G1)
+        (or (and (= G 0) (= M 0)) (and (not (= G 0)) (= M 1)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_18|
+  B2
+  L
+  T
+  U
+  D1
+  J1
+  S
+  X
+  Q1
+  V
+  W
+  D
+  V1
+  K1
+  H
+  D2
+  Z1
+  A
+  S1
+  M1
+  M
+  C
+  P1
+  G
+  L1
+  A2
+  I1
+  E
+  F1
+  Z
+  N
+  O
+  C1
+  T1
+  R1
+  R
+  F
+  P
+  G2
+  C2
+  Y
+  K
+  X1
+  U1
+  J
+  W1
+  O1
+  B1
+  E1
+  B
+  A1
+  H1
+  F2
+  Y1
+  N1
+  Q
+  E2
+  I
+  G1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_18|
+  C
+  R1
+  Q
+  K1
+  X
+  Q1
+  E1
+  M1
+  H1
+  L1
+  T
+  T1
+  U
+  W
+  S
+  F2
+  W1
+  N1
+  C1
+  I
+  Y1
+  O1
+  V
+  F1
+  S1
+  I1
+  G
+  V1
+  N
+  K
+  E2
+  B
+  R
+  B1
+  C2
+  U1
+  G1
+  F
+  J
+  M
+  Z1
+  P1
+  L
+  Y
+  J1
+  B2
+  P
+  O
+  D2
+  X1
+  H
+  A1
+  G2
+  A2
+  E
+  D
+  Z
+  D1
+  A)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block8_19|
+  C
+  R1
+  Q
+  K1
+  X
+  Q1
+  E1
+  M1
+  H1
+  L1
+  T
+  T1
+  U
+  W
+  S
+  F2
+  W1
+  N1
+  C1
+  I
+  Y1
+  O1
+  V
+  F1
+  S1
+  I1
+  G
+  V1
+  N
+  K
+  E2
+  B
+  R
+  B1
+  C2
+  U1
+  G1
+  F
+  J
+  M
+  Z1
+  P1
+  L
+  Y
+  J1
+  B2
+  P
+  O
+  D2
+  X1
+  H
+  A1
+  G2
+  A2
+  E
+  D
+  Z
+  D1
+  A)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_18|
+  W
+  S1
+  R1
+  A
+  K1
+  D
+  C1
+  U
+  C
+  D2
+  B1
+  M
+  X1
+  Z
+  B
+  L
+  Y
+  L1
+  H
+  O
+  X
+  P1
+  R
+  F
+  J1
+  Q1
+  Z1
+  K
+  W1
+  N
+  P
+  C2
+  A1
+  T1
+  I
+  B2
+  S
+  H1
+  V
+  I1
+  G
+  G2
+  Y1
+  O1
+  G1
+  Q
+  F2
+  J
+  A2
+  D1
+  E1
+  E2
+  M1
+  N1
+  F1
+  U1
+  T
+  V1
+  E)
+        (not (= X 0))
+      )
+      |Assert #22: Main.java, line 20|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_19|
+  C
+  M
+  B1
+  B
+  I1
+  N1
+  K1
+  W1
+  P1
+  O
+  N
+  A
+  W
+  U1
+  V
+  A2
+  C1
+  S
+  Y
+  O1
+  E1
+  Q
+  Z1
+  Y1
+  E2
+  E
+  I
+  V1
+  F
+  D1
+  R1
+  G
+  D2
+  L
+  H
+  F1
+  K
+  F2
+  H1
+  T
+  G1
+  Q1
+  B2
+  J1
+  X
+  Z
+  T1
+  G2
+  J
+  L1
+  X1
+  A1
+  U
+  P
+  R
+  C2
+  S1
+  D
+  M1)
+        (= X Z1)
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block9|
+  C
+  M
+  B1
+  B
+  I1
+  N1
+  K1
+  W1
+  P1
+  O
+  N
+  A
+  W
+  U1
+  V
+  A2
+  C1
+  S
+  Y
+  O1
+  E1
+  Q
+  Z1
+  Y1
+  E2
+  E
+  I
+  V1
+  F
+  D1
+  R1
+  G
+  D2
+  L
+  H
+  F1
+  K
+  F2
+  H1
+  T
+  G1
+  Q1
+  B2
+  J1
+  X
+  Z
+  T1
+  G2
+  J
+  L1
+  X1
+  A1
+  U
+  P
+  R
+  C2
+  S1
+  D
+  M1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block10_1|
+  F1
+  B
+  G2
+  K
+  I1
+  L
+  Q
+  X
+  P
+  A1
+  N1
+  T1
+  I
+  O
+  J
+  M1
+  E
+  C1
+  U1
+  H
+  A2
+  D
+  V1
+  E2
+  X1
+  F2
+  E1
+  P1
+  A
+  B1
+  N
+  W1
+  U
+  W
+  G1
+  Z1
+  C2
+  Z
+  J1
+  D2
+  S
+  C
+  Y1
+  S1
+  Q1
+  G
+  L1
+  R
+  H1
+  O1
+  F
+  Y
+  M
+  R1
+  D1
+  T
+  V
+  B2
+  K1)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block9|
+  F1
+  B
+  G2
+  K
+  I1
+  L
+  Q
+  X
+  P
+  A1
+  N1
+  T1
+  I
+  O
+  J
+  M1
+  E
+  C1
+  U1
+  H
+  A2
+  D
+  V1
+  E2
+  X1
+  F2
+  E1
+  P1
+  A
+  B1
+  N
+  W1
+  U
+  W
+  G1
+  Z1
+  C2
+  Z
+  J1
+  D2
+  S
+  C
+  Y1
+  S1
+  Q1
+  G
+  L1
+  R
+  H1
+  O1
+  F
+  Y
+  M
+  R1
+  D1
+  T
+  V
+  B2
+  K1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block8_19|
+  N1
+  Y1
+  F1
+  P1
+  U1
+  E1
+  U
+  H
+  S1
+  R1
+  A2
+  O1
+  B
+  Z
+  W
+  Z1
+  L
+  S
+  G1
+  R
+  P
+  L1
+  K1
+  V1
+  G
+  M1
+  H1
+  N
+  F
+  W1
+  Y
+  V
+  T
+  E
+  G2
+  C2
+  K
+  I1
+  Q1
+  D1
+  J
+  B1
+  J1
+  M
+  E2
+  D2
+  D
+  Q
+  C
+  A1
+  T1
+  F2
+  C1
+  O
+  A
+  X
+  B2
+  X1
+  I)
+        (not (= E2 K1))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block10|
+  N1
+  Y1
+  F1
+  P1
+  U1
+  E1
+  U
+  H
+  S1
+  R1
+  A2
+  O1
+  B
+  Z
+  W
+  Z1
+  L
+  S
+  G1
+  R
+  P
+  L1
+  K1
+  V1
+  G
+  M1
+  H1
+  N
+  F
+  W1
+  Y
+  V
+  T
+  E
+  G2
+  C2
+  K
+  I1
+  Q1
+  D1
+  J
+  B1
+  J1
+  M
+  E2
+  D2
+  D
+  Q
+  C
+  A1
+  T1
+  F2
+  C1
+  O
+  A
+  X
+  B2
+  X1
+  I)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11|
+  V
+  C
+  U
+  R
+  D
+  I
+  N
+  F
+  X
+  K
+  O
+  B
+  M
+  A
+  W
+  G
+  H
+  T
+  Q
+  P
+  J
+  E
+  L
+  S)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_pre| M A W S)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11|
+  C
+  E1
+  Y
+  S
+  W
+  P
+  D1
+  R
+  J
+  A
+  E
+  V
+  L
+  A1
+  C1
+  U
+  M
+  B
+  O
+  Q
+  X
+  B1
+  D
+  K)
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_post|
+  L
+  A1
+  C1
+  K
+  G
+  H
+  Z
+  N
+  F
+  I
+  T)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_1|
+  C
+  E1
+  Y
+  S
+  W
+  G
+  H
+  Z
+  L
+  A1
+  C1
+  O
+  Q
+  X
+  T)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_1|
+  K
+  O
+  I
+  B
+  F
+  N
+  P
+  D
+  G
+  M
+  L
+  J
+  A
+  C
+  H)
+        (or (and (= E 0) (= N 0)) (and (= E 1) (not (= N 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_2|
+  K
+  O
+  I
+  B
+  F
+  E
+  G
+  M
+  L
+  J
+  A
+  C
+  H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_2|
+  J
+  A
+  M
+  E
+  C
+  D
+  F
+  L
+  B
+  I
+  H
+  G
+  K)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_3|
+  J
+  A
+  M
+  E
+  C
+  F
+  L
+  B
+  I
+  H
+  G
+  K)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_2|
+  E
+  F
+  C
+  A
+  B
+  L
+  M
+  G
+  H
+  K
+  J
+  D
+  I)
+        (not (= L 0))
+      )
+      |Assert #23: Main.java, line 30|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_3|
+  D
+  S
+  A
+  I
+  E
+  R
+  L
+  O
+  K
+  J
+  B
+  N)
+        (|<java.lang.StringBuilder: java.lang.String toString()>_post|
+  R
+  L
+  O
+  N
+  C
+  M
+  Q
+  G
+  H
+  P
+  F)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_4|
+  D
+  S
+  A
+  I
+  E
+  C
+  M
+  Q
+  G
+  H
+  P
+  K
+  J
+  B
+  F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_4|
+  G
+  J
+  N
+  C
+  B
+  L
+  F
+  I
+  E
+  K
+  H
+  O
+  D
+  P
+  A)
+        (or (and (= L 0) (= M 0)) (and (not (= L 0)) (= M 1)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_5|
+  G
+  J
+  N
+  C
+  B
+  M
+  E
+  K
+  H
+  O
+  D
+  P
+  A)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_5|
+  G
+  C
+  K
+  A
+  F
+  E
+  D
+  I
+  J
+  B
+  H
+  M
+  L)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_6|
+  G
+  C
+  K
+  A
+  F
+  D
+  I
+  J
+  B
+  H
+  M
+  L)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_5|
+  E
+  J
+  F
+  K
+  B
+  M
+  L
+  I
+  D
+  C
+  A
+  G
+  H)
+        (not (= M 0))
+      )
+      |Assert #24: Main.java, line 32|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_6|
+  J
+  C
+  M
+  L
+  K
+  E
+  H
+  I
+  G
+  F
+  A
+  B)
+        (or (and (= D 1) (= E 0)) (and (= D 0) (not (= E 0))))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_7|
+  J
+  C
+  M
+  L
+  K
+  D
+  E
+  H
+  I
+  G
+  F
+  A
+  B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_7|
+  G
+  D
+  K
+  A
+  M
+  B
+  E
+  L
+  I
+  J
+  H
+  C
+  F)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_8|
+  G
+  D
+  K
+  A
+  M
+  E
+  L
+  I
+  J
+  H
+  C
+  F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_7|
+  E
+  C
+  L
+  M
+  A
+  F
+  K
+  B
+  D
+  J
+  I
+  G
+  H)
+        (not (= F 0))
+      )
+      |Assert #25: Main.java, line 32|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_8|
+  O
+  C
+  D
+  M
+  N
+  E
+  J
+  S
+  R
+  F
+  P
+  B)
+        (|<java.lang.String: boolean equals(java.lang.Object)>_post|
+  E
+  J
+  S
+  L
+  G
+  P
+  B
+  H
+  I
+  K
+  A
+  Q)
+        (and (= G 3) (= L (- 4)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_9| O C D M N H I K A Q)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_9| D K A F I J B C E G)
+        (or (and (= H 1) (not (= J 0))) (and (= H 0) (= J 0)))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_10|
+  D
+  K
+  A
+  F
+  I
+  H
+  J
+  B
+  C
+  E
+  G)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_10|
+  F
+  A
+  B
+  J
+  H
+  D
+  G
+  I
+  K
+  E
+  C)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block11_11| F A B J H G I K E C)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_10|
+  C
+  G
+  H
+  B
+  J
+  K
+  D
+  E
+  F
+  A
+  I)
+        (not (= K 0))
+      )
+      |Assert #26: Main.java, line 32|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block11_11| H D J C G I B F A E)
+        (not (= A 0))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block14| H D J C G I B F A E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block12|
+  I
+  R
+  Q
+  H
+  E
+  L
+  D
+  O
+  V
+  A
+  K
+  G
+  X
+  W
+  U
+  M
+  T
+  C
+  J
+  P
+  S
+  F
+  B
+  N)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block12_1|
+  I
+  R
+  Q
+  H
+  E
+  L
+  D
+  O
+  V
+  A
+  K
+  G
+  X
+  W
+  U
+  M
+  T
+  C
+  J
+  P
+  S
+  F
+  B
+  N)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block12|
+  T
+  V
+  Q
+  X
+  S
+  H
+  W
+  G
+  P
+  A
+  R
+  K
+  E
+  F
+  C
+  B
+  L
+  D
+  M
+  I
+  U
+  N
+  O
+  J)
+        true
+      )
+      |Assert #27: Main.java, line 28|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block9|
+  E1
+  D1
+  H
+  M1
+  I
+  L1
+  C2
+  R
+  Q1
+  P
+  X
+  T1
+  Y1
+  W
+  V1
+  U1
+  Z
+  N
+  C
+  F
+  R1
+  S1
+  B2
+  E
+  B
+  Q
+  A1
+  Y
+  A2
+  G
+  L
+  O
+  E2
+  P1
+  C1
+  K
+  N1
+  J1
+  D2
+  B1
+  V
+  T
+  D
+  U
+  W1
+  I1
+  A
+  G1
+  H1
+  S
+  F2
+  H2
+  G2
+  M
+  F1
+  J
+  K1
+  Z1
+  O1)
+        (= X1 (+ 1 A))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block9_1|
+  E1
+  D1
+  H
+  M1
+  I
+  L1
+  C2
+  R
+  Q1
+  P
+  X
+  T1
+  Y1
+  W
+  V1
+  U1
+  Z
+  N
+  C
+  F
+  R1
+  S1
+  B2
+  E
+  B
+  Q
+  A1
+  Y
+  A2
+  G
+  L
+  O
+  E2
+  P1
+  C1
+  K
+  N1
+  J1
+  D2
+  B1
+  V
+  T
+  D
+  U
+  W1
+  I1
+  X1
+  G1
+  H1
+  S
+  F2
+  H2
+  G2
+  M
+  F1
+  J
+  K1
+  Z1
+  O1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block9_1|
+  Z1
+  M1
+  Q1
+  W1
+  V
+  U
+  B1
+  I1
+  B2
+  E
+  V1
+  J
+  L
+  R1
+  C1
+  H
+  S1
+  O
+  F
+  D
+  C
+  G
+  Y
+  Y1
+  I
+  K1
+  W
+  A
+  N
+  G2
+  J1
+  Q
+  E2
+  F1
+  D1
+  X1
+  A1
+  L1
+  M
+  D2
+  U1
+  G1
+  C2
+  H2
+  A2
+  H1
+  P
+  S
+  E1
+  P1
+  N1
+  O1
+  T
+  K
+  T1
+  F2
+  Z
+  B
+  X)
+        (= R (+ 1 S))
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block9_2|
+  Z1
+  M1
+  Q1
+  W1
+  V
+  U
+  B1
+  I1
+  B2
+  E
+  V1
+  J
+  L
+  R1
+  C1
+  H
+  S1
+  O
+  F
+  D
+  C
+  G
+  Y
+  Y1
+  I
+  K1
+  W
+  A
+  N
+  G2
+  J1
+  Q
+  E2
+  F1
+  D1
+  X1
+  A1
+  L1
+  M
+  D2
+  U1
+  G1
+  C2
+  H2
+  A2
+  H1
+  P
+  R
+  E1
+  P1
+  N1
+  O1
+  T
+  K
+  T1
+  F2
+  Z
+  B
+  X)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block10|
+  X1
+  Z
+  F1
+  S
+  D2
+  P
+  O1
+  M
+  E
+  C1
+  Q
+  E1
+  H
+  F
+  J1
+  I
+  U
+  V
+  Y
+  A1
+  C
+  P1
+  L1
+  B1
+  T
+  S1
+  L
+  O
+  W1
+  K1
+  I1
+  A2
+  A
+  D1
+  R
+  V1
+  G
+  K
+  H1
+  N
+  Y1
+  Z1
+  G2
+  R1
+  G1
+  X
+  J
+  N1
+  D
+  U1
+  Q1
+  F2
+  W
+  B2
+  B
+  E2
+  M1
+  T1
+  C2)
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_Block10_1|
+  X1
+  Z
+  F1
+  S
+  D2
+  P
+  O1
+  M
+  E
+  C1
+  Q
+  E1
+  H
+  F
+  J1
+  I
+  U
+  V
+  Y
+  A1
+  C
+  P1
+  L1
+  B1
+  T
+  S1
+  L
+  O
+  W1
+  K1
+  I1
+  A2
+  A
+  D1
+  R
+  V1
+  G
+  K
+  H1
+  N
+  Y1
+  Z1
+  G2
+  R1
+  G1
+  X
+  J
+  N1
+  D
+  U1
+  Q1
+  F2
+  W
+  B2
+  B
+  E2
+  M1
+  T1
+  C2)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block10|
+  L
+  I
+  T1
+  Z
+  W1
+  S1
+  U1
+  B1
+  S
+  F
+  E
+  F2
+  R
+  N1
+  Q
+  A1
+  Y1
+  B
+  V
+  K
+  Z1
+  Y
+  J
+  C1
+  M
+  X
+  G
+  D
+  N
+  G2
+  H1
+  E2
+  O
+  V1
+  Q1
+  K1
+  A
+  B2
+  I1
+  F1
+  P1
+  M1
+  C
+  D1
+  E1
+  R1
+  U
+  T
+  O1
+  G1
+  W
+  P
+  L1
+  C2
+  J1
+  A2
+  H
+  D2
+  X1)
+        true
+      )
+      |Assert #28: Main.java, line 22|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) ) 
+    (=>
+      (and
+        (|<Main: void main(JayArray_java_lang_String)>_Block14| E B J C G F H A D I)
+        true
+      )
+      |Assert #29: Main.java, line 31|
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (v_12 Int) (v_13 Int) (v_14 Int) (v_15 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void <init>(java.lang.String)>_pre| L B C K I F D)
+        (and (= v_12 L) (= v_13 B) (= v_14 C) (= v_15 D))
+      )
+      (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0|
+  L
+  B
+  C
+  K
+  I
+  F
+  D
+  v_12
+  v_13
+  v_14
+  v_15
+  A
+  J
+  H
+  E
+  G)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (v_12 Int) (v_13 Int) (v_14 Int) (v_15 Int) (v_16 Int) (v_17 Int) (v_18 Int) (v_19 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0|
+  L
+  I
+  B
+  K
+  A
+  H
+  F
+  v_12
+  v_13
+  v_14
+  v_15
+  E
+  J
+  G
+  D
+  C)
+        (and (= v_12 L)
+     (= v_13 I)
+     (= v_14 B)
+     (= v_15 F)
+     (= v_16 L)
+     (= v_17 I)
+     (= v_18 B)
+     (= v_19 F))
+      )
+      (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_1|
+  L
+  I
+  B
+  K
+  A
+  H
+  F
+  v_16
+  v_17
+  v_18
+  v_19
+  E
+  J
+  G
+  D
+  C)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (v_16 Int) (v_17 Int) (v_18 Int) (v_19 Int) (v_20 Int) (v_21 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_1|
+  E
+  N
+  A
+  G
+  O
+  L
+  K
+  v_16
+  v_17
+  v_18
+  P
+  F
+  J
+  M
+  H
+  C)
+        (and (= v_16 E)
+     (= v_17 N)
+     (= v_18 A)
+     (= D 0)
+     (= B 0)
+     (= I 0)
+     (= v_19 E)
+     (= v_20 N)
+     (= v_21 A))
+      )
+      (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_2|
+  E
+  N
+  A
+  G
+  O
+  L
+  K
+  v_19
+  v_20
+  v_21
+  B
+  I
+  D
+  P
+  F
+  J
+  M
+  H
+  C)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (v_16 Int) (v_17 Int) (v_18 Int) (v_19 Int) (v_20 Int) (v_21 Int) (v_22 Int) (v_23 Int) (v_24 Int) (v_25 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_2|
+  B
+  C
+  F
+  J
+  D
+  O
+  I
+  v_16
+  v_17
+  v_18
+  H
+  M
+  L
+  P
+  G
+  N
+  E
+  K
+  A)
+        (and (= v_16 B)
+     (= v_17 C)
+     (= v_18 F)
+     (= v_19 B)
+     (= v_20 C)
+     (= v_21 F)
+     (= v_22 G)
+     (= v_23 N)
+     (= v_24 E)
+     (= v_25 K))
+      )
+      (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_3|
+  B
+  C
+  F
+  J
+  D
+  O
+  I
+  v_19
+  v_20
+  v_21
+  G
+  N
+  E
+  K
+  H
+  M
+  L
+  P
+  v_22
+  v_23
+  v_24
+  v_25
+  A)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (v_20 Int) (v_21 Int) (v_22 Int) (v_23 Int) (v_24 Int) (v_25 Int) (v_26 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_3|
+  D
+  R
+  T
+  F
+  B
+  C
+  I
+  v_20
+  v_21
+  v_22
+  K
+  M
+  E
+  Q
+  A
+  L
+  N
+  H
+  J
+  G
+  P
+  O
+  S)
+        (and (= v_20 D)
+     (= v_21 R)
+     (= v_22 T)
+     (= v_23 D)
+     (= v_24 R)
+     (= v_25 T)
+     (= v_26 S))
+      )
+      (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_4|
+  D
+  R
+  T
+  F
+  B
+  C
+  I
+  v_23
+  v_24
+  v_25
+  K
+  M
+  E
+  Q
+  S
+  A
+  L
+  N
+  H
+  J
+  G
+  P
+  O
+  v_26)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (v_21 Int) (v_22 Int) (v_23 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_4|
+  U
+  I
+  K
+  T
+  L
+  Q
+  N
+  v_21
+  v_22
+  v_23
+  S
+  J
+  C
+  E
+  D
+  G
+  F
+  A
+  B
+  H
+  M
+  R
+  O
+  P)
+        (and (= v_21 U) (= v_22 I) (= v_23 K))
+      )
+      (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_5|
+  U
+  I
+  K
+  T
+  L
+  Q
+  N
+  S
+  J
+  C
+  E
+  D
+  G
+  F
+  A
+  B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void <init>(java.lang.String)>_Block0_5|
+  L
+  P
+  C
+  J
+  G
+  M
+  I
+  F
+  K
+  D
+  O
+  E
+  N
+  B
+  H
+  A)
+        true
+      )
+      (|<java.lang.StringBuilder: void <init>(java.lang.String)>_post|
+  L
+  P
+  C
+  J
+  G
+  M
+  I
+  N
+  B
+  H
+  F
+  K
+  D
+  O
+  E
+  A)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (v_12 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_pre| E G K F)
+        (= v_12 F)
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block0|
+  E
+  G
+  K
+  F
+  J
+  D
+  I
+  v_12
+  H
+  C
+  B
+  L
+  A)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (v_12 Int) (v_13 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block0|
+  C
+  L
+  B
+  H
+  E
+  G
+  A
+  v_12
+  K
+  I
+  J
+  F
+  D)
+        (and (= v_12 H) (= v_13 H))
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block0_1|
+  C
+  L
+  B
+  H
+  E
+  G
+  A
+  v_13
+  K
+  I
+  J
+  F
+  D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block0_1|
+  N
+  G
+  F
+  K
+  C
+  I
+  O
+  A
+  L
+  B
+  H
+  M
+  J)
+        (and (= E 0) (= D 0) (= P 0))
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block0_2|
+  N
+  G
+  F
+  K
+  C
+  I
+  O
+  E
+  D
+  P
+  A
+  L
+  B
+  H
+  M
+  J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block0_2|
+  H
+  K
+  L
+  B
+  C
+  J
+  E
+  I
+  N
+  A
+  P
+  D
+  F
+  O
+  M
+  G)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block1|
+  H
+  K
+  L
+  B
+  I
+  N
+  A
+  P)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block0_2|
+  H
+  J
+  P
+  G
+  K
+  I
+  B
+  A
+  D
+  E
+  N
+  C
+  F
+  O
+  M
+  L)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block2|
+  H
+  J
+  P
+  G
+  K
+  I
+  B
+  A
+  D
+  E
+  N
+  C
+  F
+  O
+  M
+  L)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block1|
+  B
+  C
+  D
+  A
+  G
+  J
+  H
+  F)
+        (and (= I 0) (= E 0) (= K 0))
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block1_1|
+  B
+  C
+  D
+  A
+  E
+  K
+  I
+  G
+  J
+  H
+  F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block1_1|
+  H
+  A
+  D
+  B
+  G
+  F
+  I
+  C
+  J
+  K
+  E)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block3|
+  H
+  A
+  D
+  B
+  G
+  F
+  I
+  C
+  J
+  K
+  E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block2_3|
+  D
+  K
+  H
+  J
+  C
+  I
+  E
+  A
+  F
+  G
+  B)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block3|
+  D
+  K
+  H
+  J
+  C
+  I
+  E
+  A
+  F
+  G
+  B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block2|
+  L
+  C
+  N
+  E
+  Q
+  B
+  J
+  F
+  A
+  I
+  K
+  D
+  P
+  M
+  O
+  H)
+        (= G (+ 1 K))
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block2_1|
+  L
+  C
+  N
+  E
+  F
+  A
+  I
+  G
+  D
+  P
+  M
+  O
+  H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (v_15 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block2_1|
+  I
+  E
+  N
+  G
+  L
+  D
+  K
+  J
+  B
+  M
+  C
+  H
+  A)
+        (and (= F 3298) (= O 3) (= v_15 J))
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block2_2|
+  I
+  E
+  N
+  G
+  J
+  O
+  F
+  L
+  D
+  K
+  v_15
+  B
+  M
+  C
+  H
+  A)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block2_2|
+  I
+  F
+  J
+  M
+  H
+  B
+  E
+  D
+  L
+  A
+  P
+  N
+  C
+  G
+  O
+  K)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_Block2_3|
+  I
+  F
+  J
+  M
+  H
+  B
+  E
+  D
+  L
+  A
+  P)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.String toString()>_Block3|
+  K
+  D
+  J
+  A
+  C
+  I
+  H
+  G
+  F
+  B
+  E)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.String toString()>_post|
+  K
+  D
+  J
+  A
+  G
+  F
+  B
+  C
+  I
+  H
+  E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (v_8 Int) ) 
+    (=>
+      (and
+        (|<java.lang.String: boolean equals(java.lang.Object)>_pre| D C G B E A F)
+        (= v_8 F)
+      )
+      (|<java.lang.String: boolean equals(java.lang.Object)>_Block0|
+  D
+  C
+  G
+  B
+  E
+  A
+  F
+  H
+  v_8)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (v_8 Int) (v_9 Int) ) 
+    (=>
+      (and
+        (|<java.lang.String: boolean equals(java.lang.Object)>_Block0|
+  G
+  B
+  D
+  H
+  E
+  F
+  C
+  A
+  v_8)
+        (and (= v_8 C) (= v_9 C))
+      )
+      (|<java.lang.String: boolean equals(java.lang.Object)>_Block0_1|
+  G
+  B
+  D
+  H
+  E
+  F
+  C
+  A
+  v_9)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) ) 
+    (=>
+      (and
+        (|<java.lang.String: boolean equals(java.lang.Object)>_Block0_1|
+  K
+  I
+  C
+  J
+  B
+  E
+  A
+  G
+  H)
+        (and (= F 0) (= D 0) (= L 0))
+      )
+      (|<java.lang.String: boolean equals(java.lang.Object)>_Block0_2|
+  K
+  I
+  C
+  J
+  B
+  E
+  A
+  G
+  L
+  F
+  D
+  H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) ) 
+    (=>
+      (and
+        (|<java.lang.String: boolean equals(java.lang.Object)>_Block0_2|
+  D
+  J
+  E
+  C
+  L
+  H
+  I
+  A
+  K
+  G
+  B
+  F)
+        true
+      )
+      (|<java.lang.String: boolean equals(java.lang.Object)>_post|
+  D
+  J
+  E
+  C
+  L
+  H
+  I
+  K
+  G
+  B
+  A
+  F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (v_6 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: char charAt(int)>_pre| E A C B F)
+        (= v_6 F)
+      )
+      (|<java.lang.StringBuilder: char charAt(int)>_Block0| E A C B F D v_6)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (v_6 Int) (v_7 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: char charAt(int)>_Block0| F D E B C A v_6)
+        (and (= v_6 C) (= v_7 C))
+      )
+      (|<java.lang.StringBuilder: char charAt(int)>_Block0_1| F D E B C A v_7)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: char charAt(int)>_Block0_1| D H F A I G B)
+        (and (= E 0) (= C 0) (= J 0))
+      )
+      (|<java.lang.StringBuilder: char charAt(int)>_Block0_2| D H F A I G C J E B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: char charAt(int)>_Block0_2| G E F H A D I J B C)
+        true
+      )
+      (|<java.lang.StringBuilder: char charAt(int)>_post| G E F H A I J B D C)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (v_5 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: int length()>_pre| D C B A)
+        (= v_5 A)
+      )
+      (|<java.lang.StringBuilder: int length()>_Block0| D C B A E v_5)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (v_5 Int) (v_6 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: int length()>_Block0| A B D C E v_5)
+        (and (= v_5 C) (= v_6 C))
+      )
+      (|<java.lang.StringBuilder: int length()>_Block0_1| A B D C E v_6)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: int length()>_Block0_1| C H B E D G)
+        (and (= F 0) (= A 0) (= I 0))
+      )
+      (|<java.lang.StringBuilder: int length()>_Block0_2| C H B E D A F I G)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: int length()>_Block0_2| G F A E D C B H I)
+        true
+      )
+      (|<java.lang.StringBuilder: int length()>_post| G F A E C B H D I)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (v_7 Int) (v_8 Int) (v_9 Int) (v_10 Int) (v_11 Int) (v_12 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: void <init>(int)>_pre| C B A G D F)
+        (and (= v_7 C) (= v_8 B) (= v_9 A) (= v_10 G) (= v_11 D) (= v_12 F))
+      )
+      (|<JayArray_char: void <init>(int)>_Block1|
+  C
+  B
+  A
+  G
+  D
+  F
+  v_7
+  v_8
+  v_9
+  v_10
+  v_11
+  E
+  v_12)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (v_7 Int) (v_8 Int) (v_9 Int) (v_10 Int) (v_11 Int) (v_12 Int) (v_13 Int) (v_14 Int) (v_15 Int) (v_16 Int) (v_17 Int) (v_18 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: void <init>(int)>_Block1|
+  D
+  E
+  C
+  G
+  F
+  B
+  v_7
+  v_8
+  v_9
+  v_10
+  v_11
+  A
+  v_12)
+        (and (= v_7 D)
+     (= v_8 E)
+     (= v_9 C)
+     (= v_10 G)
+     (= v_11 F)
+     (= v_12 B)
+     (= v_13 D)
+     (= v_14 E)
+     (= v_15 C)
+     (= v_16 G)
+     (= v_17 F)
+     (= v_18 B))
+      )
+      (|<JayArray_char: void <init>(int)>_Block1_1|
+  D
+  E
+  C
+  G
+  F
+  B
+  v_13
+  v_14
+  v_15
+  v_16
+  v_17
+  A
+  v_18)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (v_11 Int) (v_12 Int) (v_13 Int) (v_14 Int) (v_15 Int) (v_16 Int) (v_17 Int) (v_18 Int) (v_19 Int) (v_20 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: void <init>(int)>_Block1_1|
+  F
+  A
+  K
+  G
+  J
+  D
+  v_11
+  v_12
+  v_13
+  v_14
+  v_15
+  I
+  E)
+        (and (= v_11 F)
+     (= v_12 A)
+     (= v_13 K)
+     (= v_14 G)
+     (= v_15 J)
+     (= C 0)
+     (= B 0)
+     (= H 0)
+     (= v_16 F)
+     (= v_17 A)
+     (= v_18 K)
+     (= v_19 G)
+     (= v_20 J))
+      )
+      (|<JayArray_char: void <init>(int)>_Block1_2|
+  F
+  A
+  K
+  G
+  J
+  D
+  C
+  H
+  B
+  v_16
+  v_17
+  v_18
+  v_19
+  v_20
+  I
+  E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (v_11 Int) (v_12 Int) (v_13 Int) (v_14 Int) (v_15 Int) (v_16 Int) (v_17 Int) (v_18 Int) (v_19 Int) (v_20 Int) (v_21 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: void <init>(int)>_Block1_2|
+  I
+  H
+  C
+  D
+  E
+  G
+  K
+  J
+  F
+  v_11
+  v_12
+  v_13
+  v_14
+  v_15
+  A
+  B)
+        (and (= v_11 I)
+     (= v_12 H)
+     (= v_13 C)
+     (= v_14 D)
+     (= v_15 E)
+     (= v_16 E)
+     (= v_17 I)
+     (= v_18 H)
+     (= v_19 C)
+     (= v_20 D)
+     (= v_21 E))
+      )
+      (|<JayArray_char: void <init>(int)>_Block1_3|
+  I
+  H
+  C
+  D
+  E
+  G
+  v_16
+  K
+  J
+  F
+  v_17
+  v_18
+  v_19
+  v_20
+  v_21
+  A
+  B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (v_13 Int) (v_14 Int) (v_15 Int) (v_16 Int) (v_17 Int) (v_18 Int) (v_19 Int) (v_20 Int) (v_21 Int) (v_22 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: void <init>(int)>_Block1_3|
+  E
+  L
+  H
+  G
+  K
+  J
+  B
+  I
+  M
+  A
+  v_13
+  v_14
+  v_15
+  v_16
+  v_17
+  C
+  D)
+        (and (= v_13 E)
+     (= v_14 L)
+     (= v_15 H)
+     (= v_16 G)
+     (= v_17 K)
+     (= F 304)
+     (= v_18 E)
+     (= v_19 L)
+     (= v_20 H)
+     (= v_21 G)
+     (= v_22 K))
+      )
+      (|<JayArray_char: void <init>(int)>_Block1_4|
+  E
+  L
+  H
+  G
+  K
+  J
+  B
+  F
+  I
+  M
+  A
+  v_18
+  v_19
+  v_20
+  v_21
+  v_22
+  C
+  D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (v_14 Int) (v_15 Int) (v_16 Int) (v_17 Int) (v_18 Int) (v_19 Int) (v_20 Int) (v_21 Int) (v_22 Int) (v_23 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: void <init>(int)>_Block1_4|
+  H
+  E
+  D
+  J
+  M
+  A
+  G
+  L
+  B
+  C
+  K
+  v_14
+  v_15
+  v_16
+  v_17
+  v_18
+  I
+  F)
+        (and (= v_14 H)
+     (= v_15 E)
+     (= v_16 D)
+     (= v_17 J)
+     (= v_18 M)
+     (= N 0)
+     (= v_19 H)
+     (= v_20 E)
+     (= v_21 D)
+     (= v_22 J)
+     (= v_23 M))
+      )
+      (|<JayArray_char: void <init>(int)>_Block1_5|
+  H
+  E
+  D
+  J
+  M
+  A
+  G
+  L
+  N
+  B
+  C
+  K
+  v_19
+  v_20
+  v_21
+  v_22
+  v_23
+  I
+  F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (v_18 Int) (v_19 Int) (v_20 Int) (v_21 Int) (v_22 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: void <init>(int)>_Block1_5|
+  L
+  P
+  E
+  D
+  B
+  K
+  M
+  J
+  I
+  R
+  A
+  H
+  v_18
+  v_19
+  v_20
+  v_21
+  v_22
+  G
+  C)
+        (and (= v_18 L) (= v_19 P) (= v_20 E) (= v_21 D) (= v_22 B) (= F 304) (= O 0))
+      )
+      (inv_JayArray_char_11 L P E D Q N B F O)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (v_14 Int) (v_15 Int) (v_16 Int) (v_17 Int) (v_18 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: void <init>(int)>_Block1_5|
+  I
+  B
+  M
+  H
+  D
+  N
+  C
+  F
+  G
+  K
+  A
+  L
+  v_14
+  v_15
+  v_16
+  v_17
+  v_18
+  J
+  E)
+        (and (= v_14 I) (= v_15 B) (= v_16 M) (= v_17 H) (= v_18 D))
+      )
+      (|<JayArray_char: void <init>(int)>_Block1_6| I B M H D N C F G K A L E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: void <init>(int)>_Block1_6| J A D L M H K C E G B F I)
+        true
+      )
+      (|<JayArray_char: void <init>(int)>_Block0| J A D L M H K C E G B F I)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: void <init>(int)>_Block0| C D B G H A M K J I E L F)
+        true
+      )
+      (|<JayArray_char: void <init>(int)>_post| C D B G H A I E L M K J F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (v_11 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_pre|
+  D
+  F
+  H
+  C
+  A
+  J
+  G
+  I
+  E
+  B
+  K)
+        (= v_11 K)
+      )
+      (|<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_Block0|
+  D
+  F
+  H
+  C
+  A
+  J
+  G
+  I
+  E
+  B
+  K
+  v_11)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (v_11 Int) (v_12 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_Block0|
+  H
+  J
+  I
+  D
+  G
+  E
+  F
+  K
+  C
+  A
+  B
+  v_11)
+        (and (= v_11 B) (= v_12 B))
+      )
+      (|<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_Block0_1|
+  H
+  J
+  I
+  D
+  G
+  E
+  F
+  K
+  C
+  A
+  B
+  v_12)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_Block0_1|
+  M
+  K
+  N
+  F
+  D
+  E
+  H
+  J
+  G
+  C
+  O
+  I)
+        (and (= B 0) (= A 0) (= L 0))
+      )
+      (|<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_Block0_2|
+  M
+  K
+  N
+  F
+  D
+  E
+  H
+  J
+  G
+  C
+  O
+  L
+  B
+  A
+  I)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_Block0_2|
+  A
+  G
+  L
+  J
+  C
+  M
+  I
+  N
+  O
+  B
+  H
+  F
+  E
+  D
+  K)
+        true
+      )
+      (|<java.lang.StringBuilder: void getChars(int,int,JayArray_char,int)>_post|
+  A
+  G
+  L
+  J
+  C
+  M
+  I
+  N
+  O
+  B
+  H
+  F
+  E
+  D
+  K)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (v_7 Int) (v_8 Int) (v_9 Int) (v_10 Int) (v_11 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: char get(int)>_pre| B F A E C G)
+        (and (= v_7 B) (= v_8 F) (= v_9 A) (= v_10 E) (= v_11 G))
+      )
+      (|<JayArray_char: char get(int)>_Block1| B F A E C G v_7 v_8 v_9 v_10 v_11 D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (v_7 Int) (v_8 Int) (v_9 Int) (v_10 Int) (v_11 Int) (v_12 Int) (v_13 Int) (v_14 Int) (v_15 Int) (v_16 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: char get(int)>_Block1| B A G C D F v_7 v_8 v_9 v_10 v_11 E)
+        (and (= v_7 B)
+     (= v_8 A)
+     (= v_9 G)
+     (= v_10 C)
+     (= v_11 F)
+     (= v_12 B)
+     (= v_13 A)
+     (= v_14 G)
+     (= v_15 C)
+     (= v_16 F))
+      )
+      (|<JayArray_char: char get(int)>_Block1_1| B A G C D F v_12 v_13 v_14 v_15 v_16)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (v_11 Int) (v_12 Int) (v_13 Int) (v_14 Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: char get(int)>_Block1_1| A F K G I J v_11 v_12 v_13 v_14 B)
+        (inv_JayArray_char_11 A F K G H I E D C)
+        (and (= v_11 A) (= v_12 F) (= v_13 K) (= v_14 G))
+      )
+      (|<JayArray_char: char get(int)>_Block1_2| A F K G I J B C)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: char get(int)>_Block1_2| I H K J A G D F)
+        (and (= C 0) (= B 0) (= E 0))
+      )
+      (|<JayArray_char: char get(int)>_Block1_3| I H K J A G B C E D F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: char get(int)>_Block1_3| G D F I H K B E A J C)
+        true
+      )
+      (|<JayArray_char: char get(int)>_Block1_4| G D F I H K B E A C J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: char get(int)>_Block1_4| E H K F J G D B C I A)
+        true
+      )
+      (|<JayArray_char: char get(int)>_Block0| E H K F J G D B C I A)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<JayArray_char: char get(int)>_Block0| I A B C E G J D H F K)
+        true
+      )
+      (|<JayArray_char: char get(int)>_post| I A B C E G J D H F K)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (v_5 Int) ) 
+    (=>
+      (and
+        (|<java.io.PrintStream: void print(char)>_pre| D B C E A)
+        (= v_5 A)
+      )
+      (|<java.io.PrintStream: void print(char)>_Block0| D B C E A v_5)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (v_5 Int) (v_6 Int) ) 
+    (=>
+      (and
+        (|<java.io.PrintStream: void print(char)>_Block0| C B A E D v_5)
+        (and (= v_5 D) (= v_6 D))
+      )
+      (|<java.io.PrintStream: void print(char)>_Block0_1| C B A E D v_6)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) ) 
+    (=>
+      (and
+        (|<java.io.PrintStream: void print(char)>_Block0_1| A F E H D G)
+        (and (= C 0) (= B 0) (= I 0))
+      )
+      (|<java.io.PrintStream: void print(char)>_Block0_2| A F E H D B I C G)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) ) 
+    (=>
+      (and
+        (|<java.io.PrintStream: void print(char)>_Block0_2| C F D A H I B G E)
+        true
+      )
+      (|<java.io.PrintStream: void print(char)>_post| C F D A H I B G E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (v_6 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void setCharAt(int,char)>_pre| F D C E A B)
+        (= v_6 B)
+      )
+      (|<java.lang.StringBuilder: void setCharAt(int,char)>_Block0| F D C E A B v_6)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (v_6 Int) (v_7 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void setCharAt(int,char)>_Block0| D F A E B C v_6)
+        (and (= v_6 C) (= v_7 C))
+      )
+      (|<java.lang.StringBuilder: void setCharAt(int,char)>_Block0_1| D F A E B C v_7)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void setCharAt(int,char)>_Block0_1| D E J F B H A)
+        (and (= G 0) (= C 0) (= I 0))
+      )
+      (|<java.lang.StringBuilder: void setCharAt(int,char)>_Block0_2|
+  D
+  E
+  J
+  F
+  B
+  H
+  C
+  G
+  I
+  A)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: void setCharAt(int,char)>_Block0_2|
+  D
+  J
+  G
+  I
+  H
+  C
+  F
+  B
+  A
+  E)
+        true
+      )
+      (|<java.lang.StringBuilder: void setCharAt(int,char)>_post| D J G I H C F B A E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (v_12 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_pre| B L J E)
+        (= v_12 E)
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block0|
+  B
+  L
+  J
+  E
+  H
+  D
+  K
+  v_12
+  A
+  C
+  I
+  G
+  F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (v_12 Int) (v_13 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block0|
+  I
+  F
+  J
+  C
+  G
+  E
+  K
+  v_12
+  D
+  B
+  H
+  A
+  L)
+        (and (= v_12 C) (= v_13 C))
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block0_1|
+  I
+  F
+  J
+  C
+  G
+  E
+  K
+  v_13
+  D
+  B
+  H
+  A
+  L)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block0_1|
+  F
+  N
+  O
+  H
+  G
+  L
+  C
+  M
+  B
+  A
+  E
+  K
+  P)
+        (and (= I 0) (= D 0) (= J 0))
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block0_2|
+  F
+  N
+  O
+  H
+  G
+  L
+  C
+  I
+  J
+  D
+  M
+  B
+  A
+  E
+  K
+  P)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block0_2|
+  E
+  H
+  M
+  G
+  P
+  C
+  D
+  J
+  A
+  K
+  O
+  L
+  N
+  I
+  B
+  F)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block1|
+  E
+  H
+  M
+  G
+  J
+  A
+  K
+  O)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block0_2|
+  N
+  E
+  J
+  B
+  P
+  F
+  I
+  M
+  L
+  C
+  K
+  G
+  D
+  O
+  A
+  H)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2|
+  N
+  E
+  J
+  B
+  P
+  F
+  I
+  M
+  L
+  C
+  K
+  G
+  D
+  O
+  A
+  H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block1|
+  G
+  C
+  K
+  D
+  E
+  B
+  I
+  H)
+        (and (= F 0) (= A 0) (= J 0))
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block1_1|
+  G
+  C
+  K
+  D
+  J
+  F
+  A
+  E
+  B
+  I
+  H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block1_1|
+  C
+  K
+  D
+  J
+  A
+  F
+  B
+  E
+  I
+  H
+  G)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block3|
+  C
+  K
+  D
+  J
+  A
+  F
+  B
+  E
+  I
+  H
+  G)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2_3|
+  C
+  H
+  A
+  E
+  I
+  B
+  F
+  D
+  K
+  J
+  G)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block3|
+  C
+  H
+  A
+  E
+  I
+  B
+  F
+  D
+  K
+  J
+  G)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2|
+  Q
+  L
+  G
+  F
+  E
+  N
+  A
+  H
+  K
+  B
+  D
+  C
+  O
+  M
+  J
+  P)
+        (= I (+ 1 D))
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2_1|
+  Q
+  L
+  G
+  F
+  H
+  K
+  B
+  I
+  C
+  O
+  M
+  J
+  P)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (v_15 Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2_1|
+  L
+  B
+  J
+  M
+  K
+  D
+  F
+  A
+  H
+  C
+  N
+  O
+  I)
+        (and (= E 3601) (= G 265) (= v_15 A))
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2_2|
+  L
+  B
+  J
+  M
+  A
+  G
+  E
+  K
+  D
+  F
+  v_15
+  H
+  C
+  N
+  O
+  I)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2_2|
+  M
+  G
+  D
+  A
+  J
+  I
+  K
+  H
+  C
+  L
+  E
+  F
+  P
+  O
+  B
+  N)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block2_3|
+  M
+  G
+  D
+  A
+  J
+  I
+  K
+  H
+  C
+  L
+  E)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) ) 
+    (=>
+      (and
+        (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_Block3|
+  A
+  E
+  K
+  D
+  F
+  G
+  B
+  C
+  H
+  I
+  J)
+        true
+      )
+      (|<java.lang.StringBuilder: java.lang.StringBuilder reverse()>_post|
+  A
+  E
+  K
+  D
+  C
+  H
+  I
+  F
+  G
+  B
+  J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) ) 
+    (=>
+      (and
+        true
+      )
+      (|<Main: void main(JayArray_java_lang_String)>_pre| C A D E B)
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #0: Main.java, line 11|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #1: Main.java, line 20|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #2: Main.java, line 20|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #3: Main.java, line 20|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #4: Main.java, line 20|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #5: Main.java, line 20|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #6: Main.java, line 13|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #7: Main.java, line 16|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #8: Main.java, line 16|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #9: Main.java, line 17|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #10: Main.java, line 17|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #11: Main.java, line 14|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #12: Main.java, line 26|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #13: Main.java, line 27|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #14: Main.java, line 32|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #15: Main.java, line 32|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #16: Main.java, line 32|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #17: Main.java, line 31|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #18: Main.java, line 31|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #19: Main.java, line 31|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #20: Main.java, line 21|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #21: Main.java, line 21|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #22: Main.java, line 20|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #23: Main.java, line 30|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #24: Main.java, line 32|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #25: Main.java, line 32|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #26: Main.java, line 32|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #27: Main.java, line 28|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #28: Main.java, line 22|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        |Assert #29: Main.java, line 31|
+        true
+      )
+      CHC_COMP_FALSE
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        CHC_COMP_FALSE
+      )
+      false
+    )
+  )
+)
+
+(check-sat)
+(exit)

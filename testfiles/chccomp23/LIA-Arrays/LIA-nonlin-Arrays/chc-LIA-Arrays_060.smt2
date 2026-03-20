@@ -1,0 +1,19660 @@
+; ./prepared/synth/semgus/./nonfusedArray.CLIA_Track_IF__fg_max5__1_000.smt2
+(set-logic HORN)
+
+
+(declare-fun |funcNT5__syn| ( (Array Int Int) Int (Array Int Int) Int ) Bool)
+(declare-fun |funcNT4__syn| ( (Array Int Int) Int (Array Int Int) Int ) Bool)
+(declare-fun |funcNT2__sem| ( (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool ) Bool)
+(declare-fun |funcNT4__sem| ( (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int (Array Int Int) Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |funcNT1__sem| ( (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int (Array Int Int) Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |funcNT7__sem| ( (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int (Array Int Int) Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |funcNT6__sem| ( (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool ) Bool)
+(declare-fun |funcNT7__syn| ( (Array Int Int) Int (Array Int Int) Int ) Bool)
+(declare-fun |funcNT5__sem| ( (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool ) Bool)
+(declare-fun |funcNT3__syn| ( (Array Int Int) Int (Array Int Int) Int ) Bool)
+(declare-fun |realizable| ( ) Bool)
+(declare-fun |funcNT6__syn| ( (Array Int Int) Int (Array Int Int) Int ) Bool)
+(declare-fun |funcNT1__syn| ( (Array Int Int) Int (Array Int Int) Int ) Bool)
+(declare-fun |funcStart__sem| ( (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int (Array Int Int) Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |funcmainStart__syn| ( (Array Int Int) Int (Array Int Int) Int ) Bool)
+(declare-fun |funcStart__syn| ( (Array Int Int) Int (Array Int Int) Int ) Bool)
+(declare-fun |funcNT2__syn| ( (Array Int Int) Int (Array Int Int) Int ) Bool)
+(declare-fun |funcNT3__sem| ( (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int (Array Int Int) Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+(declare-fun |funcmainStart__sem| ( (Array Int Int) Int Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Bool Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int (Array Int Int) Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool)
+
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) ) 
+    (=>
+      (and
+        (funcStart__syn B A E F)
+        (and (= B (store C D 0)) (= A (+ 1 D)))
+      )
+      (funcmainStart__syn C D E F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) (I (Array Int Int)) (J Int) ) 
+    (=>
+      (and
+        (funcNT1__syn E F I J)
+        (funcNT2__syn B A C D)
+        (funcNT1__syn C D E F)
+        (and (= B (store G H 36)) (= A (+ 1 H)))
+      )
+      (funcNT3__syn G H I J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT3__syn B A C D)
+        (and (= B (store E F 35)) (= A (+ 1 F)))
+      )
+      (funcNT3__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT3__syn C D G H)
+        (funcNT3__syn B A C D)
+        (and (= B (store E F 40)) (= A (+ 1 F)))
+      )
+      (funcNT4__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) (I (Array Int Int)) (J Int) ) 
+    (=>
+      (and
+        (funcNT1__syn E F I J)
+        (funcNT2__syn B A C D)
+        (funcNT3__syn C D E F)
+        (and (= B (store G H 39)) (= A (+ 1 H)))
+      )
+      (funcNT4__syn G H I J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT4__syn B A C D)
+        (and (= B (store E F 41)) (= A (+ 1 F)))
+      )
+      (funcNT4__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) (I (Array Int Int)) (J Int) ) 
+    (=>
+      (and
+        (funcNT1__syn E F I J)
+        (funcNT5__syn B A C D)
+        (funcNT1__syn C D E F)
+        (and (= B (store G H 38)) (= A (+ 1 H)))
+      )
+      (funcNT4__syn G H I J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) (I (Array Int Int)) (J Int) ) 
+    (=>
+      (and
+        (funcNT1__syn E F I J)
+        (funcNT2__syn B A C D)
+        (funcNT1__syn C D E F)
+        (and (= B (store G H 11)) (= A (+ 1 H)))
+      )
+      (funcStart__syn G H I J)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 5) C) (= B (+ (- 1) D)))
+      )
+      (funcStart__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 18) C) (= B (+ (- 1) D)))
+      )
+      (funcStart__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 3) C) (= B (+ (- 1) D)))
+      )
+      (funcStart__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 12) C) (= B (+ (- 1) D)))
+      )
+      (funcStart__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT7__syn B A C D)
+        (and (= B (store E F 7)) (= A (+ 1 F)))
+      )
+      (funcStart__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT3__syn C D G H)
+        (funcNT3__syn B A C D)
+        (and (= B (store E F 19)) (= A (+ 1 F)))
+      )
+      (funcStart__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) (I (Array Int Int)) (J Int) ) 
+    (=>
+      (and
+        (funcNT1__syn E F I J)
+        (funcNT2__syn B A C D)
+        (funcNT4__syn C D E F)
+        (and (= B (store G H 15)) (= A (+ 1 H)))
+      )
+      (funcStart__syn G H I J)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 17) C) (= B (+ (- 1) D)))
+      )
+      (funcStart__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT4__syn B A C D)
+        (and (= B (store E F 9)) (= A (+ 1 F)))
+      )
+      (funcStart__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 13) C) (= B (+ (- 1) D)))
+      )
+      (funcStart__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT1__syn B A C D)
+        (and (= B (store E F 8)) (= A (+ 1 F)))
+      )
+      (funcStart__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 14) C) (= B (+ (- 1) D)))
+      )
+      (funcStart__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT3__syn B A C D)
+        (and (= B (store E F 16)) (= A (+ 1 F)))
+      )
+      (funcStart__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) (I (Array Int Int)) (J Int) ) 
+    (=>
+      (and
+        (funcNT1__syn E F I J)
+        (funcNT5__syn B A C D)
+        (funcNT1__syn C D E F)
+        (and (= B (store G H 6)) (= A (+ 1 H)))
+      )
+      (funcStart__syn G H I J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) (I (Array Int Int)) (J Int) ) 
+    (=>
+      (and
+        (funcNT1__syn E F I J)
+        (funcNT2__syn B A C D)
+        (funcNT3__syn C D E F)
+        (and (= B (store G H 4)) (= A (+ 1 H)))
+      )
+      (funcStart__syn G H I J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) (I (Array Int Int)) (J Int) ) 
+    (=>
+      (and
+        (funcNT1__syn E F I J)
+        (funcNT6__syn B A C D)
+        (funcNT1__syn C D E F)
+        (and (= B (store G H 10)) (= A (+ 1 H)))
+      )
+      (funcStart__syn G H I J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT1__syn B A C D)
+        (and (= B (store E F 33)) (= A (+ 1 F)))
+      )
+      (funcNT2__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT2__syn C D G H)
+        (funcNT2__syn B A C D)
+        (and (= B (store E F 30)) (= A (+ 1 F)))
+      )
+      (funcNT2__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) ) 
+    (=>
+      (and
+        (funcNT2__syn B A E F)
+        (and (= B (store C D 32)) (= A (+ 1 D)))
+      )
+      (funcNT2__syn C D E F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT2__syn C D G H)
+        (funcNT2__syn B A C D)
+        (and (= B (store E F 31)) (= A (+ 1 F)))
+      )
+      (funcNT2__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT5__syn C D G H)
+        (funcNT5__syn B A C D)
+        (and (= B (store E F 51)) (= A (+ 1 F)))
+      )
+      (funcNT6__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT4__syn B A C D)
+        (and (= B (store E F 50)) (= A (+ 1 F)))
+      )
+      (funcNT6__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) ) 
+    (=>
+      (and
+        (funcNT6__syn B A E F)
+        (and (= B (store C D 53)) (= A (+ 1 D)))
+      )
+      (funcNT6__syn C D E F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT2__syn C D G H)
+        (funcNT6__syn B A C D)
+        (and (= B (store E F 52)) (= A (+ 1 F)))
+      )
+      (funcNT6__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT5__syn C D G H)
+        (funcNT5__syn B A C D)
+        (and (= B (store E F 54)) (= A (+ 1 F)))
+      )
+      (funcNT6__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT2__syn C D G H)
+        (funcNT6__syn B A C D)
+        (and (= B (store E F 48)) (= A (+ 1 F)))
+      )
+      (funcNT6__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT3__syn C D G H)
+        (funcNT3__syn B A C D)
+        (and (= B (store E F 49)) (= A (+ 1 F)))
+      )
+      (funcNT6__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) (I (Array Int Int)) (J Int) ) 
+    (=>
+      (and
+        (funcNT1__syn E F I J)
+        (funcNT2__syn B A C D)
+        (funcNT4__syn C D E F)
+        (and (= B (store G H 58)) (= A (+ 1 H)))
+      )
+      (funcNT7__syn G H I J)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT7__syn B A C D)
+        (and (= B (store E F 56)) (= A (+ 1 F)))
+      )
+      (funcNT7__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) (I (Array Int Int)) (J Int) ) 
+    (=>
+      (and
+        (funcNT1__syn E F I J)
+        (funcNT6__syn B A C D)
+        (funcNT1__syn C D E F)
+        (and (= B (store G H 57)) (= A (+ 1 H)))
+      )
+      (funcNT7__syn G H I J)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 26) C) (= B (+ (- 1) D)))
+      )
+      (funcNT1__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT1__syn B A C D)
+        (and (= B (store E F 24)) (= A (+ 1 F)))
+      )
+      (funcNT1__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 28) C) (= B (+ (- 1) D)))
+      )
+      (funcNT1__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 25) C) (= B (+ (- 1) D)))
+      )
+      (funcNT1__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 21) C) (= B (+ (- 1) D)))
+      )
+      (funcNT1__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 23) C) (= B (+ (- 1) D)))
+      )
+      (funcNT1__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 27) C) (= B (+ (- 1) D)))
+      )
+      (funcNT1__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D Int) ) 
+    (=>
+      (and
+        (and (= (store A B 22) C) (= B (+ (- 1) D)))
+      )
+      (funcNT1__syn A B C D)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) ) 
+    (=>
+      (and
+        (funcNT5__syn B A E F)
+        (and (= B (store C D 45)) (= A (+ 1 D)))
+      )
+      (funcNT5__syn C D E F)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT2__syn C D G H)
+        (funcNT5__syn B A C D)
+        (and (= B (store E F 44)) (= A (+ 1 F)))
+      )
+      (funcNT5__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT2__syn C D G H)
+        (funcNT5__syn B A C D)
+        (and (= B (store E F 43)) (= A (+ 1 F)))
+      )
+      (funcNT5__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B (Array Int Int)) (C (Array Int Int)) (D Int) (E (Array Int Int)) (F Int) (G (Array Int Int)) (H Int) ) 
+    (=>
+      (and
+        (funcNT1__syn C D G H)
+        (funcNT3__syn B A C D)
+        (and (= B (store E F 46)) (= A (+ 1 F)))
+      )
+      (funcNT5__syn E F G H)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Bool) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Bool) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Bool) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Bool) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Bool) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Bool) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Bool) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Bool) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Bool) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Bool) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Bool) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Bool) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Bool) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Bool) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Bool) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (v_149 Int) (v_150 Int) (v_151 Int) (v_152 Int) (v_153 Int) (v_154 Int) (v_155 Int) (v_156 Int) (v_157 Int) (v_158 Int) (v_159 Int) (v_160 Int) (v_161 Int) (v_162 Int) (v_163 Int) (v_164 Int) (v_165 Int) (v_166 Int) (v_167 Int) (v_168 Int) (v_169 Int) (v_170 Int) (v_171 Int) (v_172 Int) (v_173 Int) (v_174 Int) (v_175 Int) (v_176 Int) (v_177 Int) (v_178 Int) (v_179 Int) (v_180 Int) (v_181 Int) (v_182 Int) (v_183 Int) (v_184 Int) (v_185 Int) (v_186 Int) (v_187 Int) (v_188 Int) (v_189 Int) (v_190 Int) (v_191 Int) (v_192 Int) (v_193 Int) (v_194 Int) (v_195 Int) (v_196 Int) (v_197 Int) (v_198 Int) (v_199 Int) (v_200 Int) (v_201 Int) (v_202 Int) (v_203 Int) (v_204 Int) (v_205 Int) (v_206 Int) (v_207 Int) (v_208 Int) (v_209 Int) (v_210 Int) (v_211 Int) (v_212 Int) (v_213 Int) (v_214 Int) (v_215 Int) (v_216 Int) (v_217 Int) (v_218 Int) (v_219 Int) (v_220 Int) (v_221 Int) (v_222 Int) (v_223 Int) (v_224 Int) (v_225 Int) (v_226 Int) (v_227 Int) (v_228 Int) ) 
+    (=>
+      (and
+        (funcStart__sem R
+                A
+                V
+                D1
+                L1
+                T1
+                B2
+                J2
+                R2
+                Z2
+                H3
+                P3
+                X3
+                F4
+                N4
+                V4
+                D5
+                L5
+                X
+                Y
+                Z
+                A1
+                B1
+                C1
+                F1
+                G1
+                H1
+                I1
+                J1
+                K1
+                N1
+                O1
+                P1
+                Q1
+                R1
+                S1
+                V1
+                W1
+                X1
+                Y1
+                Z1
+                A2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                F5
+                G5
+                H5
+                I5
+                J5
+                K5
+                N5
+                O5
+                P5
+                Q5
+                R5
+                S5
+                T
+                U
+                W
+                E1
+                M1
+                U1
+                C2
+                K2
+                S2
+                A3
+                I3
+                Q3
+                Y3
+                G4
+                O4
+                W4
+                E5
+                M5)
+        (and (= D (ite V4 W4 X4))
+     (= E (ite N4 O4 P4))
+     (= F (ite F4 G4 H4))
+     (= G (ite X3 Y3 Z3))
+     (= H (ite P3 Q3 R3))
+     (= I (ite H3 I3 J3))
+     (= J (ite Z2 A3 B3))
+     (= K (ite R2 S2 T2))
+     (= L (ite J2 K2 L2))
+     (= M (ite B2 C2 D2))
+     (= N (ite T1 U1 V1))
+     (= O (ite L1 M1 N1))
+     (= P (ite D1 E1 F1))
+     (= Q (ite V W X))
+     (= A (+ 1 S))
+     (= C (ite D5 E5 F5))
+     (= B (ite L5 M5 N5))
+     (= 0 (select R S))
+     (= v_149 Y)
+     (= v_150 Z)
+     (= v_151 A1)
+     (= v_152 B1)
+     (= v_153 C1)
+     (= v_154 G1)
+     (= v_155 H1)
+     (= v_156 I1)
+     (= v_157 J1)
+     (= v_158 K1)
+     (= v_159 O1)
+     (= v_160 P1)
+     (= v_161 Q1)
+     (= v_162 R1)
+     (= v_163 S1)
+     (= v_164 W1)
+     (= v_165 X1)
+     (= v_166 Y1)
+     (= v_167 Z1)
+     (= v_168 A2)
+     (= v_169 E2)
+     (= v_170 F2)
+     (= v_171 G2)
+     (= v_172 H2)
+     (= v_173 I2)
+     (= v_174 M2)
+     (= v_175 N2)
+     (= v_176 O2)
+     (= v_177 P2)
+     (= v_178 Q2)
+     (= v_179 U2)
+     (= v_180 V2)
+     (= v_181 W2)
+     (= v_182 X2)
+     (= v_183 Y2)
+     (= v_184 C3)
+     (= v_185 D3)
+     (= v_186 E3)
+     (= v_187 F3)
+     (= v_188 G3)
+     (= v_189 K3)
+     (= v_190 L3)
+     (= v_191 M3)
+     (= v_192 N3)
+     (= v_193 O3)
+     (= v_194 S3)
+     (= v_195 T3)
+     (= v_196 U3)
+     (= v_197 V3)
+     (= v_198 W3)
+     (= v_199 A4)
+     (= v_200 B4)
+     (= v_201 C4)
+     (= v_202 D4)
+     (= v_203 E4)
+     (= v_204 I4)
+     (= v_205 J4)
+     (= v_206 K4)
+     (= v_207 L4)
+     (= v_208 M4)
+     (= v_209 Q4)
+     (= v_210 R4)
+     (= v_211 S4)
+     (= v_212 T4)
+     (= v_213 U4)
+     (= v_214 Y4)
+     (= v_215 Z4)
+     (= v_216 A5)
+     (= v_217 B5)
+     (= v_218 C5)
+     (= v_219 G5)
+     (= v_220 H5)
+     (= v_221 I5)
+     (= v_222 J5)
+     (= v_223 K5)
+     (= v_224 O5)
+     (= v_225 P5)
+     (= v_226 Q5)
+     (= v_227 R5)
+     (= v_228 S5))
+      )
+      (funcmainStart__sem
+  R
+  S
+  V
+  D1
+  L1
+  T1
+  B2
+  J2
+  R2
+  Z2
+  H3
+  P3
+  X3
+  F4
+  N4
+  V4
+  D5
+  L5
+  X
+  Y
+  Z
+  A1
+  B1
+  C1
+  F1
+  G1
+  H1
+  I1
+  J1
+  K1
+  N1
+  O1
+  P1
+  Q1
+  R1
+  S1
+  V1
+  W1
+  X1
+  Y1
+  Z1
+  A2
+  D2
+  E2
+  F2
+  G2
+  H2
+  I2
+  L2
+  M2
+  N2
+  O2
+  P2
+  Q2
+  T2
+  U2
+  V2
+  W2
+  X2
+  Y2
+  B3
+  C3
+  D3
+  E3
+  F3
+  G3
+  J3
+  K3
+  L3
+  M3
+  N3
+  O3
+  R3
+  S3
+  T3
+  U3
+  V3
+  W3
+  Z3
+  A4
+  B4
+  C4
+  D4
+  E4
+  H4
+  I4
+  J4
+  K4
+  L4
+  M4
+  P4
+  Q4
+  R4
+  S4
+  T4
+  U4
+  X4
+  Y4
+  Z4
+  A5
+  B5
+  C5
+  F5
+  G5
+  H5
+  I5
+  J5
+  K5
+  N5
+  O5
+  P5
+  Q5
+  R5
+  S5
+  T
+  U
+  Q
+  v_149
+  v_150
+  v_151
+  v_152
+  v_153
+  P
+  v_154
+  v_155
+  v_156
+  v_157
+  v_158
+  O
+  v_159
+  v_160
+  v_161
+  v_162
+  v_163
+  N
+  v_164
+  v_165
+  v_166
+  v_167
+  v_168
+  M
+  v_169
+  v_170
+  v_171
+  v_172
+  v_173
+  L
+  v_174
+  v_175
+  v_176
+  v_177
+  v_178
+  K
+  v_179
+  v_180
+  v_181
+  v_182
+  v_183
+  J
+  v_184
+  v_185
+  v_186
+  v_187
+  v_188
+  I
+  v_189
+  v_190
+  v_191
+  v_192
+  v_193
+  H
+  v_194
+  v_195
+  v_196
+  v_197
+  v_198
+  G
+  v_199
+  v_200
+  v_201
+  v_202
+  v_203
+  F
+  v_204
+  v_205
+  v_206
+  v_207
+  v_208
+  E
+  v_209
+  v_210
+  v_211
+  v_212
+  v_213
+  D
+  v_214
+  v_215
+  v_216
+  v_217
+  v_218
+  C
+  v_219
+  v_220
+  v_221
+  v_222
+  v_223
+  B
+  v_224
+  v_225
+  v_226
+  v_227
+  v_228)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Bool) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 (Array Int Int)) (Y1 Int) (Z1 (Array Int Int)) (A2 Int) (B2 (Array Int Int)) (C2 Int) (D2 Bool) (E2 Bool) (F2 Bool) (G2 Bool) (H2 Bool) (I2 Bool) (J2 Bool) (K2 Bool) (L2 Bool) (M2 Bool) (N2 Bool) (O2 Bool) (P2 Bool) (Q2 Bool) (R2 Bool) (S2 Bool) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Int) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) (L6 (Array Int Int)) (M6 Int) (N6 Bool) (O6 Int) (P6 Int) (Q6 Bool) (R6 Int) (S6 Int) (T6 Bool) (U6 Int) (V6 Int) (W6 Bool) (X6 Int) (Y6 Int) (Z6 Bool) (A7 Int) (B7 Int) (C7 Bool) (D7 Int) (E7 Int) (F7 Bool) (G7 Int) (H7 Int) (I7 Bool) (J7 Int) (K7 Int) (L7 Bool) (M7 Int) (N7 Int) (O7 Bool) (P7 Int) (Q7 Int) (R7 Bool) (S7 Int) (T7 Int) (U7 Bool) (V7 Int) (W7 Int) (X7 Bool) (Y7 Int) (Z7 Int) (A8 Bool) (B8 Int) (C8 Int) (D8 Bool) (E8 Int) (F8 Int) (G8 Bool) (H8 Int) (I8 Int) ) 
+    (=>
+      (and
+        (funcNT1__sem X1
+              Y1
+              G1
+              F1
+              E1
+              D1
+              C1
+              B1
+              A1
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              Z1
+              A2
+              O6
+              R6
+              U6
+              X6
+              A7
+              D7
+              G7
+              J7
+              M7
+              P7
+              S7
+              V7
+              Y7
+              B8
+              E8
+              H8)
+        (funcNT1__sem Z1
+              A2
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              P6
+              S6
+              V6
+              Y6
+              B7
+              E7
+              H7
+              K7
+              N7
+              Q7
+              T7
+              W7
+              Z7
+              C8
+              F8
+              I8)
+        (funcNT2__sem B2
+              A
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              X1
+              Y1
+              N6
+              Q6
+              T6
+              W6
+              Z6
+              C7
+              F7
+              I7
+              L7
+              O7
+              R7
+              U7
+              X7
+              A8
+              D8
+              G8)
+        (and (= W1 (ite N6 O6 P6))
+     (= V1 (ite Q6 R6 S6))
+     (= U1 (ite T6 U6 V6))
+     (= T1 (ite W6 X6 Y6))
+     (= S1 (ite Z6 A7 B7))
+     (= R1 (ite C7 D7 E7))
+     (= Q1 (ite F7 G7 H7))
+     (= P1 (ite I7 J7 K7))
+     (= O1 (ite L7 M7 N7))
+     (= N1 (ite O7 P7 Q7))
+     (= M1 (ite R7 S7 T7))
+     (= L1 (ite U7 V7 W7))
+     (= K1 (ite X7 Y7 Z7))
+     (= J1 (ite A8 B8 C8))
+     (= I1 (ite D8 E8 F8))
+     (= H1 (ite G8 H8 I8))
+     (= A (+ 1 C2))
+     (= G1 (and N6 D2))
+     (= F1 (and Q6 E2))
+     (= E1 (and T6 F2))
+     (= D1 (and W6 G2))
+     (= C1 (and Z6 H2))
+     (= B1 (and C7 I2))
+     (= A1 (and F7 J2))
+     (= Z (and I7 K2))
+     (= Y (and L7 L2))
+     (= X (and O7 M2))
+     (= W (and R7 N2))
+     (= V (and U7 O2))
+     (= U (and X7 P2))
+     (= T (and A8 Q2))
+     (= S (and D8 R2))
+     (= R (and G8 S2))
+     (= Q (and (not N6) D2))
+     (= P (and (not Q6) E2))
+     (= O (and (not T6) F2))
+     (= N (and (not W6) G2))
+     (= M (and (not Z6) H2))
+     (= L (and (not C7) I2))
+     (= K (and (not F7) J2))
+     (= J (and (not I7) K2))
+     (= I (and (not L7) L2))
+     (= H (and (not O7) M2))
+     (= G (and (not R7) N2))
+     (= F (and (not U7) O2))
+     (= E (and (not X7) P2))
+     (= D (and (not A8) Q2))
+     (= C (and (not D8) R2))
+     (= B (and (not G8) S2))
+     (= 36 (select B2 C2)))
+      )
+      (funcNT3__sem B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              W1
+              V1
+              U1
+              T1
+              S1
+              R1
+              Q1
+              P1
+              O1
+              N1
+              M1
+              L1
+              K1
+              J1
+              I1
+              H1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT3__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= C (+ H6 I6))
+     (= E (+ D6 E6))
+     (= Q (+ F5 G5))
+     (= P (+ H5 I5))
+     (= O (+ J5 K5))
+     (= N (+ L5 M5))
+     (= M (+ N5 O5))
+     (= L (+ P5 Q5))
+     (= K (+ R5 S5))
+     (= J (+ T5 U5))
+     (= I (+ V5 W5))
+     (= H (+ X5 Y5))
+     (= G (+ Z5 A6))
+     (= F (+ B6 C6))
+     (= D (+ F6 G6))
+     (= B (+ J6 K6))
+     (= 35 (select T U)))
+      )
+      (funcNT3__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT3__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT3__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= C (+ H6 I6))
+     (= E (+ D6 E6))
+     (= Q (+ F5 G5))
+     (= P (+ H5 I5))
+     (= O (+ J5 K5))
+     (= N (+ L5 M5))
+     (= M (+ N5 O5))
+     (= L (+ P5 Q5))
+     (= K (+ R5 S5))
+     (= J (+ T5 U5))
+     (= I (+ V5 W5))
+     (= H (+ X5 Y5))
+     (= G (+ Z5 A6))
+     (= F (+ B6 C6))
+     (= D (+ F6 G6))
+     (= B (+ J6 K6))
+     (= 40 (select T U)))
+      )
+      (funcNT4__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Bool) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 (Array Int Int)) (Y1 Int) (Z1 (Array Int Int)) (A2 Int) (B2 (Array Int Int)) (C2 Int) (D2 Bool) (E2 Bool) (F2 Bool) (G2 Bool) (H2 Bool) (I2 Bool) (J2 Bool) (K2 Bool) (L2 Bool) (M2 Bool) (N2 Bool) (O2 Bool) (P2 Bool) (Q2 Bool) (R2 Bool) (S2 Bool) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Int) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) (L6 (Array Int Int)) (M6 Int) (N6 Bool) (O6 Int) (P6 Int) (Q6 Bool) (R6 Int) (S6 Int) (T6 Bool) (U6 Int) (V6 Int) (W6 Bool) (X6 Int) (Y6 Int) (Z6 Bool) (A7 Int) (B7 Int) (C7 Bool) (D7 Int) (E7 Int) (F7 Bool) (G7 Int) (H7 Int) (I7 Bool) (J7 Int) (K7 Int) (L7 Bool) (M7 Int) (N7 Int) (O7 Bool) (P7 Int) (Q7 Int) (R7 Bool) (S7 Int) (T7 Int) (U7 Bool) (V7 Int) (W7 Int) (X7 Bool) (Y7 Int) (Z7 Int) (A8 Bool) (B8 Int) (C8 Int) (D8 Bool) (E8 Int) (F8 Int) (G8 Bool) (H8 Int) (I8 Int) ) 
+    (=>
+      (and
+        (funcNT3__sem X1
+              Y1
+              G1
+              F1
+              E1
+              D1
+              C1
+              B1
+              A1
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              Z1
+              A2
+              O6
+              R6
+              U6
+              X6
+              A7
+              D7
+              G7
+              J7
+              M7
+              P7
+              S7
+              V7
+              Y7
+              B8
+              E8
+              H8)
+        (funcNT1__sem Z1
+              A2
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              P6
+              S6
+              V6
+              Y6
+              B7
+              E7
+              H7
+              K7
+              N7
+              Q7
+              T7
+              W7
+              Z7
+              C8
+              F8
+              I8)
+        (funcNT2__sem B2
+              A
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              X1
+              Y1
+              N6
+              Q6
+              T6
+              W6
+              Z6
+              C7
+              F7
+              I7
+              L7
+              O7
+              R7
+              U7
+              X7
+              A8
+              D8
+              G8)
+        (and (= W1 (ite N6 O6 P6))
+     (= V1 (ite Q6 R6 S6))
+     (= U1 (ite T6 U6 V6))
+     (= T1 (ite W6 X6 Y6))
+     (= S1 (ite Z6 A7 B7))
+     (= R1 (ite C7 D7 E7))
+     (= Q1 (ite F7 G7 H7))
+     (= P1 (ite I7 J7 K7))
+     (= O1 (ite L7 M7 N7))
+     (= N1 (ite O7 P7 Q7))
+     (= M1 (ite R7 S7 T7))
+     (= L1 (ite U7 V7 W7))
+     (= K1 (ite X7 Y7 Z7))
+     (= J1 (ite A8 B8 C8))
+     (= I1 (ite D8 E8 F8))
+     (= H1 (ite G8 H8 I8))
+     (= A (+ 1 C2))
+     (= G1 (and N6 D2))
+     (= F1 (and Q6 E2))
+     (= E1 (and T6 F2))
+     (= D1 (and W6 G2))
+     (= C1 (and Z6 H2))
+     (= B1 (and C7 I2))
+     (= A1 (and F7 J2))
+     (= Z (and I7 K2))
+     (= Y (and L7 L2))
+     (= X (and O7 M2))
+     (= W (and R7 N2))
+     (= V (and U7 O2))
+     (= U (and X7 P2))
+     (= T (and A8 Q2))
+     (= S (and D8 R2))
+     (= R (and G8 S2))
+     (= Q (and (not N6) D2))
+     (= P (and (not Q6) E2))
+     (= O (and (not T6) F2))
+     (= N (and (not W6) G2))
+     (= M (and (not Z6) H2))
+     (= L (and (not C7) I2))
+     (= K (and (not F7) J2))
+     (= J (and (not I7) K2))
+     (= I (and (not L7) L2))
+     (= H (and (not O7) M2))
+     (= G (and (not R7) N2))
+     (= F (and (not U7) O2))
+     (= E (and (not X7) P2))
+     (= D (and (not A8) Q2))
+     (= C (and (not D8) R2))
+     (= B (and (not G8) S2))
+     (= 39 (select B2 C2)))
+      )
+      (funcNT4__sem B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              W1
+              V1
+              U1
+              T1
+              S1
+              R1
+              Q1
+              P1
+              O1
+              N1
+              M1
+              L1
+              K1
+              J1
+              I1
+              H1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT4__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= C (+ H6 I6))
+     (= E (+ D6 E6))
+     (= Q (+ F5 G5))
+     (= P (+ H5 I5))
+     (= O (+ J5 K5))
+     (= N (+ L5 M5))
+     (= M (+ N5 O5))
+     (= L (+ P5 Q5))
+     (= K (+ R5 S5))
+     (= J (+ T5 U5))
+     (= I (+ V5 W5))
+     (= H (+ X5 Y5))
+     (= G (+ Z5 A6))
+     (= F (+ B6 C6))
+     (= D (+ F6 G6))
+     (= B (+ J6 K6))
+     (= 41 (select T U)))
+      )
+      (funcNT4__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Bool) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 (Array Int Int)) (Y1 Int) (Z1 (Array Int Int)) (A2 Int) (B2 (Array Int Int)) (C2 Int) (D2 Bool) (E2 Bool) (F2 Bool) (G2 Bool) (H2 Bool) (I2 Bool) (J2 Bool) (K2 Bool) (L2 Bool) (M2 Bool) (N2 Bool) (O2 Bool) (P2 Bool) (Q2 Bool) (R2 Bool) (S2 Bool) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Int) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) (L6 (Array Int Int)) (M6 Int) (N6 Bool) (O6 Int) (P6 Int) (Q6 Bool) (R6 Int) (S6 Int) (T6 Bool) (U6 Int) (V6 Int) (W6 Bool) (X6 Int) (Y6 Int) (Z6 Bool) (A7 Int) (B7 Int) (C7 Bool) (D7 Int) (E7 Int) (F7 Bool) (G7 Int) (H7 Int) (I7 Bool) (J7 Int) (K7 Int) (L7 Bool) (M7 Int) (N7 Int) (O7 Bool) (P7 Int) (Q7 Int) (R7 Bool) (S7 Int) (T7 Int) (U7 Bool) (V7 Int) (W7 Int) (X7 Bool) (Y7 Int) (Z7 Int) (A8 Bool) (B8 Int) (C8 Int) (D8 Bool) (E8 Int) (F8 Int) (G8 Bool) (H8 Int) (I8 Int) ) 
+    (=>
+      (and
+        (funcNT1__sem X1
+              Y1
+              G1
+              F1
+              E1
+              D1
+              C1
+              B1
+              A1
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              Z1
+              A2
+              O6
+              R6
+              U6
+              X6
+              A7
+              D7
+              G7
+              J7
+              M7
+              P7
+              S7
+              V7
+              Y7
+              B8
+              E8
+              H8)
+        (funcNT1__sem Z1
+              A2
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              P6
+              S6
+              V6
+              Y6
+              B7
+              E7
+              H7
+              K7
+              N7
+              Q7
+              T7
+              W7
+              Z7
+              C8
+              F8
+              I8)
+        (funcNT5__sem B2
+              A
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              X1
+              Y1
+              N6
+              Q6
+              T6
+              W6
+              Z6
+              C7
+              F7
+              I7
+              L7
+              O7
+              R7
+              U7
+              X7
+              A8
+              D8
+              G8)
+        (and (= W1 (ite N6 O6 P6))
+     (= V1 (ite Q6 R6 S6))
+     (= U1 (ite T6 U6 V6))
+     (= T1 (ite W6 X6 Y6))
+     (= S1 (ite Z6 A7 B7))
+     (= R1 (ite C7 D7 E7))
+     (= Q1 (ite F7 G7 H7))
+     (= P1 (ite I7 J7 K7))
+     (= O1 (ite L7 M7 N7))
+     (= N1 (ite O7 P7 Q7))
+     (= M1 (ite R7 S7 T7))
+     (= L1 (ite U7 V7 W7))
+     (= K1 (ite X7 Y7 Z7))
+     (= J1 (ite A8 B8 C8))
+     (= I1 (ite D8 E8 F8))
+     (= H1 (ite G8 H8 I8))
+     (= A (+ 1 C2))
+     (= G1 (and N6 D2))
+     (= F1 (and Q6 E2))
+     (= E1 (and T6 F2))
+     (= D1 (and W6 G2))
+     (= C1 (and Z6 H2))
+     (= B1 (and C7 I2))
+     (= A1 (and F7 J2))
+     (= Z (and I7 K2))
+     (= Y (and L7 L2))
+     (= X (and O7 M2))
+     (= W (and R7 N2))
+     (= V (and U7 O2))
+     (= U (and X7 P2))
+     (= T (and A8 Q2))
+     (= S (and D8 R2))
+     (= R (and G8 S2))
+     (= Q (and (not N6) D2))
+     (= P (and (not Q6) E2))
+     (= O (and (not T6) F2))
+     (= N (and (not W6) G2))
+     (= M (and (not Z6) H2))
+     (= L (and (not C7) I2))
+     (= K (and (not F7) J2))
+     (= J (and (not I7) K2))
+     (= I (and (not L7) L2))
+     (= H (and (not O7) M2))
+     (= G (and (not R7) N2))
+     (= F (and (not U7) O2))
+     (= E (and (not X7) P2))
+     (= D (and (not A8) Q2))
+     (= C (and (not D8) R2))
+     (= B (and (not G8) S2))
+     (= 38 (select B2 C2)))
+      )
+      (funcNT4__sem B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              W1
+              V1
+              U1
+              T1
+              S1
+              R1
+              Q1
+              P1
+              O1
+              N1
+              M1
+              L1
+              K1
+              J1
+              I1
+              H1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Bool) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 (Array Int Int)) (Y1 Int) (Z1 (Array Int Int)) (A2 Int) (B2 (Array Int Int)) (C2 Int) (D2 Bool) (E2 Bool) (F2 Bool) (G2 Bool) (H2 Bool) (I2 Bool) (J2 Bool) (K2 Bool) (L2 Bool) (M2 Bool) (N2 Bool) (O2 Bool) (P2 Bool) (Q2 Bool) (R2 Bool) (S2 Bool) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Int) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) (L6 (Array Int Int)) (M6 Int) (N6 Bool) (O6 Int) (P6 Int) (Q6 Bool) (R6 Int) (S6 Int) (T6 Bool) (U6 Int) (V6 Int) (W6 Bool) (X6 Int) (Y6 Int) (Z6 Bool) (A7 Int) (B7 Int) (C7 Bool) (D7 Int) (E7 Int) (F7 Bool) (G7 Int) (H7 Int) (I7 Bool) (J7 Int) (K7 Int) (L7 Bool) (M7 Int) (N7 Int) (O7 Bool) (P7 Int) (Q7 Int) (R7 Bool) (S7 Int) (T7 Int) (U7 Bool) (V7 Int) (W7 Int) (X7 Bool) (Y7 Int) (Z7 Int) (A8 Bool) (B8 Int) (C8 Int) (D8 Bool) (E8 Int) (F8 Int) (G8 Bool) (H8 Int) (I8 Int) ) 
+    (=>
+      (and
+        (funcNT1__sem X1
+              Y1
+              G1
+              F1
+              E1
+              D1
+              C1
+              B1
+              A1
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              Z1
+              A2
+              O6
+              R6
+              U6
+              X6
+              A7
+              D7
+              G7
+              J7
+              M7
+              P7
+              S7
+              V7
+              Y7
+              B8
+              E8
+              H8)
+        (funcNT1__sem Z1
+              A2
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              P6
+              S6
+              V6
+              Y6
+              B7
+              E7
+              H7
+              K7
+              N7
+              Q7
+              T7
+              W7
+              Z7
+              C8
+              F8
+              I8)
+        (funcNT2__sem B2
+              A
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              X1
+              Y1
+              N6
+              Q6
+              T6
+              W6
+              Z6
+              C7
+              F7
+              I7
+              L7
+              O7
+              R7
+              U7
+              X7
+              A8
+              D8
+              G8)
+        (and (= W1 (ite N6 O6 P6))
+     (= V1 (ite Q6 R6 S6))
+     (= U1 (ite T6 U6 V6))
+     (= T1 (ite W6 X6 Y6))
+     (= S1 (ite Z6 A7 B7))
+     (= R1 (ite C7 D7 E7))
+     (= Q1 (ite F7 G7 H7))
+     (= P1 (ite I7 J7 K7))
+     (= O1 (ite L7 M7 N7))
+     (= N1 (ite O7 P7 Q7))
+     (= M1 (ite R7 S7 T7))
+     (= L1 (ite U7 V7 W7))
+     (= K1 (ite X7 Y7 Z7))
+     (= J1 (ite A8 B8 C8))
+     (= I1 (ite D8 E8 F8))
+     (= H1 (ite G8 H8 I8))
+     (= A (+ 1 C2))
+     (= G1 (and N6 D2))
+     (= F1 (and Q6 E2))
+     (= E1 (and T6 F2))
+     (= D1 (and W6 G2))
+     (= C1 (and Z6 H2))
+     (= B1 (and C7 I2))
+     (= A1 (and F7 J2))
+     (= Z (and I7 K2))
+     (= Y (and L7 L2))
+     (= X (and O7 M2))
+     (= W (and R7 N2))
+     (= V (and U7 O2))
+     (= U (and X7 P2))
+     (= T (and A8 Q2))
+     (= S (and D8 R2))
+     (= R (and G8 S2))
+     (= Q (and (not N6) D2))
+     (= P (and (not Q6) E2))
+     (= O (and (not T6) F2))
+     (= N (and (not W6) G2))
+     (= M (and (not Z6) H2))
+     (= L (and (not C7) I2))
+     (= K (and (not F7) J2))
+     (= J (and (not I7) K2))
+     (= I (and (not L7) L2))
+     (= H (and (not O7) M2))
+     (= G (and (not R7) N2))
+     (= F (and (not U7) O2))
+     (= E (and (not X7) P2))
+     (= D (and (not A8) Q2))
+     (= C (and (not D8) R2))
+     (= B (and (not G8) S2))
+     (= 11 (select B2 C2)))
+      )
+      (funcStart__sem B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                N4
+                O4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                V4
+                W4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                D5
+                E5
+                F5
+                G5
+                H5
+                I5
+                J5
+                K5
+                L5
+                M5
+                N5
+                O5
+                P5
+                Q5
+                R5
+                S5
+                T5
+                U5
+                V5
+                W5
+                X5
+                Y5
+                Z5
+                A6
+                B6
+                C6
+                D6
+                E6
+                F6
+                G6
+                H6
+                I6
+                J6
+                K6
+                L6
+                M6
+                W1
+                V1
+                U1
+                T1
+                S1
+                R1
+                Q1
+                P1
+                O1
+                N1
+                M1
+                L1
+                K1
+                J1
+                I1
+                H1)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 (Array Int Int)) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) V3))
+     (= A U3)
+     (= 5 (select A B))
+     (= v_116 W3)
+     (= v_117 X3)
+     (= v_118 Y3)
+     (= v_119 Z3)
+     (= v_120 A4)
+     (= v_121 B4)
+     (= v_122 C4)
+     (= v_123 D4)
+     (= v_124 E4)
+     (= v_125 F4)
+     (= v_126 G4)
+     (= v_127 H4)
+     (= v_128 I4)
+     (= v_129 J4)
+     (= v_130 K4)
+     (= v_131 L4))
+      )
+      (funcStart__sem A
+                B
+                C
+                D
+                E
+                F
+                G
+                H
+                I
+                J
+                K
+                L
+                M
+                N
+                O
+                P
+                Q
+                R
+                S
+                T
+                U
+                W3
+                V
+                W
+                X
+                Y
+                Z
+                X3
+                A1
+                B1
+                C1
+                D1
+                E1
+                Y3
+                F1
+                G1
+                H1
+                I1
+                J1
+                Z3
+                K1
+                L1
+                M1
+                N1
+                O1
+                A4
+                P1
+                Q1
+                R1
+                S1
+                T1
+                B4
+                U1
+                V1
+                W1
+                X1
+                Y1
+                C4
+                Z1
+                A2
+                B2
+                C2
+                D2
+                D4
+                E2
+                F2
+                G2
+                H2
+                I2
+                E4
+                J2
+                K2
+                L2
+                M2
+                N2
+                F4
+                O2
+                P2
+                Q2
+                R2
+                S2
+                G4
+                T2
+                U2
+                V2
+                W2
+                X2
+                H4
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                I4
+                D3
+                E3
+                F3
+                G3
+                H3
+                J4
+                I3
+                J3
+                K3
+                L3
+                M3
+                K4
+                N3
+                O3
+                P3
+                Q3
+                R3
+                L4
+                S3
+                T3
+                U3
+                V3
+                v_116
+                v_117
+                v_118
+                v_119
+                v_120
+                v_121
+                v_122
+                v_123
+                v_124
+                v_125
+                v_126
+                v_127
+                v_128
+                v_129
+                v_130
+                v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 (Array Int Int)) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) L4))
+     (= A K4)
+     (= 18 (select A B))
+     (= 0 v_116)
+     (= 0 v_117)
+     (= 0 v_118)
+     (= 0 v_119)
+     (= 0 v_120)
+     (= 0 v_121)
+     (= 0 v_122)
+     (= 0 v_123)
+     (= 0 v_124)
+     (= 0 v_125)
+     (= 0 v_126)
+     (= 0 v_127)
+     (= 0 v_128)
+     (= 0 v_129)
+     (= 0 v_130)
+     (= 0 v_131))
+      )
+      (funcStart__sem A
+                B
+                C
+                D
+                E
+                F
+                G
+                H
+                I
+                J
+                K
+                L
+                M
+                N
+                O
+                P
+                Q
+                R
+                S
+                T
+                U
+                V
+                W
+                X
+                Y
+                Z
+                A1
+                B1
+                C1
+                D1
+                E1
+                F1
+                G1
+                H1
+                I1
+                J1
+                K1
+                L1
+                M1
+                N1
+                O1
+                P1
+                Q1
+                R1
+                S1
+                T1
+                U1
+                V1
+                W1
+                X1
+                Y1
+                Z1
+                A2
+                B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                v_116
+                v_117
+                v_118
+                v_119
+                v_120
+                v_121
+                v_122
+                v_123
+                v_124
+                v_125
+                v_126
+                v_127
+                v_128
+                v_129
+                v_130
+                v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 (Array Int Int)) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) V3))
+     (= A U3)
+     (= 3 (select A B))
+     (= v_116 W3)
+     (= v_117 X3)
+     (= v_118 Y3)
+     (= v_119 Z3)
+     (= v_120 A4)
+     (= v_121 B4)
+     (= v_122 C4)
+     (= v_123 D4)
+     (= v_124 E4)
+     (= v_125 F4)
+     (= v_126 G4)
+     (= v_127 H4)
+     (= v_128 I4)
+     (= v_129 J4)
+     (= v_130 K4)
+     (= v_131 L4))
+      )
+      (funcStart__sem A
+                B
+                C
+                D
+                E
+                F
+                G
+                H
+                I
+                J
+                K
+                L
+                M
+                N
+                O
+                P
+                Q
+                R
+                S
+                T
+                U
+                V
+                W3
+                W
+                X
+                Y
+                Z
+                A1
+                X3
+                B1
+                C1
+                D1
+                E1
+                F1
+                Y3
+                G1
+                H1
+                I1
+                J1
+                K1
+                Z3
+                L1
+                M1
+                N1
+                O1
+                P1
+                A4
+                Q1
+                R1
+                S1
+                T1
+                U1
+                B4
+                V1
+                W1
+                X1
+                Y1
+                Z1
+                C4
+                A2
+                B2
+                C2
+                D2
+                E2
+                D4
+                F2
+                G2
+                H2
+                I2
+                J2
+                E4
+                K2
+                L2
+                M2
+                N2
+                O2
+                F4
+                P2
+                Q2
+                R2
+                S2
+                T2
+                G4
+                U2
+                V2
+                W2
+                X2
+                Y2
+                H4
+                Z2
+                A3
+                B3
+                C3
+                D3
+                I4
+                E3
+                F3
+                G3
+                H3
+                I3
+                J4
+                J3
+                K3
+                L3
+                M3
+                N3
+                K4
+                O3
+                P3
+                Q3
+                R3
+                S3
+                L4
+                T3
+                U3
+                V3
+                v_116
+                v_117
+                v_118
+                v_119
+                v_120
+                v_121
+                v_122
+                v_123
+                v_124
+                v_125
+                v_126
+                v_127
+                v_128
+                v_129
+                v_130
+                v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 (Array Int Int)) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) V3))
+     (= A U3)
+     (= 12 (select A B))
+     (= v_116 W3)
+     (= v_117 X3)
+     (= v_118 Y3)
+     (= v_119 Z3)
+     (= v_120 A4)
+     (= v_121 B4)
+     (= v_122 C4)
+     (= v_123 D4)
+     (= v_124 E4)
+     (= v_125 F4)
+     (= v_126 G4)
+     (= v_127 H4)
+     (= v_128 I4)
+     (= v_129 J4)
+     (= v_130 K4)
+     (= v_131 L4))
+      )
+      (funcStart__sem A
+                B
+                C
+                D
+                E
+                F
+                G
+                H
+                I
+                J
+                K
+                L
+                M
+                N
+                O
+                P
+                Q
+                R
+                S
+                W3
+                T
+                U
+                V
+                W
+                X
+                X3
+                Y
+                Z
+                A1
+                B1
+                C1
+                Y3
+                D1
+                E1
+                F1
+                G1
+                H1
+                Z3
+                I1
+                J1
+                K1
+                L1
+                M1
+                A4
+                N1
+                O1
+                P1
+                Q1
+                R1
+                B4
+                S1
+                T1
+                U1
+                V1
+                W1
+                C4
+                X1
+                Y1
+                Z1
+                A2
+                B2
+                D4
+                C2
+                D2
+                E2
+                F2
+                G2
+                E4
+                H2
+                I2
+                J2
+                K2
+                L2
+                F4
+                M2
+                N2
+                O2
+                P2
+                Q2
+                G4
+                R2
+                S2
+                T2
+                U2
+                V2
+                H4
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                I4
+                B3
+                C3
+                D3
+                E3
+                F3
+                J4
+                G3
+                H3
+                I3
+                J3
+                K3
+                K4
+                L3
+                M3
+                N3
+                O3
+                P3
+                L4
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                v_116
+                v_117
+                v_118
+                v_119
+                v_120
+                v_121
+                v_122
+                v_123
+                v_124
+                v_125
+                v_126
+                v_127
+                v_128
+                v_129
+                v_130
+                v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT7__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= C (+ H6 I6))
+     (= E (+ D6 E6))
+     (= Q (+ F5 G5))
+     (= P (+ H5 I5))
+     (= O (+ J5 K5))
+     (= N (+ L5 M5))
+     (= M (+ N5 O5))
+     (= L (+ P5 Q5))
+     (= K (+ R5 S5))
+     (= J (+ T5 U5))
+     (= I (+ V5 W5))
+     (= H (+ X5 Y5))
+     (= G (+ Z5 A6))
+     (= F (+ B6 C6))
+     (= D (+ F6 G6))
+     (= B (+ J6 K6))
+     (= 7 (select T U)))
+      )
+      (funcStart__sem T
+                U
+                V
+                W
+                X
+                Y
+                Z
+                A1
+                B1
+                C1
+                D1
+                E1
+                F1
+                G1
+                H1
+                I1
+                J1
+                K1
+                L1
+                M1
+                N1
+                O1
+                P1
+                Q1
+                R1
+                S1
+                T1
+                U1
+                V1
+                W1
+                X1
+                Y1
+                Z1
+                A2
+                B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                N4
+                O4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                V4
+                W4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                D5
+                E5
+                Q
+                P
+                O
+                N
+                M
+                L
+                K
+                J
+                I
+                H
+                G
+                F
+                E
+                D
+                C
+                B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT3__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT3__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= C (+ H6 I6))
+     (= E (+ D6 E6))
+     (= Q (+ F5 G5))
+     (= P (+ H5 I5))
+     (= O (+ J5 K5))
+     (= N (+ L5 M5))
+     (= M (+ N5 O5))
+     (= L (+ P5 Q5))
+     (= K (+ R5 S5))
+     (= J (+ T5 U5))
+     (= I (+ V5 W5))
+     (= H (+ X5 Y5))
+     (= G (+ Z5 A6))
+     (= F (+ B6 C6))
+     (= D (+ F6 G6))
+     (= B (+ J6 K6))
+     (= 19 (select T U)))
+      )
+      (funcStart__sem T
+                U
+                V
+                W
+                X
+                Y
+                Z
+                A1
+                B1
+                C1
+                D1
+                E1
+                F1
+                G1
+                H1
+                I1
+                J1
+                K1
+                L1
+                M1
+                N1
+                O1
+                P1
+                Q1
+                R1
+                S1
+                T1
+                U1
+                V1
+                W1
+                X1
+                Y1
+                Z1
+                A2
+                B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                N4
+                O4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                V4
+                W4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                D5
+                E5
+                Q
+                P
+                O
+                N
+                M
+                L
+                K
+                J
+                I
+                H
+                G
+                F
+                E
+                D
+                C
+                B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Bool) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 (Array Int Int)) (Y1 Int) (Z1 (Array Int Int)) (A2 Int) (B2 (Array Int Int)) (C2 Int) (D2 Bool) (E2 Bool) (F2 Bool) (G2 Bool) (H2 Bool) (I2 Bool) (J2 Bool) (K2 Bool) (L2 Bool) (M2 Bool) (N2 Bool) (O2 Bool) (P2 Bool) (Q2 Bool) (R2 Bool) (S2 Bool) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Int) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) (L6 (Array Int Int)) (M6 Int) (N6 Bool) (O6 Int) (P6 Int) (Q6 Bool) (R6 Int) (S6 Int) (T6 Bool) (U6 Int) (V6 Int) (W6 Bool) (X6 Int) (Y6 Int) (Z6 Bool) (A7 Int) (B7 Int) (C7 Bool) (D7 Int) (E7 Int) (F7 Bool) (G7 Int) (H7 Int) (I7 Bool) (J7 Int) (K7 Int) (L7 Bool) (M7 Int) (N7 Int) (O7 Bool) (P7 Int) (Q7 Int) (R7 Bool) (S7 Int) (T7 Int) (U7 Bool) (V7 Int) (W7 Int) (X7 Bool) (Y7 Int) (Z7 Int) (A8 Bool) (B8 Int) (C8 Int) (D8 Bool) (E8 Int) (F8 Int) (G8 Bool) (H8 Int) (I8 Int) ) 
+    (=>
+      (and
+        (funcNT4__sem X1
+              Y1
+              G1
+              F1
+              E1
+              D1
+              C1
+              B1
+              A1
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              Z1
+              A2
+              O6
+              R6
+              U6
+              X6
+              A7
+              D7
+              G7
+              J7
+              M7
+              P7
+              S7
+              V7
+              Y7
+              B8
+              E8
+              H8)
+        (funcNT1__sem Z1
+              A2
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              P6
+              S6
+              V6
+              Y6
+              B7
+              E7
+              H7
+              K7
+              N7
+              Q7
+              T7
+              W7
+              Z7
+              C8
+              F8
+              I8)
+        (funcNT2__sem B2
+              A
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              X1
+              Y1
+              N6
+              Q6
+              T6
+              W6
+              Z6
+              C7
+              F7
+              I7
+              L7
+              O7
+              R7
+              U7
+              X7
+              A8
+              D8
+              G8)
+        (and (= W1 (ite N6 O6 P6))
+     (= V1 (ite Q6 R6 S6))
+     (= U1 (ite T6 U6 V6))
+     (= T1 (ite W6 X6 Y6))
+     (= S1 (ite Z6 A7 B7))
+     (= R1 (ite C7 D7 E7))
+     (= Q1 (ite F7 G7 H7))
+     (= P1 (ite I7 J7 K7))
+     (= O1 (ite L7 M7 N7))
+     (= N1 (ite O7 P7 Q7))
+     (= M1 (ite R7 S7 T7))
+     (= L1 (ite U7 V7 W7))
+     (= K1 (ite X7 Y7 Z7))
+     (= J1 (ite A8 B8 C8))
+     (= I1 (ite D8 E8 F8))
+     (= H1 (ite G8 H8 I8))
+     (= A (+ 1 C2))
+     (= G1 (and N6 D2))
+     (= F1 (and Q6 E2))
+     (= E1 (and T6 F2))
+     (= D1 (and W6 G2))
+     (= C1 (and Z6 H2))
+     (= B1 (and C7 I2))
+     (= A1 (and F7 J2))
+     (= Z (and I7 K2))
+     (= Y (and L7 L2))
+     (= X (and O7 M2))
+     (= W (and R7 N2))
+     (= V (and U7 O2))
+     (= U (and X7 P2))
+     (= T (and A8 Q2))
+     (= S (and D8 R2))
+     (= R (and G8 S2))
+     (= Q (and (not N6) D2))
+     (= P (and (not Q6) E2))
+     (= O (and (not T6) F2))
+     (= N (and (not W6) G2))
+     (= M (and (not Z6) H2))
+     (= L (and (not C7) I2))
+     (= K (and (not F7) J2))
+     (= J (and (not I7) K2))
+     (= I (and (not L7) L2))
+     (= H (and (not O7) M2))
+     (= G (and (not R7) N2))
+     (= F (and (not U7) O2))
+     (= E (and (not X7) P2))
+     (= D (and (not A8) Q2))
+     (= C (and (not D8) R2))
+     (= B (and (not G8) S2))
+     (= 15 (select B2 C2)))
+      )
+      (funcStart__sem B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                N4
+                O4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                V4
+                W4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                D5
+                E5
+                F5
+                G5
+                H5
+                I5
+                J5
+                K5
+                L5
+                M5
+                N5
+                O5
+                P5
+                Q5
+                R5
+                S5
+                T5
+                U5
+                V5
+                W5
+                X5
+                Y5
+                Z5
+                A6
+                B6
+                C6
+                D6
+                E6
+                F6
+                G6
+                H6
+                I6
+                J6
+                K6
+                L6
+                M6
+                W1
+                V1
+                U1
+                T1
+                S1
+                R1
+                Q1
+                P1
+                O1
+                N1
+                M1
+                L1
+                K1
+                J1
+                I1
+                H1)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 (Array Int Int)) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) L4))
+     (= A K4)
+     (= 17 (select A B))
+     (= 1 v_116)
+     (= 1 v_117)
+     (= 1 v_118)
+     (= 1 v_119)
+     (= 1 v_120)
+     (= 1 v_121)
+     (= 1 v_122)
+     (= 1 v_123)
+     (= 1 v_124)
+     (= 1 v_125)
+     (= 1 v_126)
+     (= 1 v_127)
+     (= 1 v_128)
+     (= 1 v_129)
+     (= 1 v_130)
+     (= 1 v_131))
+      )
+      (funcStart__sem A
+                B
+                C
+                D
+                E
+                F
+                G
+                H
+                I
+                J
+                K
+                L
+                M
+                N
+                O
+                P
+                Q
+                R
+                S
+                T
+                U
+                V
+                W
+                X
+                Y
+                Z
+                A1
+                B1
+                C1
+                D1
+                E1
+                F1
+                G1
+                H1
+                I1
+                J1
+                K1
+                L1
+                M1
+                N1
+                O1
+                P1
+                Q1
+                R1
+                S1
+                T1
+                U1
+                V1
+                W1
+                X1
+                Y1
+                Z1
+                A2
+                B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                v_116
+                v_117
+                v_118
+                v_119
+                v_120
+                v_121
+                v_122
+                v_123
+                v_124
+                v_125
+                v_126
+                v_127
+                v_128
+                v_129
+                v_130
+                v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT4__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= C (+ H6 I6))
+     (= E (+ D6 E6))
+     (= Q (+ F5 G5))
+     (= P (+ H5 I5))
+     (= O (+ J5 K5))
+     (= N (+ L5 M5))
+     (= M (+ N5 O5))
+     (= L (+ P5 Q5))
+     (= K (+ R5 S5))
+     (= J (+ T5 U5))
+     (= I (+ V5 W5))
+     (= H (+ X5 Y5))
+     (= G (+ Z5 A6))
+     (= F (+ B6 C6))
+     (= D (+ F6 G6))
+     (= B (+ J6 K6))
+     (= 9 (select T U)))
+      )
+      (funcStart__sem T
+                U
+                V
+                W
+                X
+                Y
+                Z
+                A1
+                B1
+                C1
+                D1
+                E1
+                F1
+                G1
+                H1
+                I1
+                J1
+                K1
+                L1
+                M1
+                N1
+                O1
+                P1
+                Q1
+                R1
+                S1
+                T1
+                U1
+                V1
+                W1
+                X1
+                Y1
+                Z1
+                A2
+                B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                N4
+                O4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                V4
+                W4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                D5
+                E5
+                Q
+                P
+                O
+                N
+                M
+                L
+                K
+                J
+                I
+                H
+                G
+                F
+                E
+                D
+                C
+                B)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 (Array Int Int)) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) V3))
+     (= A U3)
+     (= 13 (select A B))
+     (= v_116 W3)
+     (= v_117 X3)
+     (= v_118 Y3)
+     (= v_119 Z3)
+     (= v_120 A4)
+     (= v_121 B4)
+     (= v_122 C4)
+     (= v_123 D4)
+     (= v_124 E4)
+     (= v_125 F4)
+     (= v_126 G4)
+     (= v_127 H4)
+     (= v_128 I4)
+     (= v_129 J4)
+     (= v_130 K4)
+     (= v_131 L4))
+      )
+      (funcStart__sem A
+                B
+                C
+                D
+                E
+                F
+                G
+                H
+                I
+                J
+                K
+                L
+                M
+                N
+                O
+                P
+                Q
+                R
+                S
+                T
+                W3
+                U
+                V
+                W
+                X
+                Y
+                X3
+                Z
+                A1
+                B1
+                C1
+                D1
+                Y3
+                E1
+                F1
+                G1
+                H1
+                I1
+                Z3
+                J1
+                K1
+                L1
+                M1
+                N1
+                A4
+                O1
+                P1
+                Q1
+                R1
+                S1
+                B4
+                T1
+                U1
+                V1
+                W1
+                X1
+                C4
+                Y1
+                Z1
+                A2
+                B2
+                C2
+                D4
+                D2
+                E2
+                F2
+                G2
+                H2
+                E4
+                I2
+                J2
+                K2
+                L2
+                M2
+                F4
+                N2
+                O2
+                P2
+                Q2
+                R2
+                G4
+                S2
+                T2
+                U2
+                V2
+                W2
+                H4
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                I4
+                C3
+                D3
+                E3
+                F3
+                G3
+                J4
+                H3
+                I3
+                J3
+                K3
+                L3
+                K4
+                M3
+                N3
+                O3
+                P3
+                Q3
+                L4
+                R3
+                S3
+                T3
+                U3
+                V3
+                v_116
+                v_117
+                v_118
+                v_119
+                v_120
+                v_121
+                v_122
+                v_123
+                v_124
+                v_125
+                v_126
+                v_127
+                v_128
+                v_129
+                v_130
+                v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT1__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= C (+ H6 I6))
+     (= E (+ D6 E6))
+     (= Q (+ F5 G5))
+     (= P (+ H5 I5))
+     (= O (+ J5 K5))
+     (= N (+ L5 M5))
+     (= M (+ N5 O5))
+     (= L (+ P5 Q5))
+     (= K (+ R5 S5))
+     (= J (+ T5 U5))
+     (= I (+ V5 W5))
+     (= H (+ X5 Y5))
+     (= G (+ Z5 A6))
+     (= F (+ B6 C6))
+     (= D (+ F6 G6))
+     (= B (+ J6 K6))
+     (= 8 (select T U)))
+      )
+      (funcStart__sem T
+                U
+                V
+                W
+                X
+                Y
+                Z
+                A1
+                B1
+                C1
+                D1
+                E1
+                F1
+                G1
+                H1
+                I1
+                J1
+                K1
+                L1
+                M1
+                N1
+                O1
+                P1
+                Q1
+                R1
+                S1
+                T1
+                U1
+                V1
+                W1
+                X1
+                Y1
+                Z1
+                A2
+                B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                N4
+                O4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                V4
+                W4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                D5
+                E5
+                Q
+                P
+                O
+                N
+                M
+                L
+                K
+                J
+                I
+                H
+                G
+                F
+                E
+                D
+                C
+                B)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 (Array Int Int)) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) V3))
+     (= A U3)
+     (= 14 (select A B))
+     (= v_116 W3)
+     (= v_117 X3)
+     (= v_118 Y3)
+     (= v_119 Z3)
+     (= v_120 A4)
+     (= v_121 B4)
+     (= v_122 C4)
+     (= v_123 D4)
+     (= v_124 E4)
+     (= v_125 F4)
+     (= v_126 G4)
+     (= v_127 H4)
+     (= v_128 I4)
+     (= v_129 J4)
+     (= v_130 K4)
+     (= v_131 L4))
+      )
+      (funcStart__sem A
+                B
+                C
+                D
+                E
+                F
+                G
+                H
+                I
+                J
+                K
+                L
+                M
+                N
+                O
+                P
+                Q
+                R
+                S
+                T
+                U
+                V
+                W
+                W3
+                X
+                Y
+                Z
+                A1
+                B1
+                X3
+                C1
+                D1
+                E1
+                F1
+                G1
+                Y3
+                H1
+                I1
+                J1
+                K1
+                L1
+                Z3
+                M1
+                N1
+                O1
+                P1
+                Q1
+                A4
+                R1
+                S1
+                T1
+                U1
+                V1
+                B4
+                W1
+                X1
+                Y1
+                Z1
+                A2
+                C4
+                B2
+                C2
+                D2
+                E2
+                F2
+                D4
+                G2
+                H2
+                I2
+                J2
+                K2
+                E4
+                L2
+                M2
+                N2
+                O2
+                P2
+                F4
+                Q2
+                R2
+                S2
+                T2
+                U2
+                G4
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                H4
+                A3
+                B3
+                C3
+                D3
+                E3
+                I4
+                F3
+                G3
+                H3
+                I3
+                J3
+                J4
+                K3
+                L3
+                M3
+                N3
+                O3
+                K4
+                P3
+                Q3
+                R3
+                S3
+                T3
+                L4
+                U3
+                V3
+                v_116
+                v_117
+                v_118
+                v_119
+                v_120
+                v_121
+                v_122
+                v_123
+                v_124
+                v_125
+                v_126
+                v_127
+                v_128
+                v_129
+                v_130
+                v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT3__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= C (+ H6 I6))
+     (= E (+ D6 E6))
+     (= Q (+ F5 G5))
+     (= P (+ H5 I5))
+     (= O (+ J5 K5))
+     (= N (+ L5 M5))
+     (= M (+ N5 O5))
+     (= L (+ P5 Q5))
+     (= K (+ R5 S5))
+     (= J (+ T5 U5))
+     (= I (+ V5 W5))
+     (= H (+ X5 Y5))
+     (= G (+ Z5 A6))
+     (= F (+ B6 C6))
+     (= D (+ F6 G6))
+     (= B (+ J6 K6))
+     (= 16 (select T U)))
+      )
+      (funcStart__sem T
+                U
+                V
+                W
+                X
+                Y
+                Z
+                A1
+                B1
+                C1
+                D1
+                E1
+                F1
+                G1
+                H1
+                I1
+                J1
+                K1
+                L1
+                M1
+                N1
+                O1
+                P1
+                Q1
+                R1
+                S1
+                T1
+                U1
+                V1
+                W1
+                X1
+                Y1
+                Z1
+                A2
+                B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                N4
+                O4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                V4
+                W4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                D5
+                E5
+                Q
+                P
+                O
+                N
+                M
+                L
+                K
+                J
+                I
+                H
+                G
+                F
+                E
+                D
+                C
+                B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Bool) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 (Array Int Int)) (Y1 Int) (Z1 (Array Int Int)) (A2 Int) (B2 (Array Int Int)) (C2 Int) (D2 Bool) (E2 Bool) (F2 Bool) (G2 Bool) (H2 Bool) (I2 Bool) (J2 Bool) (K2 Bool) (L2 Bool) (M2 Bool) (N2 Bool) (O2 Bool) (P2 Bool) (Q2 Bool) (R2 Bool) (S2 Bool) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Int) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) (L6 (Array Int Int)) (M6 Int) (N6 Bool) (O6 Int) (P6 Int) (Q6 Bool) (R6 Int) (S6 Int) (T6 Bool) (U6 Int) (V6 Int) (W6 Bool) (X6 Int) (Y6 Int) (Z6 Bool) (A7 Int) (B7 Int) (C7 Bool) (D7 Int) (E7 Int) (F7 Bool) (G7 Int) (H7 Int) (I7 Bool) (J7 Int) (K7 Int) (L7 Bool) (M7 Int) (N7 Int) (O7 Bool) (P7 Int) (Q7 Int) (R7 Bool) (S7 Int) (T7 Int) (U7 Bool) (V7 Int) (W7 Int) (X7 Bool) (Y7 Int) (Z7 Int) (A8 Bool) (B8 Int) (C8 Int) (D8 Bool) (E8 Int) (F8 Int) (G8 Bool) (H8 Int) (I8 Int) ) 
+    (=>
+      (and
+        (funcNT1__sem X1
+              Y1
+              G1
+              F1
+              E1
+              D1
+              C1
+              B1
+              A1
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              Z1
+              A2
+              O6
+              R6
+              U6
+              X6
+              A7
+              D7
+              G7
+              J7
+              M7
+              P7
+              S7
+              V7
+              Y7
+              B8
+              E8
+              H8)
+        (funcNT1__sem Z1
+              A2
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              P6
+              S6
+              V6
+              Y6
+              B7
+              E7
+              H7
+              K7
+              N7
+              Q7
+              T7
+              W7
+              Z7
+              C8
+              F8
+              I8)
+        (funcNT5__sem B2
+              A
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              X1
+              Y1
+              N6
+              Q6
+              T6
+              W6
+              Z6
+              C7
+              F7
+              I7
+              L7
+              O7
+              R7
+              U7
+              X7
+              A8
+              D8
+              G8)
+        (and (= W1 (ite N6 O6 P6))
+     (= V1 (ite Q6 R6 S6))
+     (= U1 (ite T6 U6 V6))
+     (= T1 (ite W6 X6 Y6))
+     (= S1 (ite Z6 A7 B7))
+     (= R1 (ite C7 D7 E7))
+     (= Q1 (ite F7 G7 H7))
+     (= P1 (ite I7 J7 K7))
+     (= O1 (ite L7 M7 N7))
+     (= N1 (ite O7 P7 Q7))
+     (= M1 (ite R7 S7 T7))
+     (= L1 (ite U7 V7 W7))
+     (= K1 (ite X7 Y7 Z7))
+     (= J1 (ite A8 B8 C8))
+     (= I1 (ite D8 E8 F8))
+     (= H1 (ite G8 H8 I8))
+     (= A (+ 1 C2))
+     (= G1 (and N6 D2))
+     (= F1 (and Q6 E2))
+     (= E1 (and T6 F2))
+     (= D1 (and W6 G2))
+     (= C1 (and Z6 H2))
+     (= B1 (and C7 I2))
+     (= A1 (and F7 J2))
+     (= Z (and I7 K2))
+     (= Y (and L7 L2))
+     (= X (and O7 M2))
+     (= W (and R7 N2))
+     (= V (and U7 O2))
+     (= U (and X7 P2))
+     (= T (and A8 Q2))
+     (= S (and D8 R2))
+     (= R (and G8 S2))
+     (= Q (and (not N6) D2))
+     (= P (and (not Q6) E2))
+     (= O (and (not T6) F2))
+     (= N (and (not W6) G2))
+     (= M (and (not Z6) H2))
+     (= L (and (not C7) I2))
+     (= K (and (not F7) J2))
+     (= J (and (not I7) K2))
+     (= I (and (not L7) L2))
+     (= H (and (not O7) M2))
+     (= G (and (not R7) N2))
+     (= F (and (not U7) O2))
+     (= E (and (not X7) P2))
+     (= D (and (not A8) Q2))
+     (= C (and (not D8) R2))
+     (= B (and (not G8) S2))
+     (= 6 (select B2 C2)))
+      )
+      (funcStart__sem B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                N4
+                O4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                V4
+                W4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                D5
+                E5
+                F5
+                G5
+                H5
+                I5
+                J5
+                K5
+                L5
+                M5
+                N5
+                O5
+                P5
+                Q5
+                R5
+                S5
+                T5
+                U5
+                V5
+                W5
+                X5
+                Y5
+                Z5
+                A6
+                B6
+                C6
+                D6
+                E6
+                F6
+                G6
+                H6
+                I6
+                J6
+                K6
+                L6
+                M6
+                W1
+                V1
+                U1
+                T1
+                S1
+                R1
+                Q1
+                P1
+                O1
+                N1
+                M1
+                L1
+                K1
+                J1
+                I1
+                H1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Bool) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 (Array Int Int)) (Y1 Int) (Z1 (Array Int Int)) (A2 Int) (B2 (Array Int Int)) (C2 Int) (D2 Bool) (E2 Bool) (F2 Bool) (G2 Bool) (H2 Bool) (I2 Bool) (J2 Bool) (K2 Bool) (L2 Bool) (M2 Bool) (N2 Bool) (O2 Bool) (P2 Bool) (Q2 Bool) (R2 Bool) (S2 Bool) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Int) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) (L6 (Array Int Int)) (M6 Int) (N6 Bool) (O6 Int) (P6 Int) (Q6 Bool) (R6 Int) (S6 Int) (T6 Bool) (U6 Int) (V6 Int) (W6 Bool) (X6 Int) (Y6 Int) (Z6 Bool) (A7 Int) (B7 Int) (C7 Bool) (D7 Int) (E7 Int) (F7 Bool) (G7 Int) (H7 Int) (I7 Bool) (J7 Int) (K7 Int) (L7 Bool) (M7 Int) (N7 Int) (O7 Bool) (P7 Int) (Q7 Int) (R7 Bool) (S7 Int) (T7 Int) (U7 Bool) (V7 Int) (W7 Int) (X7 Bool) (Y7 Int) (Z7 Int) (A8 Bool) (B8 Int) (C8 Int) (D8 Bool) (E8 Int) (F8 Int) (G8 Bool) (H8 Int) (I8 Int) ) 
+    (=>
+      (and
+        (funcNT3__sem X1
+              Y1
+              G1
+              F1
+              E1
+              D1
+              C1
+              B1
+              A1
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              Z1
+              A2
+              O6
+              R6
+              U6
+              X6
+              A7
+              D7
+              G7
+              J7
+              M7
+              P7
+              S7
+              V7
+              Y7
+              B8
+              E8
+              H8)
+        (funcNT1__sem Z1
+              A2
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              P6
+              S6
+              V6
+              Y6
+              B7
+              E7
+              H7
+              K7
+              N7
+              Q7
+              T7
+              W7
+              Z7
+              C8
+              F8
+              I8)
+        (funcNT2__sem B2
+              A
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              X1
+              Y1
+              N6
+              Q6
+              T6
+              W6
+              Z6
+              C7
+              F7
+              I7
+              L7
+              O7
+              R7
+              U7
+              X7
+              A8
+              D8
+              G8)
+        (and (= W1 (ite N6 O6 P6))
+     (= V1 (ite Q6 R6 S6))
+     (= U1 (ite T6 U6 V6))
+     (= T1 (ite W6 X6 Y6))
+     (= S1 (ite Z6 A7 B7))
+     (= R1 (ite C7 D7 E7))
+     (= Q1 (ite F7 G7 H7))
+     (= P1 (ite I7 J7 K7))
+     (= O1 (ite L7 M7 N7))
+     (= N1 (ite O7 P7 Q7))
+     (= M1 (ite R7 S7 T7))
+     (= L1 (ite U7 V7 W7))
+     (= K1 (ite X7 Y7 Z7))
+     (= J1 (ite A8 B8 C8))
+     (= I1 (ite D8 E8 F8))
+     (= H1 (ite G8 H8 I8))
+     (= A (+ 1 C2))
+     (= G1 (and N6 D2))
+     (= F1 (and Q6 E2))
+     (= E1 (and T6 F2))
+     (= D1 (and W6 G2))
+     (= C1 (and Z6 H2))
+     (= B1 (and C7 I2))
+     (= A1 (and F7 J2))
+     (= Z (and I7 K2))
+     (= Y (and L7 L2))
+     (= X (and O7 M2))
+     (= W (and R7 N2))
+     (= V (and U7 O2))
+     (= U (and X7 P2))
+     (= T (and A8 Q2))
+     (= S (and D8 R2))
+     (= R (and G8 S2))
+     (= Q (and (not N6) D2))
+     (= P (and (not Q6) E2))
+     (= O (and (not T6) F2))
+     (= N (and (not W6) G2))
+     (= M (and (not Z6) H2))
+     (= L (and (not C7) I2))
+     (= K (and (not F7) J2))
+     (= J (and (not I7) K2))
+     (= I (and (not L7) L2))
+     (= H (and (not O7) M2))
+     (= G (and (not R7) N2))
+     (= F (and (not U7) O2))
+     (= E (and (not X7) P2))
+     (= D (and (not A8) Q2))
+     (= C (and (not D8) R2))
+     (= B (and (not G8) S2))
+     (= 4 (select B2 C2)))
+      )
+      (funcStart__sem B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                N4
+                O4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                V4
+                W4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                D5
+                E5
+                F5
+                G5
+                H5
+                I5
+                J5
+                K5
+                L5
+                M5
+                N5
+                O5
+                P5
+                Q5
+                R5
+                S5
+                T5
+                U5
+                V5
+                W5
+                X5
+                Y5
+                Z5
+                A6
+                B6
+                C6
+                D6
+                E6
+                F6
+                G6
+                H6
+                I6
+                J6
+                K6
+                L6
+                M6
+                W1
+                V1
+                U1
+                T1
+                S1
+                R1
+                Q1
+                P1
+                O1
+                N1
+                M1
+                L1
+                K1
+                J1
+                I1
+                H1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Bool) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 (Array Int Int)) (Y1 Int) (Z1 (Array Int Int)) (A2 Int) (B2 (Array Int Int)) (C2 Int) (D2 Bool) (E2 Bool) (F2 Bool) (G2 Bool) (H2 Bool) (I2 Bool) (J2 Bool) (K2 Bool) (L2 Bool) (M2 Bool) (N2 Bool) (O2 Bool) (P2 Bool) (Q2 Bool) (R2 Bool) (S2 Bool) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Int) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) (L6 (Array Int Int)) (M6 Int) (N6 Bool) (O6 Int) (P6 Int) (Q6 Bool) (R6 Int) (S6 Int) (T6 Bool) (U6 Int) (V6 Int) (W6 Bool) (X6 Int) (Y6 Int) (Z6 Bool) (A7 Int) (B7 Int) (C7 Bool) (D7 Int) (E7 Int) (F7 Bool) (G7 Int) (H7 Int) (I7 Bool) (J7 Int) (K7 Int) (L7 Bool) (M7 Int) (N7 Int) (O7 Bool) (P7 Int) (Q7 Int) (R7 Bool) (S7 Int) (T7 Int) (U7 Bool) (V7 Int) (W7 Int) (X7 Bool) (Y7 Int) (Z7 Int) (A8 Bool) (B8 Int) (C8 Int) (D8 Bool) (E8 Int) (F8 Int) (G8 Bool) (H8 Int) (I8 Int) ) 
+    (=>
+      (and
+        (funcNT1__sem X1
+              Y1
+              G1
+              F1
+              E1
+              D1
+              C1
+              B1
+              A1
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              Z1
+              A2
+              O6
+              R6
+              U6
+              X6
+              A7
+              D7
+              G7
+              J7
+              M7
+              P7
+              S7
+              V7
+              Y7
+              B8
+              E8
+              H8)
+        (funcNT1__sem Z1
+              A2
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              P6
+              S6
+              V6
+              Y6
+              B7
+              E7
+              H7
+              K7
+              N7
+              Q7
+              T7
+              W7
+              Z7
+              C8
+              F8
+              I8)
+        (funcNT6__sem B2
+              A
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              X1
+              Y1
+              N6
+              Q6
+              T6
+              W6
+              Z6
+              C7
+              F7
+              I7
+              L7
+              O7
+              R7
+              U7
+              X7
+              A8
+              D8
+              G8)
+        (and (= W1 (ite N6 O6 P6))
+     (= V1 (ite Q6 R6 S6))
+     (= U1 (ite T6 U6 V6))
+     (= T1 (ite W6 X6 Y6))
+     (= S1 (ite Z6 A7 B7))
+     (= R1 (ite C7 D7 E7))
+     (= Q1 (ite F7 G7 H7))
+     (= P1 (ite I7 J7 K7))
+     (= O1 (ite L7 M7 N7))
+     (= N1 (ite O7 P7 Q7))
+     (= M1 (ite R7 S7 T7))
+     (= L1 (ite U7 V7 W7))
+     (= K1 (ite X7 Y7 Z7))
+     (= J1 (ite A8 B8 C8))
+     (= I1 (ite D8 E8 F8))
+     (= H1 (ite G8 H8 I8))
+     (= A (+ 1 C2))
+     (= G1 (and N6 D2))
+     (= F1 (and Q6 E2))
+     (= E1 (and T6 F2))
+     (= D1 (and W6 G2))
+     (= C1 (and Z6 H2))
+     (= B1 (and C7 I2))
+     (= A1 (and F7 J2))
+     (= Z (and I7 K2))
+     (= Y (and L7 L2))
+     (= X (and O7 M2))
+     (= W (and R7 N2))
+     (= V (and U7 O2))
+     (= U (and X7 P2))
+     (= T (and A8 Q2))
+     (= S (and D8 R2))
+     (= R (and G8 S2))
+     (= Q (and (not N6) D2))
+     (= P (and (not Q6) E2))
+     (= O (and (not T6) F2))
+     (= N (and (not W6) G2))
+     (= M (and (not Z6) H2))
+     (= L (and (not C7) I2))
+     (= K (and (not F7) J2))
+     (= J (and (not I7) K2))
+     (= I (and (not L7) L2))
+     (= H (and (not O7) M2))
+     (= G (and (not R7) N2))
+     (= F (and (not U7) O2))
+     (= E (and (not X7) P2))
+     (= D (and (not A8) Q2))
+     (= C (and (not D8) R2))
+     (= B (and (not G8) S2))
+     (= 10 (select B2 C2)))
+      )
+      (funcStart__sem B2
+                C2
+                D2
+                E2
+                F2
+                G2
+                H2
+                I2
+                J2
+                K2
+                L2
+                M2
+                N2
+                O2
+                P2
+                Q2
+                R2
+                S2
+                T2
+                U2
+                V2
+                W2
+                X2
+                Y2
+                Z2
+                A3
+                B3
+                C3
+                D3
+                E3
+                F3
+                G3
+                H3
+                I3
+                J3
+                K3
+                L3
+                M3
+                N3
+                O3
+                P3
+                Q3
+                R3
+                S3
+                T3
+                U3
+                V3
+                W3
+                X3
+                Y3
+                Z3
+                A4
+                B4
+                C4
+                D4
+                E4
+                F4
+                G4
+                H4
+                I4
+                J4
+                K4
+                L4
+                M4
+                N4
+                O4
+                P4
+                Q4
+                R4
+                S4
+                T4
+                U4
+                V4
+                W4
+                X4
+                Y4
+                Z4
+                A5
+                B5
+                C5
+                D5
+                E5
+                F5
+                G5
+                H5
+                I5
+                J5
+                K5
+                L5
+                M5
+                N5
+                O5
+                P5
+                Q5
+                R5
+                S5
+                T5
+                U5
+                V5
+                W5
+                X5
+                Y5
+                Z5
+                A6
+                B6
+                C6
+                D6
+                E6
+                F6
+                G6
+                H6
+                I6
+                J6
+                K6
+                L6
+                M6
+                W1
+                V1
+                U1
+                T1
+                S1
+                R1
+                Q1
+                P1
+                O1
+                N1
+                M1
+                L1
+                K1
+                J1
+                I1
+                H1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT1__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (<= B6 C6))
+     (= G (<= Z5 A6))
+     (= H (<= X5 Y5))
+     (= I (<= V5 W5))
+     (= J (<= T5 U5))
+     (= K (<= R5 S5))
+     (= L (<= P5 Q5))
+     (= M (<= N5 O5))
+     (= N (<= L5 M5))
+     (= O (<= J5 K5))
+     (= P (<= H5 I5))
+     (= Q (<= F5 G5))
+     (= E (<= D6 E6))
+     (= D (<= F6 G6))
+     (= C (<= H6 I6))
+     (= B (<= J6 K6))
+     (= 33 (select T U)))
+      )
+      (funcNT2__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) (T5 Bool) (U5 Bool) (V5 Bool) (W5 Bool) (X5 Bool) (Y5 Bool) (Z5 Bool) (A6 Bool) (B6 Bool) (C6 Bool) (D6 Bool) (E6 Bool) (F6 Bool) (G6 Bool) (H6 Bool) (I6 Bool) (J6 Bool) (K6 Bool) ) 
+    (=>
+      (and
+        (funcNT2__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT2__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (or C6 B6))
+     (= G (or Z5 A6))
+     (= H (or Y5 X5))
+     (= I (or V5 W5))
+     (= J (or T5 U5))
+     (= K (or S5 R5))
+     (= L (or Q5 P5))
+     (= M (or N5 O5))
+     (= N (or M5 L5))
+     (= O (or K5 J5))
+     (= P (or H5 I5))
+     (= Q (or F5 G5))
+     (= E (or D6 E6))
+     (= D (or F6 G6))
+     (= C (or I6 H6))
+     (= B (or K6 J6))
+     (= 30 (select T U)))
+      )
+      (funcNT2__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 (Array Int Int)) (C5 Int) (D5 Bool) (E5 Bool) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) ) 
+    (=>
+      (and
+        (funcNT2__sem R
+              A
+              T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5)
+        (and (= A (+ 1 S))
+     (not (= F5 O))
+     (not (= G5 N))
+     (not (= I5 L))
+     (not (= J5 K))
+     (not (= M5 H))
+     (not (= O5 F))
+     (not (= P5 E))
+     (not (= R5 C))
+     (not (= S5 B))
+     (not (= E5 P))
+     (not (= H5 M))
+     (not (= K5 J))
+     (not (= N5 G))
+     (not (= Q5 D))
+     (not (= D5 Q))
+     (not (= L5 I))
+     (= 32 (select R S)))
+      )
+      (funcNT2__sem R
+              S
+              T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) (T5 Bool) (U5 Bool) (V5 Bool) (W5 Bool) (X5 Bool) (Y5 Bool) (Z5 Bool) (A6 Bool) (B6 Bool) (C6 Bool) (D6 Bool) (E6 Bool) (F6 Bool) (G6 Bool) (H6 Bool) (I6 Bool) (J6 Bool) (K6 Bool) ) 
+    (=>
+      (and
+        (funcNT2__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT2__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (and C6 B6))
+     (= G (and Z5 A6))
+     (= H (and Y5 X5))
+     (= I (and V5 W5))
+     (= J (and T5 U5))
+     (= K (and S5 R5))
+     (= L (and Q5 P5))
+     (= M (and N5 O5))
+     (= N (and M5 L5))
+     (= O (and K5 J5))
+     (= P (and H5 I5))
+     (= Q (and F5 G5))
+     (= E (and D6 E6))
+     (= D (and F6 G6))
+     (= C (and I6 H6))
+     (= B (and K6 J6))
+     (= 31 (select T U)))
+      )
+      (funcNT2__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) (T5 Bool) (U5 Bool) (V5 Bool) (W5 Bool) (X5 Bool) (Y5 Bool) (Z5 Bool) (A6 Bool) (B6 Bool) (C6 Bool) (D6 Bool) (E6 Bool) (F6 Bool) (G6 Bool) (H6 Bool) (I6 Bool) (J6 Bool) (K6 Bool) ) 
+    (=>
+      (and
+        (funcNT5__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT5__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (and C6 B6))
+     (= G (and Z5 A6))
+     (= H (and Y5 X5))
+     (= I (and V5 W5))
+     (= J (and T5 U5))
+     (= K (and S5 R5))
+     (= L (and Q5 P5))
+     (= M (and N5 O5))
+     (= N (and M5 L5))
+     (= O (and K5 J5))
+     (= P (and H5 I5))
+     (= Q (and F5 G5))
+     (= E (and D6 E6))
+     (= D (and F6 G6))
+     (= C (and I6 H6))
+     (= B (and K6 J6))
+     (= 51 (select T U)))
+      )
+      (funcNT6__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT4__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (<= B6 C6))
+     (= G (<= Z5 A6))
+     (= H (<= X5 Y5))
+     (= I (<= V5 W5))
+     (= J (<= T5 U5))
+     (= K (<= R5 S5))
+     (= L (<= P5 Q5))
+     (= M (<= N5 O5))
+     (= N (<= L5 M5))
+     (= O (<= J5 K5))
+     (= P (<= H5 I5))
+     (= Q (<= F5 G5))
+     (= E (<= D6 E6))
+     (= D (<= F6 G6))
+     (= C (<= H6 I6))
+     (= B (<= J6 K6))
+     (= 50 (select T U)))
+      )
+      (funcNT6__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 (Array Int Int)) (C5 Int) (D5 Bool) (E5 Bool) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) ) 
+    (=>
+      (and
+        (funcNT6__sem R
+              A
+              T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5)
+        (and (= A (+ 1 S))
+     (not (= F5 O))
+     (not (= G5 N))
+     (not (= I5 L))
+     (not (= J5 K))
+     (not (= M5 H))
+     (not (= O5 F))
+     (not (= P5 E))
+     (not (= R5 C))
+     (not (= S5 B))
+     (not (= E5 P))
+     (not (= H5 M))
+     (not (= K5 J))
+     (not (= N5 G))
+     (not (= Q5 D))
+     (not (= D5 Q))
+     (not (= L5 I))
+     (= 53 (select R S)))
+      )
+      (funcNT6__sem R
+              S
+              T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) (T5 Bool) (U5 Bool) (V5 Bool) (W5 Bool) (X5 Bool) (Y5 Bool) (Z5 Bool) (A6 Bool) (B6 Bool) (C6 Bool) (D6 Bool) (E6 Bool) (F6 Bool) (G6 Bool) (H6 Bool) (I6 Bool) (J6 Bool) (K6 Bool) ) 
+    (=>
+      (and
+        (funcNT6__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT2__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (and C6 B6))
+     (= G (and Z5 A6))
+     (= H (and Y5 X5))
+     (= I (and V5 W5))
+     (= J (and T5 U5))
+     (= K (and S5 R5))
+     (= L (and Q5 P5))
+     (= M (and N5 O5))
+     (= N (and M5 L5))
+     (= O (and K5 J5))
+     (= P (and H5 I5))
+     (= Q (and F5 G5))
+     (= E (and D6 E6))
+     (= D (and F6 G6))
+     (= C (and I6 H6))
+     (= B (and K6 J6))
+     (= 52 (select T U)))
+      )
+      (funcNT6__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) (T5 Bool) (U5 Bool) (V5 Bool) (W5 Bool) (X5 Bool) (Y5 Bool) (Z5 Bool) (A6 Bool) (B6 Bool) (C6 Bool) (D6 Bool) (E6 Bool) (F6 Bool) (G6 Bool) (H6 Bool) (I6 Bool) (J6 Bool) (K6 Bool) ) 
+    (=>
+      (and
+        (funcNT5__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT5__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (or C6 B6))
+     (= G (or Z5 A6))
+     (= H (or Y5 X5))
+     (= I (or V5 W5))
+     (= J (or T5 U5))
+     (= K (or S5 R5))
+     (= L (or Q5 P5))
+     (= M (or N5 O5))
+     (= N (or M5 L5))
+     (= O (or K5 J5))
+     (= P (or H5 I5))
+     (= Q (or F5 G5))
+     (= E (or D6 E6))
+     (= D (or F6 G6))
+     (= C (or I6 H6))
+     (= B (or K6 J6))
+     (= 54 (select T U)))
+      )
+      (funcNT6__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) (T5 Bool) (U5 Bool) (V5 Bool) (W5 Bool) (X5 Bool) (Y5 Bool) (Z5 Bool) (A6 Bool) (B6 Bool) (C6 Bool) (D6 Bool) (E6 Bool) (F6 Bool) (G6 Bool) (H6 Bool) (I6 Bool) (J6 Bool) (K6 Bool) ) 
+    (=>
+      (and
+        (funcNT6__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT2__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (or C6 B6))
+     (= G (or Z5 A6))
+     (= H (or Y5 X5))
+     (= I (or V5 W5))
+     (= J (or T5 U5))
+     (= K (or S5 R5))
+     (= L (or Q5 P5))
+     (= M (or N5 O5))
+     (= N (or M5 L5))
+     (= O (or K5 J5))
+     (= P (or H5 I5))
+     (= Q (or F5 G5))
+     (= E (or D6 E6))
+     (= D (or F6 G6))
+     (= C (or I6 H6))
+     (= B (or K6 J6))
+     (= 48 (select T U)))
+      )
+      (funcNT6__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT3__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT3__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (<= B6 C6))
+     (= G (<= Z5 A6))
+     (= H (<= X5 Y5))
+     (= I (<= V5 W5))
+     (= J (<= T5 U5))
+     (= K (<= R5 S5))
+     (= L (<= P5 Q5))
+     (= M (<= N5 O5))
+     (= N (<= L5 M5))
+     (= O (<= J5 K5))
+     (= P (<= H5 I5))
+     (= Q (<= F5 G5))
+     (= E (<= D6 E6))
+     (= D (<= F6 G6))
+     (= C (<= H6 I6))
+     (= B (<= J6 K6))
+     (= 49 (select T U)))
+      )
+      (funcNT6__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Bool) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 (Array Int Int)) (Y1 Int) (Z1 (Array Int Int)) (A2 Int) (B2 (Array Int Int)) (C2 Int) (D2 Bool) (E2 Bool) (F2 Bool) (G2 Bool) (H2 Bool) (I2 Bool) (J2 Bool) (K2 Bool) (L2 Bool) (M2 Bool) (N2 Bool) (O2 Bool) (P2 Bool) (Q2 Bool) (R2 Bool) (S2 Bool) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Int) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) (L6 (Array Int Int)) (M6 Int) (N6 Bool) (O6 Int) (P6 Int) (Q6 Bool) (R6 Int) (S6 Int) (T6 Bool) (U6 Int) (V6 Int) (W6 Bool) (X6 Int) (Y6 Int) (Z6 Bool) (A7 Int) (B7 Int) (C7 Bool) (D7 Int) (E7 Int) (F7 Bool) (G7 Int) (H7 Int) (I7 Bool) (J7 Int) (K7 Int) (L7 Bool) (M7 Int) (N7 Int) (O7 Bool) (P7 Int) (Q7 Int) (R7 Bool) (S7 Int) (T7 Int) (U7 Bool) (V7 Int) (W7 Int) (X7 Bool) (Y7 Int) (Z7 Int) (A8 Bool) (B8 Int) (C8 Int) (D8 Bool) (E8 Int) (F8 Int) (G8 Bool) (H8 Int) (I8 Int) ) 
+    (=>
+      (and
+        (funcNT4__sem X1
+              Y1
+              G1
+              F1
+              E1
+              D1
+              C1
+              B1
+              A1
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              Z1
+              A2
+              O6
+              R6
+              U6
+              X6
+              A7
+              D7
+              G7
+              J7
+              M7
+              P7
+              S7
+              V7
+              Y7
+              B8
+              E8
+              H8)
+        (funcNT1__sem Z1
+              A2
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              P6
+              S6
+              V6
+              Y6
+              B7
+              E7
+              H7
+              K7
+              N7
+              Q7
+              T7
+              W7
+              Z7
+              C8
+              F8
+              I8)
+        (funcNT2__sem B2
+              A
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              X1
+              Y1
+              N6
+              Q6
+              T6
+              W6
+              Z6
+              C7
+              F7
+              I7
+              L7
+              O7
+              R7
+              U7
+              X7
+              A8
+              D8
+              G8)
+        (and (= W1 (ite N6 O6 P6))
+     (= V1 (ite Q6 R6 S6))
+     (= U1 (ite T6 U6 V6))
+     (= T1 (ite W6 X6 Y6))
+     (= S1 (ite Z6 A7 B7))
+     (= R1 (ite C7 D7 E7))
+     (= Q1 (ite F7 G7 H7))
+     (= P1 (ite I7 J7 K7))
+     (= O1 (ite L7 M7 N7))
+     (= N1 (ite O7 P7 Q7))
+     (= M1 (ite R7 S7 T7))
+     (= L1 (ite U7 V7 W7))
+     (= K1 (ite X7 Y7 Z7))
+     (= J1 (ite A8 B8 C8))
+     (= I1 (ite D8 E8 F8))
+     (= H1 (ite G8 H8 I8))
+     (= A (+ 1 C2))
+     (= G1 (and N6 D2))
+     (= F1 (and Q6 E2))
+     (= E1 (and T6 F2))
+     (= D1 (and W6 G2))
+     (= C1 (and Z6 H2))
+     (= B1 (and C7 I2))
+     (= A1 (and F7 J2))
+     (= Z (and I7 K2))
+     (= Y (and L7 L2))
+     (= X (and O7 M2))
+     (= W (and R7 N2))
+     (= V (and U7 O2))
+     (= U (and X7 P2))
+     (= T (and A8 Q2))
+     (= S (and D8 R2))
+     (= R (and G8 S2))
+     (= Q (and (not N6) D2))
+     (= P (and (not Q6) E2))
+     (= O (and (not T6) F2))
+     (= N (and (not W6) G2))
+     (= M (and (not Z6) H2))
+     (= L (and (not C7) I2))
+     (= K (and (not F7) J2))
+     (= J (and (not I7) K2))
+     (= I (and (not L7) L2))
+     (= H (and (not O7) M2))
+     (= G (and (not R7) N2))
+     (= F (and (not U7) O2))
+     (= E (and (not X7) P2))
+     (= D (and (not A8) Q2))
+     (= C (and (not D8) R2))
+     (= B (and (not G8) S2))
+     (= 58 (select B2 C2)))
+      )
+      (funcNT7__sem B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              W1
+              V1
+              U1
+              T1
+              S1
+              R1
+              Q1
+              P1
+              O1
+              N1
+              M1
+              L1
+              K1
+              J1
+              I1
+              H1)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT7__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= C (+ H6 I6))
+     (= E (+ D6 E6))
+     (= Q (+ F5 G5))
+     (= P (+ H5 I5))
+     (= O (+ J5 K5))
+     (= N (+ L5 M5))
+     (= M (+ N5 O5))
+     (= L (+ P5 Q5))
+     (= K (+ R5 S5))
+     (= J (+ T5 U5))
+     (= I (+ V5 W5))
+     (= H (+ X5 Y5))
+     (= G (+ Z5 A6))
+     (= F (+ B6 C6))
+     (= D (+ F6 G6))
+     (= B (+ J6 K6))
+     (= 56 (select T U)))
+      )
+      (funcNT7__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Bool) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 (Array Int Int)) (Y1 Int) (Z1 (Array Int Int)) (A2 Int) (B2 (Array Int Int)) (C2 Int) (D2 Bool) (E2 Bool) (F2 Bool) (G2 Bool) (H2 Bool) (I2 Bool) (J2 Bool) (K2 Bool) (L2 Bool) (M2 Bool) (N2 Bool) (O2 Bool) (P2 Bool) (Q2 Bool) (R2 Bool) (S2 Bool) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 Int) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) (L6 (Array Int Int)) (M6 Int) (N6 Bool) (O6 Int) (P6 Int) (Q6 Bool) (R6 Int) (S6 Int) (T6 Bool) (U6 Int) (V6 Int) (W6 Bool) (X6 Int) (Y6 Int) (Z6 Bool) (A7 Int) (B7 Int) (C7 Bool) (D7 Int) (E7 Int) (F7 Bool) (G7 Int) (H7 Int) (I7 Bool) (J7 Int) (K7 Int) (L7 Bool) (M7 Int) (N7 Int) (O7 Bool) (P7 Int) (Q7 Int) (R7 Bool) (S7 Int) (T7 Int) (U7 Bool) (V7 Int) (W7 Int) (X7 Bool) (Y7 Int) (Z7 Int) (A8 Bool) (B8 Int) (C8 Int) (D8 Bool) (E8 Int) (F8 Int) (G8 Bool) (H8 Int) (I8 Int) ) 
+    (=>
+      (and
+        (funcNT1__sem X1
+              Y1
+              G1
+              F1
+              E1
+              D1
+              C1
+              B1
+              A1
+              Z
+              Y
+              X
+              W
+              V
+              U
+              T
+              S
+              R
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              Z1
+              A2
+              O6
+              R6
+              U6
+              X6
+              A7
+              D7
+              G7
+              J7
+              M7
+              P7
+              S7
+              V7
+              Y7
+              B8
+              E8
+              H8)
+        (funcNT1__sem Z1
+              A2
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              P6
+              S6
+              V6
+              Y6
+              B7
+              E7
+              H7
+              K7
+              N7
+              Q7
+              T7
+              W7
+              Z7
+              C8
+              F8
+              I8)
+        (funcNT6__sem B2
+              A
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              X1
+              Y1
+              N6
+              Q6
+              T6
+              W6
+              Z6
+              C7
+              F7
+              I7
+              L7
+              O7
+              R7
+              U7
+              X7
+              A8
+              D8
+              G8)
+        (and (= W1 (ite N6 O6 P6))
+     (= V1 (ite Q6 R6 S6))
+     (= U1 (ite T6 U6 V6))
+     (= T1 (ite W6 X6 Y6))
+     (= S1 (ite Z6 A7 B7))
+     (= R1 (ite C7 D7 E7))
+     (= Q1 (ite F7 G7 H7))
+     (= P1 (ite I7 J7 K7))
+     (= O1 (ite L7 M7 N7))
+     (= N1 (ite O7 P7 Q7))
+     (= M1 (ite R7 S7 T7))
+     (= L1 (ite U7 V7 W7))
+     (= K1 (ite X7 Y7 Z7))
+     (= J1 (ite A8 B8 C8))
+     (= I1 (ite D8 E8 F8))
+     (= H1 (ite G8 H8 I8))
+     (= A (+ 1 C2))
+     (= G1 (and N6 D2))
+     (= F1 (and Q6 E2))
+     (= E1 (and T6 F2))
+     (= D1 (and W6 G2))
+     (= C1 (and Z6 H2))
+     (= B1 (and C7 I2))
+     (= A1 (and F7 J2))
+     (= Z (and I7 K2))
+     (= Y (and L7 L2))
+     (= X (and O7 M2))
+     (= W (and R7 N2))
+     (= V (and U7 O2))
+     (= U (and X7 P2))
+     (= T (and A8 Q2))
+     (= S (and D8 R2))
+     (= R (and G8 S2))
+     (= Q (and (not N6) D2))
+     (= P (and (not Q6) E2))
+     (= O (and (not T6) F2))
+     (= N (and (not W6) G2))
+     (= M (and (not Z6) H2))
+     (= L (and (not C7) I2))
+     (= K (and (not F7) J2))
+     (= J (and (not I7) K2))
+     (= I (and (not L7) L2))
+     (= H (and (not O7) M2))
+     (= G (and (not R7) N2))
+     (= F (and (not U7) O2))
+     (= E (and (not X7) P2))
+     (= D (and (not A8) Q2))
+     (= C (and (not D8) R2))
+     (= B (and (not G8) S2))
+     (= 57 (select B2 C2)))
+      )
+      (funcNT7__sem B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5
+              T5
+              U5
+              V5
+              W5
+              X5
+              Y5
+              Z5
+              A6
+              B6
+              C6
+              D6
+              E6
+              F6
+              G6
+              H6
+              I6
+              J6
+              K6
+              L6
+              M6
+              W1
+              V1
+              U1
+              T1
+              S1
+              R1
+              Q1
+              P1
+              O1
+              N1
+              M1
+              L1
+              K1
+              J1
+              I1
+              H1)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 (Array Int Int)) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) L4))
+     (= A K4)
+     (= 26 (select A B))
+     (= 0 v_116)
+     (= 0 v_117)
+     (= 0 v_118)
+     (= 0 v_119)
+     (= 0 v_120)
+     (= 0 v_121)
+     (= 0 v_122)
+     (= 0 v_123)
+     (= 0 v_124)
+     (= 0 v_125)
+     (= 0 v_126)
+     (= 0 v_127)
+     (= 0 v_128)
+     (= 0 v_129)
+     (= 0 v_130)
+     (= 0 v_131))
+      )
+      (funcNT1__sem A
+              B
+              C
+              D
+              E
+              F
+              G
+              H
+              I
+              J
+              K
+              L
+              M
+              N
+              O
+              P
+              Q
+              R
+              S
+              T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              v_116
+              v_117
+              v_118
+              v_119
+              v_120
+              v_121
+              v_122
+              v_123
+              v_124
+              v_125
+              v_126
+              v_127
+              v_128
+              v_129
+              v_130
+              v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Int) (C Int) (D Int) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT1__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= C (+ H6 I6))
+     (= E (+ D6 E6))
+     (= Q (+ F5 G5))
+     (= P (+ H5 I5))
+     (= O (+ J5 K5))
+     (= N (+ L5 M5))
+     (= M (+ N5 O5))
+     (= L (+ P5 Q5))
+     (= K (+ R5 S5))
+     (= J (+ T5 U5))
+     (= I (+ V5 W5))
+     (= H (+ X5 Y5))
+     (= G (+ Z5 A6))
+     (= F (+ B6 C6))
+     (= D (+ F6 G6))
+     (= B (+ J6 K6))
+     (= 24 (select T U)))
+      )
+      (funcNT1__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 (Array Int Int)) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) V3))
+     (= A U3)
+     (= 28 (select A B))
+     (= v_116 W3)
+     (= v_117 X3)
+     (= v_118 Y3)
+     (= v_119 Z3)
+     (= v_120 A4)
+     (= v_121 B4)
+     (= v_122 C4)
+     (= v_123 D4)
+     (= v_124 E4)
+     (= v_125 F4)
+     (= v_126 G4)
+     (= v_127 H4)
+     (= v_128 I4)
+     (= v_129 J4)
+     (= v_130 K4)
+     (= v_131 L4))
+      )
+      (funcNT1__sem A
+              B
+              C
+              D
+              E
+              F
+              G
+              H
+              I
+              J
+              K
+              L
+              M
+              N
+              O
+              P
+              Q
+              R
+              S
+              T
+              W3
+              U
+              V
+              W
+              X
+              Y
+              X3
+              Z
+              A1
+              B1
+              C1
+              D1
+              Y3
+              E1
+              F1
+              G1
+              H1
+              I1
+              Z3
+              J1
+              K1
+              L1
+              M1
+              N1
+              A4
+              O1
+              P1
+              Q1
+              R1
+              S1
+              B4
+              T1
+              U1
+              V1
+              W1
+              X1
+              C4
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D4
+              D2
+              E2
+              F2
+              G2
+              H2
+              E4
+              I2
+              J2
+              K2
+              L2
+              M2
+              F4
+              N2
+              O2
+              P2
+              Q2
+              R2
+              G4
+              S2
+              T2
+              U2
+              V2
+              W2
+              H4
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              I4
+              C3
+              D3
+              E3
+              F3
+              G3
+              J4
+              H3
+              I3
+              J3
+              K3
+              L3
+              K4
+              M3
+              N3
+              O3
+              P3
+              Q3
+              L4
+              R3
+              S3
+              T3
+              U3
+              V3
+              v_116
+              v_117
+              v_118
+              v_119
+              v_120
+              v_121
+              v_122
+              v_123
+              v_124
+              v_125
+              v_126
+              v_127
+              v_128
+              v_129
+              v_130
+              v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 (Array Int Int)) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) L4))
+     (= A K4)
+     (= 25 (select A B))
+     (= 1 v_116)
+     (= 1 v_117)
+     (= 1 v_118)
+     (= 1 v_119)
+     (= 1 v_120)
+     (= 1 v_121)
+     (= 1 v_122)
+     (= 1 v_123)
+     (= 1 v_124)
+     (= 1 v_125)
+     (= 1 v_126)
+     (= 1 v_127)
+     (= 1 v_128)
+     (= 1 v_129)
+     (= 1 v_130)
+     (= 1 v_131))
+      )
+      (funcNT1__sem A
+              B
+              C
+              D
+              E
+              F
+              G
+              H
+              I
+              J
+              K
+              L
+              M
+              N
+              O
+              P
+              Q
+              R
+              S
+              T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              v_116
+              v_117
+              v_118
+              v_119
+              v_120
+              v_121
+              v_122
+              v_123
+              v_124
+              v_125
+              v_126
+              v_127
+              v_128
+              v_129
+              v_130
+              v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 (Array Int Int)) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) V3))
+     (= A U3)
+     (= 21 (select A B))
+     (= v_116 W3)
+     (= v_117 X3)
+     (= v_118 Y3)
+     (= v_119 Z3)
+     (= v_120 A4)
+     (= v_121 B4)
+     (= v_122 C4)
+     (= v_123 D4)
+     (= v_124 E4)
+     (= v_125 F4)
+     (= v_126 G4)
+     (= v_127 H4)
+     (= v_128 I4)
+     (= v_129 J4)
+     (= v_130 K4)
+     (= v_131 L4))
+      )
+      (funcNT1__sem A
+              B
+              C
+              D
+              E
+              F
+              G
+              H
+              I
+              J
+              K
+              L
+              M
+              N
+              O
+              P
+              Q
+              R
+              S
+              T
+              U
+              V
+              W3
+              W
+              X
+              Y
+              Z
+              A1
+              X3
+              B1
+              C1
+              D1
+              E1
+              F1
+              Y3
+              G1
+              H1
+              I1
+              J1
+              K1
+              Z3
+              L1
+              M1
+              N1
+              O1
+              P1
+              A4
+              Q1
+              R1
+              S1
+              T1
+              U1
+              B4
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              C4
+              A2
+              B2
+              C2
+              D2
+              E2
+              D4
+              F2
+              G2
+              H2
+              I2
+              J2
+              E4
+              K2
+              L2
+              M2
+              N2
+              O2
+              F4
+              P2
+              Q2
+              R2
+              S2
+              T2
+              G4
+              U2
+              V2
+              W2
+              X2
+              Y2
+              H4
+              Z2
+              A3
+              B3
+              C3
+              D3
+              I4
+              E3
+              F3
+              G3
+              H3
+              I3
+              J4
+              J3
+              K3
+              L3
+              M3
+              N3
+              K4
+              O3
+              P3
+              Q3
+              R3
+              S3
+              L4
+              T3
+              U3
+              V3
+              v_116
+              v_117
+              v_118
+              v_119
+              v_120
+              v_121
+              v_122
+              v_123
+              v_124
+              v_125
+              v_126
+              v_127
+              v_128
+              v_129
+              v_130
+              v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 (Array Int Int)) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) V3))
+     (= A U3)
+     (= 23 (select A B))
+     (= v_116 W3)
+     (= v_117 X3)
+     (= v_118 Y3)
+     (= v_119 Z3)
+     (= v_120 A4)
+     (= v_121 B4)
+     (= v_122 C4)
+     (= v_123 D4)
+     (= v_124 E4)
+     (= v_125 F4)
+     (= v_126 G4)
+     (= v_127 H4)
+     (= v_128 I4)
+     (= v_129 J4)
+     (= v_130 K4)
+     (= v_131 L4))
+      )
+      (funcNT1__sem A
+              B
+              C
+              D
+              E
+              F
+              G
+              H
+              I
+              J
+              K
+              L
+              M
+              N
+              O
+              P
+              Q
+              R
+              S
+              T
+              U
+              V
+              W
+              W3
+              X
+              Y
+              Z
+              A1
+              B1
+              X3
+              C1
+              D1
+              E1
+              F1
+              G1
+              Y3
+              H1
+              I1
+              J1
+              K1
+              L1
+              Z3
+              M1
+              N1
+              O1
+              P1
+              Q1
+              A4
+              R1
+              S1
+              T1
+              U1
+              V1
+              B4
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              C4
+              B2
+              C2
+              D2
+              E2
+              F2
+              D4
+              G2
+              H2
+              I2
+              J2
+              K2
+              E4
+              L2
+              M2
+              N2
+              O2
+              P2
+              F4
+              Q2
+              R2
+              S2
+              T2
+              U2
+              G4
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              H4
+              A3
+              B3
+              C3
+              D3
+              E3
+              I4
+              F3
+              G3
+              H3
+              I3
+              J3
+              J4
+              K3
+              L3
+              M3
+              N3
+              O3
+              K4
+              P3
+              Q3
+              R3
+              S3
+              T3
+              L4
+              U3
+              V3
+              v_116
+              v_117
+              v_118
+              v_119
+              v_120
+              v_121
+              v_122
+              v_123
+              v_124
+              v_125
+              v_126
+              v_127
+              v_128
+              v_129
+              v_130
+              v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 (Array Int Int)) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) V3))
+     (= A U3)
+     (= 27 (select A B))
+     (= v_116 W3)
+     (= v_117 X3)
+     (= v_118 Y3)
+     (= v_119 Z3)
+     (= v_120 A4)
+     (= v_121 B4)
+     (= v_122 C4)
+     (= v_123 D4)
+     (= v_124 E4)
+     (= v_125 F4)
+     (= v_126 G4)
+     (= v_127 H4)
+     (= v_128 I4)
+     (= v_129 J4)
+     (= v_130 K4)
+     (= v_131 L4))
+      )
+      (funcNT1__sem A
+              B
+              C
+              D
+              E
+              F
+              G
+              H
+              I
+              J
+              K
+              L
+              M
+              N
+              O
+              P
+              Q
+              R
+              S
+              W3
+              T
+              U
+              V
+              W
+              X
+              X3
+              Y
+              Z
+              A1
+              B1
+              C1
+              Y3
+              D1
+              E1
+              F1
+              G1
+              H1
+              Z3
+              I1
+              J1
+              K1
+              L1
+              M1
+              A4
+              N1
+              O1
+              P1
+              Q1
+              R1
+              B4
+              S1
+              T1
+              U1
+              V1
+              W1
+              C4
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              D4
+              C2
+              D2
+              E2
+              F2
+              G2
+              E4
+              H2
+              I2
+              J2
+              K2
+              L2
+              F4
+              M2
+              N2
+              O2
+              P2
+              Q2
+              G4
+              R2
+              S2
+              T2
+              U2
+              V2
+              H4
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              I4
+              B3
+              C3
+              D3
+              E3
+              F3
+              J4
+              G3
+              H3
+              I3
+              J3
+              K3
+              K4
+              L3
+              M3
+              N3
+              O3
+              P3
+              L4
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              v_116
+              v_117
+              v_118
+              v_119
+              v_120
+              v_121
+              v_122
+              v_123
+              v_124
+              v_125
+              v_126
+              v_127
+              v_128
+              v_129
+              v_130
+              v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R Bool) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 (Array Int Int)) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) ) 
+    (=>
+      (and
+        (and (= B (+ (- 1) V3))
+     (= A U3)
+     (= 22 (select A B))
+     (= v_116 W3)
+     (= v_117 X3)
+     (= v_118 Y3)
+     (= v_119 Z3)
+     (= v_120 A4)
+     (= v_121 B4)
+     (= v_122 C4)
+     (= v_123 D4)
+     (= v_124 E4)
+     (= v_125 F4)
+     (= v_126 G4)
+     (= v_127 H4)
+     (= v_128 I4)
+     (= v_129 J4)
+     (= v_130 K4)
+     (= v_131 L4))
+      )
+      (funcNT1__sem A
+              B
+              C
+              D
+              E
+              F
+              G
+              H
+              I
+              J
+              K
+              L
+              M
+              N
+              O
+              P
+              Q
+              R
+              S
+              T
+              U
+              W3
+              V
+              W
+              X
+              Y
+              Z
+              X3
+              A1
+              B1
+              C1
+              D1
+              E1
+              Y3
+              F1
+              G1
+              H1
+              I1
+              J1
+              Z3
+              K1
+              L1
+              M1
+              N1
+              O1
+              A4
+              P1
+              Q1
+              R1
+              S1
+              T1
+              B4
+              U1
+              V1
+              W1
+              X1
+              Y1
+              C4
+              Z1
+              A2
+              B2
+              C2
+              D2
+              D4
+              E2
+              F2
+              G2
+              H2
+              I2
+              E4
+              J2
+              K2
+              L2
+              M2
+              N2
+              F4
+              O2
+              P2
+              Q2
+              R2
+              S2
+              G4
+              T2
+              U2
+              V2
+              W2
+              X2
+              H4
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              I4
+              D3
+              E3
+              F3
+              G3
+              H3
+              J4
+              I3
+              J3
+              K3
+              L3
+              M3
+              K4
+              N3
+              O3
+              P3
+              Q3
+              R3
+              L4
+              S3
+              T3
+              U3
+              V3
+              v_116
+              v_117
+              v_118
+              v_119
+              v_120
+              v_121
+              v_122
+              v_123
+              v_124
+              v_125
+              v_126
+              v_127
+              v_128
+              v_129
+              v_130
+              v_131)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T Bool) (U Bool) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 (Array Int Int)) (C5 Int) (D5 Bool) (E5 Bool) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) ) 
+    (=>
+      (and
+        (funcNT5__sem R
+              A
+              T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              F5
+              G5
+              H5
+              I5
+              J5
+              K5
+              L5
+              M5
+              N5
+              O5
+              P5
+              Q5
+              R5
+              S5)
+        (and (= A (+ 1 S))
+     (not (= F5 O))
+     (not (= G5 N))
+     (not (= I5 L))
+     (not (= J5 K))
+     (not (= M5 H))
+     (not (= O5 F))
+     (not (= P5 E))
+     (not (= R5 C))
+     (not (= S5 B))
+     (not (= E5 P))
+     (not (= H5 M))
+     (not (= K5 J))
+     (not (= N5 G))
+     (not (= Q5 D))
+     (not (= D5 Q))
+     (not (= L5 I))
+     (= 45 (select R S)))
+      )
+      (funcNT5__sem R
+              S
+              T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) (T5 Bool) (U5 Bool) (V5 Bool) (W5 Bool) (X5 Bool) (Y5 Bool) (Z5 Bool) (A6 Bool) (B6 Bool) (C6 Bool) (D6 Bool) (E6 Bool) (F6 Bool) (G6 Bool) (H6 Bool) (I6 Bool) (J6 Bool) (K6 Bool) ) 
+    (=>
+      (and
+        (funcNT5__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT2__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (and C6 B6))
+     (= G (and Z5 A6))
+     (= H (and Y5 X5))
+     (= I (and V5 W5))
+     (= J (and T5 U5))
+     (= K (and S5 R5))
+     (= L (and Q5 P5))
+     (= M (and N5 O5))
+     (= N (and M5 L5))
+     (= O (and K5 J5))
+     (= P (and H5 I5))
+     (= Q (and F5 G5))
+     (= E (and D6 E6))
+     (= D (and F6 G6))
+     (= C (and I6 H6))
+     (= B (and K6 J6))
+     (= 44 (select T U)))
+      )
+      (funcNT5__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Bool) (G5 Bool) (H5 Bool) (I5 Bool) (J5 Bool) (K5 Bool) (L5 Bool) (M5 Bool) (N5 Bool) (O5 Bool) (P5 Bool) (Q5 Bool) (R5 Bool) (S5 Bool) (T5 Bool) (U5 Bool) (V5 Bool) (W5 Bool) (X5 Bool) (Y5 Bool) (Z5 Bool) (A6 Bool) (B6 Bool) (C6 Bool) (D6 Bool) (E6 Bool) (F6 Bool) (G6 Bool) (H6 Bool) (I6 Bool) (J6 Bool) (K6 Bool) ) 
+    (=>
+      (and
+        (funcNT5__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT2__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (or C6 B6))
+     (= G (or Z5 A6))
+     (= H (or Y5 X5))
+     (= I (or V5 W5))
+     (= J (or T5 U5))
+     (= K (or S5 R5))
+     (= L (or Q5 P5))
+     (= M (or N5 O5))
+     (= N (or M5 L5))
+     (= O (or K5 J5))
+     (= P (or H5 I5))
+     (= Q (or F5 G5))
+     (= E (or D6 E6))
+     (= D (or F6 G6))
+     (= C (or I6 H6))
+     (= B (or K6 J6))
+     (= 43 (select T U)))
+      )
+      (funcNT5__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A Int) (B Bool) (C Bool) (D Bool) (E Bool) (F Bool) (G Bool) (H Bool) (I Bool) (J Bool) (K Bool) (L Bool) (M Bool) (N Bool) (O Bool) (P Bool) (Q Bool) (R (Array Int Int)) (S Int) (T (Array Int Int)) (U Int) (V Bool) (W Bool) (X Bool) (Y Bool) (Z Bool) (A1 Bool) (B1 Bool) (C1 Bool) (D1 Bool) (E1 Bool) (F1 Bool) (G1 Bool) (H1 Bool) (I1 Bool) (J1 Bool) (K1 Bool) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (H3 Int) (I3 Int) (J3 Int) (K3 Int) (L3 Int) (M3 Int) (N3 Int) (O3 Int) (P3 Int) (Q3 Int) (R3 Int) (S3 Int) (T3 Int) (U3 Int) (V3 Int) (W3 Int) (X3 Int) (Y3 Int) (Z3 Int) (A4 Int) (B4 Int) (C4 Int) (D4 Int) (E4 Int) (F4 Int) (G4 Int) (H4 Int) (I4 Int) (J4 Int) (K4 Int) (L4 Int) (M4 Int) (N4 Int) (O4 Int) (P4 Int) (Q4 Int) (R4 Int) (S4 Int) (T4 Int) (U4 Int) (V4 Int) (W4 Int) (X4 Int) (Y4 Int) (Z4 Int) (A5 Int) (B5 Int) (C5 Int) (D5 (Array Int Int)) (E5 Int) (F5 Int) (G5 Int) (H5 Int) (I5 Int) (J5 Int) (K5 Int) (L5 Int) (M5 Int) (N5 Int) (O5 Int) (P5 Int) (Q5 Int) (R5 Int) (S5 Int) (T5 Int) (U5 Int) (V5 Int) (W5 Int) (X5 Int) (Y5 Int) (Z5 Int) (A6 Int) (B6 Int) (C6 Int) (D6 Int) (E6 Int) (F6 Int) (G6 Int) (H6 Int) (I6 Int) (J6 Int) (K6 Int) ) 
+    (=>
+      (and
+        (funcNT3__sem T
+              A
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              R
+              S
+              F5
+              H5
+              J5
+              L5
+              N5
+              P5
+              R5
+              T5
+              V5
+              X5
+              Z5
+              B6
+              D6
+              F6
+              H6
+              J6)
+        (funcNT1__sem R
+              S
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              G5
+              I5
+              K5
+              M5
+              O5
+              Q5
+              S5
+              U5
+              W5
+              Y5
+              A6
+              C6
+              E6
+              G6
+              I6
+              K6)
+        (and (= A (+ 1 U))
+     (= F (<= B6 C6))
+     (= G (<= Z5 A6))
+     (= H (<= X5 Y5))
+     (= I (<= V5 W5))
+     (= J (<= T5 U5))
+     (= K (<= R5 S5))
+     (= L (<= P5 Q5))
+     (= M (<= N5 O5))
+     (= N (<= L5 M5))
+     (= O (<= J5 K5))
+     (= P (<= H5 I5))
+     (= Q (<= F5 G5))
+     (= E (<= D6 E6))
+     (= D (<= F6 G6))
+     (= C (<= H6 I6))
+     (= B (<= J6 K6))
+     (= 46 (select T U)))
+      )
+      (funcNT5__sem T
+              U
+              V
+              W
+              X
+              Y
+              Z
+              A1
+              B1
+              C1
+              D1
+              E1
+              F1
+              G1
+              H1
+              I1
+              J1
+              K1
+              L1
+              M1
+              N1
+              O1
+              P1
+              Q1
+              R1
+              S1
+              T1
+              U1
+              V1
+              W1
+              X1
+              Y1
+              Z1
+              A2
+              B2
+              C2
+              D2
+              E2
+              F2
+              G2
+              H2
+              I2
+              J2
+              K2
+              L2
+              M2
+              N2
+              O2
+              P2
+              Q2
+              R2
+              S2
+              T2
+              U2
+              V2
+              W2
+              X2
+              Y2
+              Z2
+              A3
+              B3
+              C3
+              D3
+              E3
+              F3
+              G3
+              H3
+              I3
+              J3
+              K3
+              L3
+              M3
+              N3
+              O3
+              P3
+              Q3
+              R3
+              S3
+              T3
+              U3
+              V3
+              W3
+              X3
+              Y3
+              Z3
+              A4
+              B4
+              C4
+              D4
+              E4
+              F4
+              G4
+              H4
+              I4
+              J4
+              K4
+              L4
+              M4
+              N4
+              O4
+              P4
+              Q4
+              R4
+              S4
+              T4
+              U4
+              V4
+              W4
+              X4
+              Y4
+              Z4
+              A5
+              B5
+              C5
+              D5
+              E5
+              Q
+              P
+              O
+              N
+              M
+              L
+              K
+              J
+              I
+              H
+              G
+              F
+              E
+              D
+              C
+              B)
+    )
+  )
+)
+(assert
+  (forall ( (A (Array Int Int)) (B Int) (C (Array Int Int)) (D (Array Int Int)) (E Int) (F Int) (G Int) (H Int) (I Int) (J Int) (K Int) (L Int) (M Int) (N Int) (O Int) (P Int) (Q Int) (R Int) (S Int) (T Int) (U Int) (V Int) (W Int) (X Int) (Y Int) (Z Int) (A1 Int) (B1 Int) (C1 Int) (D1 Int) (E1 Int) (F1 Int) (G1 Int) (H1 Int) (I1 Int) (J1 Int) (K1 Int) (L1 Int) (M1 Int) (N1 Int) (O1 Int) (P1 Int) (Q1 Int) (R1 Int) (S1 Int) (T1 Int) (U1 Int) (V1 Int) (W1 Int) (X1 Int) (Y1 Int) (Z1 Int) (A2 Int) (B2 Int) (C2 Int) (D2 Int) (E2 Int) (F2 Int) (G2 Int) (H2 Int) (I2 Int) (J2 Int) (K2 Int) (L2 Int) (M2 Int) (N2 Int) (O2 Int) (P2 Int) (Q2 Int) (R2 Int) (S2 Int) (T2 Int) (U2 Int) (V2 Int) (W2 Int) (X2 Int) (Y2 Int) (Z2 Int) (A3 Int) (B3 Int) (C3 Int) (D3 Int) (E3 Int) (F3 Int) (G3 Int) (v_85 Int) (v_86 Bool) (v_87 Bool) (v_88 Bool) (v_89 Bool) (v_90 Bool) (v_91 Bool) (v_92 Bool) (v_93 Bool) (v_94 Bool) (v_95 Bool) (v_96 Bool) (v_97 Bool) (v_98 Bool) (v_99 Bool) (v_100 Bool) (v_101 Bool) (v_102 Int) (v_103 Int) (v_104 Int) (v_105 Int) (v_106 Int) (v_107 Int) (v_108 Int) (v_109 Int) (v_110 Int) (v_111 Int) (v_112 Int) (v_113 Int) (v_114 Int) (v_115 Int) (v_116 Int) (v_117 Int) (v_118 Int) (v_119 Int) (v_120 Int) (v_121 Int) (v_122 Int) (v_123 Int) (v_124 Int) (v_125 Int) (v_126 Int) (v_127 Int) (v_128 Int) (v_129 Int) (v_130 Int) (v_131 Int) (v_132 Int) (v_133 Int) (v_134 Int) (v_135 Int) (v_136 Int) (v_137 Int) (v_138 Int) (v_139 Int) (v_140 Int) (v_141 Int) (v_142 Int) (v_143 Int) (v_144 Int) (v_145 Int) (v_146 Int) (v_147 Int) (v_148 Int) (v_149 Int) (v_150 Int) (v_151 Int) (v_152 Int) (v_153 Int) (v_154 Int) (v_155 Int) (v_156 Int) (v_157 Int) (v_158 Int) (v_159 Int) (v_160 Int) (v_161 Int) (v_162 Int) (v_163 Int) (v_164 Int) (v_165 Int) (v_166 Int) (v_167 Int) (v_168 Int) (v_169 Int) (v_170 Int) (v_171 Int) (v_172 Int) (v_173 Int) (v_174 Int) (v_175 Int) (v_176 Int) (v_177 Int) (v_178 Int) (v_179 Int) (v_180 Int) (v_181 Int) (v_182 Int) (v_183 Int) (v_184 Int) (v_185 Int) (v_186 Int) (v_187 Int) (v_188 Int) (v_189 Int) (v_190 Int) (v_191 Int) (v_192 Int) (v_193 Int) (v_194 Int) (v_195 Int) (v_196 Int) (v_197 Int) (v_198 Int) (v_199 Int) (v_200 Int) (v_201 Int) (v_202 Int) (v_203 Int) (v_204 Int) (v_205 Int) (v_206 Int) (v_207 Int) (v_208 Int) (v_209 Int) (v_210 Int) (v_211 Int) (v_212 Int) (v_213 Int) (v_214 Int) ) 
+    (=>
+      (and
+        (funcmainStart__sem
+  C
+  v_85
+  v_86
+  v_87
+  v_88
+  v_89
+  v_90
+  v_91
+  v_92
+  v_93
+  v_94
+  v_95
+  v_96
+  v_97
+  v_98
+  v_99
+  v_100
+  v_101
+  v_102
+  v_103
+  v_104
+  v_105
+  v_106
+  v_107
+  v_108
+  v_109
+  v_110
+  v_111
+  v_112
+  v_113
+  v_114
+  v_115
+  v_116
+  v_117
+  v_118
+  v_119
+  v_120
+  v_121
+  v_122
+  v_123
+  v_124
+  v_125
+  v_126
+  v_127
+  v_128
+  v_129
+  v_130
+  v_131
+  v_132
+  v_133
+  v_134
+  v_135
+  v_136
+  v_137
+  v_138
+  v_139
+  v_140
+  v_141
+  v_142
+  v_143
+  v_144
+  v_145
+  v_146
+  v_147
+  v_148
+  v_149
+  v_150
+  v_151
+  v_152
+  v_153
+  v_154
+  v_155
+  v_156
+  v_157
+  v_158
+  v_159
+  v_160
+  v_161
+  v_162
+  v_163
+  v_164
+  v_165
+  v_166
+  v_167
+  v_168
+  v_169
+  v_170
+  v_171
+  v_172
+  v_173
+  v_174
+  v_175
+  v_176
+  v_177
+  v_178
+  v_179
+  v_180
+  v_181
+  v_182
+  v_183
+  v_184
+  v_185
+  v_186
+  v_187
+  v_188
+  v_189
+  v_190
+  v_191
+  v_192
+  v_193
+  v_194
+  v_195
+  v_196
+  v_197
+  D
+  E
+  v_198
+  F
+  G
+  H
+  I
+  J
+  v_199
+  K
+  L
+  M
+  N
+  O
+  v_200
+  P
+  Q
+  R
+  S
+  T
+  v_201
+  U
+  V
+  W
+  X
+  Y
+  v_202
+  Z
+  A1
+  B1
+  C1
+  D1
+  v_203
+  E1
+  F1
+  G1
+  H1
+  I1
+  v_204
+  J1
+  K1
+  L1
+  M1
+  N1
+  v_205
+  O1
+  P1
+  Q1
+  R1
+  S1
+  v_206
+  T1
+  U1
+  V1
+  W1
+  X1
+  v_207
+  Y1
+  Z1
+  A2
+  B2
+  C2
+  v_208
+  D2
+  E2
+  F2
+  G2
+  H2
+  v_209
+  I2
+  J2
+  K2
+  L2
+  M2
+  v_210
+  N2
+  O2
+  P2
+  Q2
+  R2
+  v_211
+  S2
+  T2
+  U2
+  V2
+  W2
+  v_212
+  X2
+  Y2
+  Z2
+  A3
+  B3
+  v_213
+  C3
+  D3
+  E3
+  F3
+  G3)
+        (funcmainStart__syn A v_214 C B)
+        (and (= 0 v_85)
+     (= v_86 true)
+     (= v_87 true)
+     (= v_88 true)
+     (= v_89 true)
+     (= v_90 true)
+     (= v_91 true)
+     (= v_92 true)
+     (= v_93 true)
+     (= v_94 true)
+     (= v_95 true)
+     (= v_96 true)
+     (= v_97 true)
+     (= v_98 true)
+     (= v_99 true)
+     (= v_100 true)
+     (= v_101 true)
+     (= (- 889275714) v_102)
+     (= 0 v_103)
+     (= 0 v_104)
+     (= 0 v_105)
+     (= 0 v_106)
+     (= 0 v_107)
+     (= (- 889275714) v_108)
+     (= 0 v_109)
+     (= 0 v_110)
+     (= 0 v_111)
+     (= 0 v_112)
+     (= 1 v_113)
+     (= (- 889275714) v_114)
+     (= 0 v_115)
+     (= 0 v_116)
+     (= 1 v_117)
+     (= 0 v_118)
+     (= 0 v_119)
+     (= (- 889275714) v_120)
+     (= 0 v_121)
+     (= 0 v_122)
+     (= 2 v_123)
+     (= 0 v_124)
+     (= (- 1) v_125)
+     (= (- 889275714) v_126)
+     (= (- 1) v_127)
+     (= (- 1) v_128)
+     (= (- 1) v_129)
+     (= 1 v_130)
+     (= 0 v_131)
+     (= (- 889275714) v_132)
+     (= 0 v_133)
+     (= 0 v_134)
+     (= (- 1) v_135)
+     (= 0 v_136)
+     (= 0 v_137)
+     (= (- 889275714) v_138)
+     (= 2 v_139)
+     (= 0 v_140)
+     (= 1 v_141)
+     (= 0 v_142)
+     (= 1 v_143)
+     (= (- 889275714) v_144)
+     (= (- 1) v_145)
+     (= 0 v_146)
+     (= 0 v_147)
+     (= 0 v_148)
+     (= 0 v_149)
+     (= (- 889275714) v_150)
+     (= (- 1) v_151)
+     (= 0 v_152)
+     (= (- 1) v_153)
+     (= 0 v_154)
+     (= 0 v_155)
+     (= (- 889275714) v_156)
+     (= 1 v_157)
+     (= 1 v_158)
+     (= 0 v_159)
+     (= 1 v_160)
+     (= 1 v_161)
+     (= (- 889275714) v_162)
+     (= 1 v_163)
+     (= 2 v_164)
+     (= 1 v_165)
+     (= 1 v_166)
+     (= 1 v_167)
+     (= (- 889275714) v_168)
+     (= 1 v_169)
+     (= 1 v_170)
+     (= 1 v_171)
+     (= 0 v_172)
+     (= 1 v_173)
+     (= (- 889275714) v_174)
+     (= 0 v_175)
+     (= (- 1) v_176)
+     (= 0 v_177)
+     (= 0 v_178)
+     (= 0 v_179)
+     (= (- 889275714) v_180)
+     (= (- 3) v_181)
+     (= (- 3) v_182)
+     (= (- 1) v_183)
+     (= (- 1) v_184)
+     (= (- 1) v_185)
+     (= (- 889275714) v_186)
+     (= 1 v_187)
+     (= 0 v_188)
+     (= 0 v_189)
+     (= 2 v_190)
+     (= 0 v_191)
+     (= (- 889275714) v_192)
+     (= 0 v_193)
+     (= (- 2) v_194)
+     (= 1 v_195)
+     (= 0 v_196)
+     (= (- 1) v_197)
+     (= 0 v_198)
+     (= 1 v_199)
+     (= 1 v_200)
+     (= 0 v_201)
+     (= 0 v_202)
+     (= 0 v_203)
+     (= 2 v_204)
+     (= 0 v_205)
+     (= 0 v_206)
+     (= 1 v_207)
+     (= 2 v_208)
+     (= 1 v_209)
+     (= 0 v_210)
+     (= (- 1) v_211)
+     (= 2 v_212)
+     (= 1 v_213)
+     (= 0 v_214))
+      )
+      realizable
+    )
+  )
+)
+(assert
+  (forall ( (CHC_COMP_UNUSED Bool) ) 
+    (=>
+      (and
+        realizable
+        true
+      )
+      false
+    )
+  )
+)
+
+(check-sat)
+(exit)
